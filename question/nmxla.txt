@@ -1,0 +1,2399 @@
+Câu 1. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Nhiễu ngẫu nhiên?
+A. Thường cho khả năng nén cao hơn nhưng dữ liệu phục hồi không hoàn toàn giống ảnh gốc
+B. Loại nhiễu không rõ quy luật và thường được khắc phục bằng các phép lọc
+C. Có thể được trích chọn bằng các toán tử như gradient, la bàn hoặc Laplace để hỗ trợ nhận dạng
+D. Gồm các khâu thu nhận và tiền xử lý, biểu diễn dữ liệu, nhận dạng và ra quyết định
+
+Câu 2. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Tăng số mức xám?
+A. Biểu diễn cường độ sáng của điểm ảnh
+B. Giảm không gian lưu trữ dữ liệu ảnh
+C. Cho phép phục hồi dữ liệu ảnh sau giải nén mà không làm mất thông tin gốc
+D. Nội suy các mức xám trung gian nhằm tăng độ mịn của ảnh
+
+Câu 3. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Ảnh số?
+A. Mẫu đầu vào được gán vào một lớp đã xác định dựa trên mẫu chuẩn
+B. Nội suy các mức xám trung gian nhằm tăng độ mịn của ảnh
+C. Ảnh số có thể được biểu diễn bằng một ma trận các điểm ảnh sau quá trình số hóa
+D. Loại nhiễu không rõ quy luật và thường được khắc phục bằng các phép lọc
+
+Câu 4. Đặc điểm nào sau đây gắn đúng với Nén không bảo toàn thông tin?
+A. Có thể được trích chọn bằng các toán tử như gradient, la bàn hoặc Laplace để hỗ trợ nhận dạng
+B. Thường cho khả năng nén cao hơn nhưng dữ liệu phục hồi không hoàn toàn giống ảnh gốc
+C. Khắc phục biến dạng do thiết bị quang học và điện tử bằng các phép chiếu dựa trên điểm điều khiển
+D. Các mẫu được nhóm thành lớp theo tiêu chuẩn đồng dạng khi lớp chưa được định danh trước
+
+Câu 5. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Nén không bảo toàn thông tin?
+A. Có thể được trích chọn bằng các toán tử như gradient, la bàn hoặc Laplace để hỗ trợ nhận dạng
+B. Biểu diễn cường độ sáng của điểm ảnh
+C. Nội suy các mức xám trung gian nhằm tăng độ mịn của ảnh
+D. Thường cho khả năng nén cao hơn nhưng dữ liệu phục hồi không hoàn toàn giống ảnh gốc
+
+Câu 6. Đặc điểm nào sau đây gắn đúng với Ảnh màu RGB?
+A. Biểu diễn màu theo sắc độ, độ bão hòa và giá trị sáng
+B. Biểu diễn ảnh bằng ma trận các điểm ảnh và thuận lợi cho hiển thị, in ấn
+C. Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng
+D. Ảnh chỉ có hai mức biểu diễn
+
+Câu 7. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Ảnh màu RGB?
+A. Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng
+B. Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận
+C. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+D. Định dạng ảnh có sử dụng mã hóa loạt dài trong lưu trữ dữ liệu ảnh
+
+Câu 8. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Mô hình HSV?
+A. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+B. Biểu diễn màu theo sắc độ, độ bão hòa và độ sáng
+C. Mô hình màu liên hệ với RGB theo nguyên tắc bù màu
+D. Biểu diễn màu theo sắc độ, độ bão hòa và giá trị sáng
+
+Câu 9. Trong xử lý ảnh số, nhận định nào phù hợp nhất với BMP?
+A. Camera và scanner là các thiết bị thu nhận ảnh Raster thông dụng
+B. Định dạng ảnh bitmap lưu dữ liệu ảnh theo cấu trúc điểm ảnh
+C. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+D. Kỹ thuật in tạo cảm giác nhiều mức xám bằng cách thay đổi mật độ các điểm in
+
+Câu 10. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Phối màu cộng?
+A. Tạo màu bằng cách cộng các thành phần ánh sáng và là nguyên lý của mô hình RGB
+B. Định dạng ảnh hỗ trợ nhiều kiểu mã hóa và nhiều kiểu màu
+C. Biến giá trị biên độ liên tục sau lấy mẫu thành các mức rời rạc hữu hạn để lưu trữ
+D. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+
+Câu 11. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Phối màu trừ?
+A. Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận
+B. Kỹ thuật in tạo cảm giác nhiều mức xám bằng cách thay đổi mật độ các điểm in
+C. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+D. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+
+Câu 12. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về RAW?
+A. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+B. Dữ liệu ảnh thô lưu thông tin thu nhận trực tiếp với mức xử lý tối thiểu trước khi hậu kỳ
+C. Tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu để có thể tái tạo ảnh
+D. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+
+Câu 13. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Thiết bị thu nhận ảnh Raster?
+A. Camera và scanner là các thiết bị thu nhận ảnh Raster thông dụng
+B. Biểu diễn ảnh bằng ma trận các điểm ảnh và thuận lợi cho hiển thị, in ấn
+C. Dữ liệu ảnh thô lưu thông tin thu nhận trực tiếp với mức xử lý tối thiểu trước khi hậu kỳ
+D. Sensor hoặc bàn số hóa có thể tạo dữ liệu Vector
+
+Câu 14. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Lấy mẫu?
+A. Camera và scanner là các thiết bị thu nhận ảnh Raster thông dụng
+B. Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng
+C. Biến tín hiệu quang liên tục thành tín hiệu điện được lấy tại các vị trí rời rạc
+D. Mở rộng mô hình CMY bằng thành phần đen để phù hợp hơn với quá trình in
+
+Câu 15. Đặc điểm nào sau đây gắn đúng với Mô hình Vector?
+A. Tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu để có thể tái tạo ảnh
+B. Biểu diễn bằng các đối tượng hình học và có thể phóng to mà không bị vỡ hình
+C. Liên quan đến số lượng điểm ảnh dùng để biểu diễn ảnh theo các chiều không gian
+D. Biến tín hiệu quang liên tục thành tín hiệu điện được lấy tại các vị trí rời rạc
+
+Câu 16. Nội dung nào phản ánh đúng bản chất của Lọc Bayer?
+A. Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng
+B. Camera và scanner là các thiết bị thu nhận ảnh Raster thông dụng
+C. Tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu để có thể tái tạo ảnh
+D. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+
+Câu 17. Đặc điểm nào sau đây gắn đúng với Three-CCD?
+A. Mở rộng mô hình CMY bằng thành phần đen để phù hợp hơn với quá trình in
+B. Biến giá trị biên độ liên tục sau lấy mẫu thành các mức rời rạc hữu hạn để lưu trữ
+C. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+D. Định dạng ảnh hỗ trợ nhiều kiểu mã hóa và nhiều kiểu màu
+
+Câu 18. Đặc điểm nào sau đây gắn đúng với Mô hình HSV?
+A. Biểu diễn màu theo sắc độ, độ bão hòa và giá trị sáng
+B. Mở rộng mô hình CMY bằng thành phần đen để phù hợp hơn với quá trình in
+C. Ảnh chỉ có hai mức biểu diễn
+D. Định dạng ảnh hỗ trợ nhiều kiểu mã hóa và nhiều kiểu màu
+
+Câu 19. Đặc điểm nào sau đây gắn đúng với TIFF?
+A. Biểu diễn màu theo sắc độ, độ bão hòa và giá trị sáng
+B. Sensor hoặc bàn số hóa có thể tạo dữ liệu Vector
+C. Biểu diễn bằng các đối tượng hình học và có thể phóng to mà không bị vỡ hình
+D. Định dạng ảnh hỗ trợ nhiều kiểu mã hóa và nhiều kiểu màu
+
+Câu 20. Đặc điểm nào sau đây gắn đúng với Phối màu cộng?
+A. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+B. Tạo màu bằng cách cộng các thành phần ánh sáng và là nguyên lý của mô hình RGB
+C. Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận
+D. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+
+Câu 21. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Lọc trung bình?
+A. Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh
+B. Thay điểm ảnh bằng trung vị của các giá trị trong cửa sổ lân cận và phù hợp với nhiễu xung
+C. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+D. Tính trung bình trên k giá trị trong lân cận có mức xám gần với điểm đang xét
+
+Câu 22. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Khôi phục ảnh?
+A. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+B. Biến đổi mức xám theo quan hệ nghịch đảo so với thang mức xám
+C. Ước lượng ảnh gốc từ ảnh bị suy giảm dựa trên mô hình suy hao và nhiễu
+D. Phân bố lại mức xám để cải thiện độ tương phản của ảnh
+
+Câu 23. Đặc điểm nào sau đây gắn đúng với Mặt phẳng bit cao?
+A. Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh
+B. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+C. Khôi phục ảnh bằng cách bù trực tiếp hàm suy hao trong miền tần số khi điều kiện cho phép
+D. Thay điểm ảnh bằng trung vị của các giá trị trong cửa sổ lân cận và phù hợp với nhiễu xung
+
+Câu 24. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Mặt phẳng bit cao?
+A. Hạn chế ảnh hưởng của các thành phần làm phép đảo trở nên không ổn định
+B. Kết hợp vùng lân cận của ảnh với một mặt nạ lọc để tạo giá trị đầu ra
+C. Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng giá trị quan tâm
+D. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+
+Câu 25. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Lọc Wiener?
+A. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+B. Biểu diễn số điểm ảnh tương ứng với từng mức xám
+C. Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương khi xét cả suy hao và nhiễu
+D. Nhiễu có biên độ tuân theo phân bố Gaussian
+
+Câu 26. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Tăng độ sáng?
+A. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+B. Phân bố lại mức xám để cải thiện độ tương phản của ảnh
+C. Cộng một hằng số âm vào mức xám làm ảnh tối hơn
+D. Mở rộng dải mức xám để tăng khả năng phân biệt vùng sáng tối
+
+Câu 27. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Cân bằng histogram?
+A. Nhiễu có biên độ tuân theo phân bố Gaussian
+B. Cộng một hằng số âm vào mức xám làm ảnh tối hơn
+C. Kết hợp vùng lân cận của ảnh với một mặt nạ lọc để tạo giá trị đầu ra
+D. Phân bố lại mức xám để cải thiện độ tương phản của ảnh
+
+Câu 28. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Dãn độ tương phản?
+A. Phân bố lại mức xám để cải thiện độ tương phản của ảnh
+B. Nhiễu có biên độ tuân theo phân bố Gaussian
+C. Mở rộng dải mức xám để tăng khả năng phân biệt vùng sáng tối
+D. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+
+Câu 29. Khi xét Lọc trung bình, phát biểu nào là chính xác?
+A. Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh
+B. Phân bố lại mức xám để cải thiện độ tương phản của ảnh
+C. Xác định ngưỡng dựa trên đặc trưng phân bố mức xám thay vì chọn hoàn toàn thủ công
+D. Thay điểm ảnh bằng trung vị của các giá trị trong cửa sổ lân cận và phù hợp với nhiễu xung
+
+Câu 30. Đặc điểm nào sau đây gắn đúng với Lọc trung bình theo k giá trị gần nhất?
+A. Biến đổi mức xám theo quan hệ nghịch đảo so với thang mức xám
+B. Nhiễu có biên độ tuân theo phân bố Gaussian
+C. Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương khi xét cả suy hao và nhiễu
+D. Tính trung bình trên k giá trị trong lân cận có mức xám gần với điểm đang xét
+
+Câu 31. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Nhiễu muối tiêu?
+A. Hạn chế ảnh hưởng của các thành phần làm phép đảo trở nên không ổn định
+B. Nhiễu xung tạo ra các điểm rất sáng hoặc rất tối rải rác trên ảnh
+C. Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương khi xét cả suy hao và nhiễu
+D. Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh
+
+Câu 32. Khi xét Mặt phẳng bit cao, phát biểu nào là chính xác?
+A. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+B. Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng giá trị quan tâm
+C. Tính trung bình trên k giá trị trong lân cận có mức xám gần với điểm đang xét
+D. Xác định ngưỡng dựa trên đặc trưng phân bố mức xám thay vì chọn hoàn toàn thủ công
+
+Câu 33. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Lọc đảo?
+A. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+B. Cộng một hằng số âm vào mức xám làm ảnh tối hơn
+C. Khôi phục ảnh bằng cách bù trực tiếp hàm suy hao trong miền tần số khi điều kiện cho phép
+D. Biến đổi mức xám theo quan hệ nghịch đảo so với thang mức xám
+
+Câu 34. Đặc điểm nào sau đây gắn đúng với Tăng độ sáng?
+A. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+B. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+C. Nhiễu xung tạo ra các điểm rất sáng hoặc rất tối rải rác trên ảnh
+D. Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh
+
+Câu 35. Nội dung nào phản ánh đúng bản chất của Cân bằng histogram?
+A. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+B. Xác định ngưỡng dựa trên đặc trưng phân bố mức xám thay vì chọn hoàn toàn thủ công
+C. Biểu diễn số điểm ảnh tương ứng với từng mức xám
+D. Phân bố lại mức xám để cải thiện độ tương phản của ảnh
+
+Câu 36. Đặc điểm nào sau đây gắn đúng với Trích biên hình thái?
+A. Thực hiện co ảnh rồi giãn ảnh với cùng phần tử cấu trúc
+B. Bao gồm cả bốn hướng chéo ngoài bốn láng giềng trực giao
+C. Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co
+D. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+
+Câu 37. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Trích biên hình thái?
+A. Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co
+B. Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau
+C. Toán tử gradient có trọng số lớn hơn ở hàng hoặc cột giữa của mặt nạ
+D. Làm mở rộng vùng đối tượng theo phần tử cấu trúc
+
+Câu 38. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Ngưỡng kép Canny?
+A. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+B. Tìm đường biên tối ưu dựa trên một hàm chi phí và quan hệ lân cận giữa các điểm
+C. Đạo hàm bậc nhất dùng để làm nổi bật sự thay đổi mức xám
+D. Dùng hai ngưỡng để phân biệt biên mạnh, biên yếu và hỗ trợ nối biên
+
+Câu 39. Đặc điểm nào sau đây gắn đúng với Trích biên trong?
+A. Dùng hai ngưỡng để phân biệt biên mạnh, biên yếu và hỗ trợ nối biên
+B. Có thể xác định bằng hiệu giữa ảnh gốc và ảnh sau phép co
+C. Tìm đường biên tối ưu dựa trên một hàm chi phí và quan hệ lân cận giữa các điểm
+D. Phương pháp phát hiện biên nhiều bước nhằm tạo biên mảnh và liên tục hơn
+
+Câu 40. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Phát hiện biên trực tiếp?
+A. Phát hiện biên dựa trên biến thiên mức xám, thường thông qua đạo hàm
+B. Làm mảnh đáp ứng gradient bằng cách chỉ giữ cực đại cục bộ theo hướng biên trong Canny
+C. Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau
+D. Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập
+
+Câu 41. Đặc điểm nào sau đây gắn đúng với Prewitt?
+A. Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập
+B. Có thể xác định bằng hiệu giữa ảnh gốc và ảnh sau phép co
+C. Toán tử gradient sử dụng các mặt nạ xấp xỉ đạo hàm theo hai hướng
+D. Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co
+
+Câu 42. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Sobel?
+A. Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau
+B. Toán tử gradient có trọng số lớn hơn ở hàng hoặc cột giữa của mặt nạ
+C. Vị trí có sự thay đổi đáng kể về mức xám và thường tạo ranh giới giữa các vùng
+D. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+
+Câu 43. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Canny?
+A. Phương pháp phát hiện biên nhiều bước nhằm tạo biên mảnh và liên tục hơn
+B. Tìm đường biên tối ưu dựa trên một hàm chi phí và quan hệ lân cận giữa các điểm
+C. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+D. Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập
+
+Câu 44. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Phép co ảnh?
+A. Có thể xác định bằng hiệu giữa ảnh gốc và ảnh sau phép co
+B. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+C. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+D. Thực hiện co ảnh rồi giãn ảnh với cùng phần tử cấu trúc
+
+Câu 45. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Phép đóng?
+A. Phát hiện biên dựa trên biến thiên mức xám, thường thông qua đạo hàm
+B. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+C. Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau
+D. Phương pháp phát hiện biên nhiều bước nhằm tạo biên mảnh và liên tục hơn
+
+Câu 46. Khi xét Đạo hàm bậc hai, phát biểu nào là chính xác?
+A. Đạo hàm bậc nhất dùng để làm nổi bật sự thay đổi mức xám
+B. Toán tử gradient sử dụng các mặt nạ xấp xỉ đạo hàm theo hai hướng
+C. Tìm đường biên tối ưu dựa trên một hàm chi phí và quan hệ lân cận giữa các điểm
+D. Làm nổi chi tiết mịn và điểm cô lập nhưng thường nhạy với nhiễu hơn
+
+Câu 47. Đặc điểm nào sau đây gắn đúng với Ngưỡng kép Canny?
+A. Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập
+B. Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co
+C. Dùng hai ngưỡng để phân biệt biên mạnh, biên yếu và hỗ trợ nối biên
+D. Xác định biên từ ranh giới của các vùng sau khi phân vùng
+
+Câu 48. Khi xét Phần tử cấu trúc, phát biểu nào là chính xác?
+A. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+B. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+C. Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co
+D. Vị trí có sự thay đổi đáng kể về mức xám và thường tạo ranh giới giữa các vùng
+
+Câu 49. Đặc điểm nào sau đây gắn đúng với Phát hiện biên trực tiếp?
+A. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+B. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+C. Thực hiện co ảnh rồi giãn ảnh với cùng phần tử cấu trúc
+D. Phát hiện biên dựa trên biến thiên mức xám, thường thông qua đạo hàm
+
+Câu 50. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Gradient?
+A. Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau
+B. Đạo hàm bậc nhất dùng để làm nổi bật sự thay đổi mức xám
+C. Dùng hai ngưỡng để phân biệt biên mạnh, biên yếu và hỗ trợ nối biên
+D. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+
+Câu 51. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Kết cấu texture?
+A. Mô tả sự sắp xếp và biến thiên cục bộ của mức xám, hữu ích khi phân vùng các bề mặt
+B. Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng
+C. Chia ảnh thành các vùng sao cho mỗi vùng chứa đối tượng hoặc nhóm đối tượng có tính chất tương đồng
+D. Lặp việc ước lượng hai nhóm mức xám và cập nhật ngưỡng cho đến khi ổn định
+
+Câu 52. Đặc điểm nào sau đây gắn đúng với Phân vùng theo ngưỡng?
+A. Sử dụng thông tin đường biên để xác định ranh giới các vùng
+B. Chia một vùng chưa đồng nhất thành các vùng nhỏ hơn
+C. Phân biệt vùng đối tượng và nền dựa trên một hoặc nhiều ngưỡng mức xám
+D. Ghép các vùng lân cận nếu chúng thỏa tiêu chuẩn đồng nhất
+
+Câu 53. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Làm trơn histogram?
+A. Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất
+B. Giảm dao động không cần thiết trên histogram trước khi xác định ngưỡng
+C. Dựa vào đặc trưng texture để phân biệt các vùng có cấu trúc bề mặt khác nhau
+D. Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng
+
+Câu 54. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Đối xứng nền?
+A. Sử dụng thông tin đường biên để xác định ranh giới các vùng
+B. Dựa vào đặc trưng texture để phân biệt các vùng có cấu trúc bề mặt khác nhau
+C. Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh
+D. Ước lượng ngưỡng dựa trên tính đối xứng của phân bố mức xám thuộc nền
+
+Câu 55. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Hợp vùng?
+A. Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh
+B. Dựa trên thông tin của toàn ảnh, ví dụ histogram
+C. Ghép các vùng lân cận nếu chúng thỏa tiêu chuẩn đồng nhất
+D. Chia một vùng chưa đồng nhất thành các vùng nhỏ hơn
+
+Câu 56. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Phân vùng theo kết cấu bề mặt?
+A. Dựa vào đặc trưng texture để phân biệt các vùng có cấu trúc bề mặt khác nhau
+B. Ghép các vùng lân cận nếu chúng thỏa tiêu chuẩn đồng nhất
+C. Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng
+D. Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất
+
+Câu 57. Đặc điểm nào sau đây gắn đúng với Histogram hai đỉnh?
+A. Sử dụng thông tin đường biên để xác định ranh giới các vùng
+B. Ghép các vùng lân cận nếu chúng thỏa tiêu chuẩn đồng nhất
+C. Mô tả sự sắp xếp và biến thiên cục bộ của mức xám, hữu ích khi phân vùng các bề mặt
+D. Thường gợi ý khả năng tồn tại hai nhóm mức xám tương ứng gần với nền và đối tượng
+
+Câu 58. Khi xét Phân vùng cục bộ, phát biểu nào là chính xác?
+A. Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng
+B. Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh
+C. Sử dụng thông tin đường biên để xác định ranh giới các vùng
+D. Giảm dao động không cần thiết trên histogram trước khi xác định ngưỡng
+
+Câu 59. Khi xét Phân vùng theo ngưỡng, phát biểu nào là chính xác?
+A. Phân biệt vùng đối tượng và nền dựa trên một hoặc nhiều ngưỡng mức xám
+B. Mô tả sự sắp xếp và biến thiên cục bộ của mức xám, hữu ích khi phân vùng các bề mặt
+C. Lặp việc ước lượng hai nhóm mức xám và cập nhật ngưỡng cho đến khi ổn định
+D. Ghép các vùng lân cận nếu chúng thỏa tiêu chuẩn đồng nhất
+
+Câu 60. Đặc điểm nào sau đây gắn đúng với Thuật toán đẳng điệu?
+A. Giảm dao động không cần thiết trên histogram trước khi xác định ngưỡng
+B. Sử dụng thông tin đường biên để xác định ranh giới các vùng
+C. Lặp việc ước lượng hai nhóm mức xám và cập nhật ngưỡng cho đến khi ổn định
+D. Phân biệt vùng đối tượng và nền dựa trên một hoặc nhiều ngưỡng mức xám
+
+Câu 61. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Học có giám sát?
+A. Giảm ảnh hưởng của các láng giềng ở xa bằng cách gán trọng số phụ thuộc khoảng cách
+B. Sử dụng thư viện mẫu chuẩn đã biết để học và so sánh đối tượng cần nhận dạng
+C. Tại một thời điểm chọn nơron có vector trọng số gần đầu vào nhất rồi hiệu chỉnh vùng lân cận
+D. Thường được dùng để xác định mẫu hoặc tâm cụm gần nhất trong không gian đặc trưng
+
+Câu 62. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Biểu diễn trong không gian đặc trưng?
+A. Sử dụng hàm phân biệt tuyến tính tạo siêu phẳng giữa các lớp
+B. Tại một thời điểm chọn nơron có vector trọng số gần đầu vào nhất rồi hiệu chỉnh vùng lân cận
+C. Tạo lớp mới từ phần tử xa nhất khi khoảng cách vượt điều kiện ngưỡng
+D. Mô tả mỗi đối tượng bằng một vector nhiều chiều, mỗi chiều là một đặc trưng
+
+Câu 63. Trong xử lý ảnh số, nhận định nào phù hợp nhất với K-means?
+A. Mạng một lớp liên kết đầy đủ dùng cơ chế tự kết hợp để hồi tưởng mẫu
+B. Tự hình thành các lớp và đặc trưng lớp khi không có thư viện mẫu chuẩn
+C. Phân đối tượng vào K cụm bằng cách lặp gán điểm tới tâm gần nhất và cập nhật tâm
+D. Sử dụng hàm phân biệt tuyến tính tạo siêu phẳng giữa các lớp
+
+Câu 64. Trong xử lý ảnh số, nhận định nào phù hợp nhất với K láng giềng?
+A. Biểu diễn đối tượng bằng quan hệ hoặc chuỗi ký hiệu và nhận dạng dựa trên quy tắc cấu trúc
+B. Gán lớp theo lớp chiếm đa số trong số K mẫu gần nhất của đối tượng cần nhận dạng
+C. Giảm ảnh hưởng của các láng giềng ở xa bằng cách gán trọng số phụ thuộc khoảng cách
+D. Quá trình gán đối tượng vào một lớp dựa trên mô hình biểu diễn, quy luật và mẫu chuẩn
+
+Câu 65. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Mạng Hopfield?
+A. Quá trình gán đối tượng vào một lớp dựa trên mô hình biểu diễn, quy luật và mẫu chuẩn
+B. Mạng Hopfield trong bài giảng sử dụng các giá trị đầu vào -1 và 1
+C. Sử dụng hàm phân biệt tuyến tính tạo siêu phẳng giữa các lớp
+D. Mạng một lớp liên kết đầy đủ dùng cơ chế tự kết hợp để hồi tưởng mẫu
+
+Câu 66. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Quét Zig-Zag?
+A. Bao gồm các phương pháp mã hóa tương đối trực tiếp như RLE, Huffman và LZW
+B. Tỷ số giữa kích thước dữ liệu trước nén và kích thước dữ liệu sau nén
+C. Sắp xếp các hệ số sau lượng tử theo thứ tự từ tần số thấp đến cao trước khi mã hóa
+D. Biểu diễn các khối dữ liệu bằng các từ mã tương ứng
+
+Câu 67. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Kim tự tháp ảnh?
+A. Biểu diễn ảnh ở nhiều mức kích thước bằng thành phần low-pass và các phần chi tiết high-pass
+B. Khai thác tính tự tương đồng của ảnh nhưng quá trình tìm phép biến đổi thường tốn thời gian mã hóa
+C. Gán từ mã ngắn cho ký hiệu có xác suất xuất hiện cao và từ mã dài hơn cho ký hiệu ít xuất hiện
+D. JPEG thường chia ảnh thành các khối 8×8 trước khi biến đổi cosin
+
+Câu 68. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Nén có mất thông tin?
+A. Được mở rộng động khi xuất hiện các chuỗi mới trong dữ liệu đầu vào
+B. Xây dựng và mở rộng từ điển các chuỗi trong quá trình mã hóa mà không cần truyền từ điển hoàn chỉnh
+C. Biểu diễn các khối dữ liệu bằng các từ mã tương ứng
+D. Sau giải nén không thu được hoàn toàn dữ liệu gốc nhưng thường đạt tỷ lệ nén cao hơn
+
+Câu 69. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Nén sử dụng biến đổi?
+A. Khai thác cấu trúc và mô hình ảnh ở mức cao hơn nhằm vượt giới hạn của các phương pháp truyền thống
+B. Biến đổi ảnh sang miền khác trước khi lượng tử hoặc mã hóa các hệ số
+C. Chuyển dữ liệu ảnh từ miền không gian sang miền tần số để tập trung năng lượng và thuận lợi loại bớt chi tiết
+D. Xây dựng và mở rộng từ điển các chuỗi trong quá trình mã hóa mà không cần truyền từ điển hoàn chỉnh
+
+Câu 70. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Cây Huffman?
+A. Được xây dựng bằng cách lặp ghép hai nút có xác suất nhỏ nhất
+B. Khai thác sự lặp lại hoặc tương quan của các mẫu ảnh trong miền không gian
+C. Được mở rộng động khi xuất hiện các chuỗi mới trong dữ liệu đầu vào
+D. Mã đặc biệt đánh dấu kết thúc thông tin
+
+Câu 71. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về LZW?
+A. Mã đặc biệt đánh dấu kết thúc thông tin
+B. Sắp xếp các hệ số sau lượng tử theo thứ tự từ tần số thấp đến cao trước khi mã hóa
+C. Xây dựng và mở rộng từ điển các chuỗi trong quá trình mã hóa mà không cần truyền từ điển hoàn chỉnh
+D. Thay một chuỗi ký hiệu lặp liên tiếp bằng biểu diễn gồm độ dài loạt và ký hiệu
+
+Câu 72. Theo nội dung bài giảng, phát biểu nào mô tả đúng nhất về Độ dư thừa dữ liệu?
+A. Mã hóa từng dòng bằng độ dài các chuỗi bit liên tiếp, thường bắt đầu từ số lượng bit 0
+B. Phần thông tin có thể loại bỏ hoặc biểu diễn hiệu quả hơn trong quá trình nén
+C. Sau giải nén không thu được hoàn toàn dữ liệu gốc nhưng thường đạt tỷ lệ nén cao hơn
+D. Mã đặc biệt dùng để kết thúc từ điển hiện tại và bắt đầu lại từ điển mới khi cần
+
+Câu 73. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Nén thế hệ thứ hai?
+A. Biến đổi ảnh sang miền khác trước khi lượng tử hoặc mã hóa các hệ số
+B. Chia các hệ số DCT cho ma trận lượng tử và làm tròn, khiến nhiều hệ số tần số cao trở thành 0
+C. Chuyển dữ liệu ảnh từ miền không gian sang miền tần số để tập trung năng lượng và thuận lợi loại bớt chi tiết
+D. Khai thác cấu trúc và mô hình ảnh ở mức cao hơn nhằm vượt giới hạn của các phương pháp truyền thống
+
+Câu 74. Trong xử lý ảnh số, nhận định nào phù hợp nhất với Huffman thích nghi?
+A. Tỷ số giữa kích thước dữ liệu trước nén và kích thước dữ liệu sau nén
+B. Bao gồm các phương pháp mã hóa tương đối trực tiếp như RLE, Huffman và LZW
+C. Điều chỉnh cách mã hóa theo sự thay đổi của thống kê dữ liệu trong quá trình xử lý
+D. Mã đặc biệt đánh dấu kết thúc thông tin
+
+Câu 75. Đặc điểm nào sau đây gắn đúng với Giới hạn từ điển LZW?
+A. Từ điển trong bài giảng có tối đa 4096 phần tử nên từ mã lớn nhất dài 12 bit
+B. Mã đặc biệt dùng để kết thúc từ điển hiện tại và bắt đầu lại từ điển mới khi cần
+C. Gán từ mã ngắn cho ký hiệu có xác suất xuất hiện cao và từ mã dài hơn cho ký hiệu ít xuất hiện
+D. Biểu diễn các khối dữ liệu bằng các từ mã tương ứng
+
+Câu 76. Một bước xử lý cần đạt đặc điểm sau: Loại nhiễu không rõ quy luật và thường được khắc phục bằng các phép lọc. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Mức xám
+B. Pixel
+C. Hệ thống nhận dạng tự động
+D. Nhiễu ngẫu nhiên
+
+Câu 77. Một bước xử lý cần đạt đặc điểm sau: Nội suy các mức xám trung gian nhằm tăng độ mịn của ảnh. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Nén không bảo toàn thông tin
+B. Tăng số mức xám
+C. Nén có bảo toàn thông tin
+D. Hệ thống nhận dạng tự động
+
+Câu 78. Một bước xử lý cần đạt đặc điểm sau: Các mẫu được nhóm thành lớp theo tiêu chuẩn đồng dạng khi lớp chưa được định danh trước. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Pixel
+B. Nén không bảo toàn thông tin
+C. Tăng số mức xám
+D. Phân loại không có mẫu
+
+Câu 79. Một bước xử lý cần đạt đặc điểm sau: Gồm các khâu thu nhận và tiền xử lý, biểu diễn dữ liệu, nhận dạng và ra quyết định. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Giảm số mức xám
+B. Pixel
+C. Hệ thống nhận dạng tự động
+D. Nhiễu hệ thống
+
+Câu 80. Khi gặp tình huống có đặc điểm: Biểu diễn cường độ sáng của điểm ảnh, kỹ thuật nào nên được nhận diện?
+A. Mức xám
+B. Tăng số mức xám
+C. Pixel
+D. Phân loại không có mẫu
+
+Câu 81. Khi gặp tình huống có đặc điểm: Loại nhiễu có quy luật và có thể khử bằng các phép biến đổi thích hợp, kỹ thuật nào nên được nhận diện?
+A. Pixel
+B. Mức xám
+C. Nén có bảo toàn thông tin
+D. Nhiễu hệ thống
+
+Câu 82. Một hệ thống được thiết kế để Loại nhiễu có quy luật và có thể khử bằng các phép biến đổi thích hợp. Nội dung nào tương ứng đúng nhất?
+A. Hệ thống nhận dạng tự động
+B. Nhiễu hệ thống
+C. Phân loại có mẫu
+D. Phân loại không có mẫu
+
+Câu 83. Trong một bài toán xử lý ảnh, yêu cầu là: Nhóm các mức xám gần nhau thành một nhóm để giảm số mức biểu diễn. Lựa chọn nào phù hợp nhất?
+A. Nén có bảo toàn thông tin
+B. Đặc điểm biên
+C. Nén ảnh
+D. Giảm số mức xám
+
+Câu 84. Một bước xử lý cần đạt đặc điểm sau: Ảnh chỉ có hai mức biểu diễn. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. PCX
+B. RAW
+C. Ảnh nhị phân
+D. CMYK
+
+Câu 85. Một bước xử lý cần đạt đặc điểm sau: Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Ảnh màu RGB
+B. Mô hình Raster
+C. TIFF
+D. Mô hình Vector
+
+Câu 86. Một bước xử lý cần đạt đặc điểm sau: Mô hình màu liên hệ với RGB theo nguyên tắc bù màu. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Three-CCD
+B. Nội suy màu Bayer
+C. Lấy mẫu
+D. Mô hình CMY
+
+Câu 87. Một bước xử lý cần đạt đặc điểm sau: Biểu diễn màu theo sắc độ, độ bão hòa và độ sáng. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Định lý lấy mẫu
+B. Mô hình HSL
+C. Mô hình Raster
+D. Thiết bị thu nhận ảnh Vector
+
+Câu 88. Trong một bài toán xử lý ảnh, yêu cầu là: Liên quan đến số lượng điểm ảnh dùng để biểu diễn ảnh theo các chiều không gian. Lựa chọn nào phù hợp nhất?
+A. Độ phân giải ảnh
+B. Thiết bị thu nhận ảnh Vector
+C. Thiết bị thu nhận ảnh Raster
+D. Ảnh mức xám
+
+Câu 89. Một bước xử lý cần đạt đặc điểm sau: Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. PCX
+B. Lấy mẫu
+C. Phối màu trừ
+D. TIFF
+
+Câu 90. Một bước xử lý cần đạt đặc điểm sau: Dữ liệu ảnh thô lưu thông tin thu nhận trực tiếp với mức xử lý tối thiểu trước khi hậu kỳ. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Độ phân giải ảnh
+B. RAW
+C. Thiết bị thu nhận ảnh Vector
+D. Mô hình Raster
+
+Câu 91. Trong một bài toán xử lý ảnh, yêu cầu là: Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận. Lựa chọn nào phù hợp nhất?
+A. Thiết bị thu nhận ảnh Vector
+B. Phối màu trừ
+C. Phối màu cộng
+D. Nội suy màu Bayer
+
+Câu 92. Trong một bài toán xử lý ảnh, yêu cầu là: Biến tín hiệu quang liên tục thành tín hiệu điện được lấy tại các vị trí rời rạc. Lựa chọn nào phù hợp nhất?
+A. BMP
+B. CMYK
+C. Lấy mẫu
+D. RAW
+
+Câu 93. Một bước xử lý cần đạt đặc điểm sau: Tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu để có thể tái tạo ảnh. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Định lý lấy mẫu
+B. Nội suy màu Bayer
+C. Thiết bị thu nhận ảnh Raster
+D. Lượng tử hóa
+
+Câu 94. Trong một bài toán xử lý ảnh, yêu cầu là: Ảnh chỉ có hai mức biểu diễn. Lựa chọn nào phù hợp nhất?
+A. Thiết bị thu nhận ảnh Vector
+B. RAW
+C. BMP
+D. Ảnh nhị phân
+
+Câu 95. Trong một bài toán xử lý ảnh, yêu cầu là: Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng. Lựa chọn nào phù hợp nhất?
+A. Nội suy màu Bayer
+B. Ảnh màu RGB
+C. Thiết bị thu nhận ảnh Raster
+D. Định lý lấy mẫu
+
+Câu 96. Trong một bài toán xử lý ảnh, yêu cầu là: Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy. Lựa chọn nào phù hợp nhất?
+A. TIFF
+B. Phối màu trừ
+C. Lấy mẫu
+D. Three-CCD
+
+Câu 97. Trong một bài toán xử lý ảnh, yêu cầu là: Biểu diễn màu theo sắc độ, độ bão hòa và độ sáng. Lựa chọn nào phù hợp nhất?
+A. TIFF
+B. CMYK
+C. Mô hình HSL
+D. Three-CCD
+
+Câu 98. Mô tả hoạt động sau thuộc về khái niệm nào: Tạo màu bằng cách cộng các thành phần ánh sáng và là nguyên lý của mô hình RGB?
+A. Phối màu cộng
+B. Nội suy màu Bayer
+C. Thiết bị thu nhận ảnh Raster
+D. Mô hình HSL
+
+Câu 99. Một hệ thống được thiết kế để Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn. Nội dung nào tương ứng đúng nhất?
+A. CMYK
+B. RAW
+C. Độ phân giải ảnh
+D. Phối màu trừ
+
+Câu 100. Một bước xử lý cần đạt đặc điểm sau: Định dạng ảnh có sử dụng mã hóa loạt dài trong lưu trữ dữ liệu ảnh. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Độ phân giải ảnh
+B. PCX
+C. Phối màu trừ
+D. Lọc Bayer
+
+Câu 101. Một hệ thống được thiết kế để Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận. Nội dung nào tương ứng đúng nhất?
+A. Nội suy màu Bayer
+B. Thiết bị thu nhận ảnh Vector
+C. Lấy mẫu
+D. Thiết bị thu nhận ảnh Raster
+
+Câu 102. Một bước xử lý cần đạt đặc điểm sau: Sensor hoặc bàn số hóa có thể tạo dữ liệu Vector. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Mô hình Vector
+B. Định lý lấy mẫu
+C. Thiết bị thu nhận ảnh Vector
+D. RAW
+
+Câu 103. Một hệ thống được thiết kế để Biểu diễn ảnh bằng ma trận các điểm ảnh và thuận lợi cho hiển thị, in ấn. Nội dung nào tương ứng đúng nhất?
+A. Nội suy màu Bayer
+B. Mô hình Raster
+C. Độ phân giải ảnh
+D. Thiết bị thu nhận ảnh Raster
+
+Câu 104. Khi gặp tình huống có đặc điểm: Ảnh chỉ có hai mức biểu diễn, kỹ thuật nào nên được nhận diện?
+A. Lấy mẫu
+B. Three-CCD
+C. Mô hình Vector
+D. Ảnh nhị phân
+
+Câu 105. Khi gặp tình huống có đặc điểm: Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh, kỹ thuật nào nên được nhận diện?
+A. Lấy mẫu
+B. RAW
+C. Lọc Bayer
+D. PCX
+
+Câu 106. Khi gặp tình huống có đặc điểm: Mô hình màu liên hệ với RGB theo nguyên tắc bù màu, kỹ thuật nào nên được nhận diện?
+A. Mô hình CMY
+B. Định lý lấy mẫu
+C. BMP
+D. Thiết bị thu nhận ảnh Raster
+
+Câu 107. Một bước xử lý cần đạt đặc điểm sau: Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Mặt phẳng bit cao
+B. Lọc giả đảo
+C. Tách ngưỡng
+D. Lọc trung bình
+
+Câu 108. Trong một bài toán xử lý ảnh, yêu cầu là: Nhiễu xung tạo ra các điểm rất sáng hoặc rất tối rải rác trên ảnh. Lựa chọn nào phù hợp nhất?
+A. Dãn độ tương phản
+B. Nhiễu muối tiêu
+C. Tìm ngưỡng tự động
+D. Mặt phẳng bit cao
+
+Câu 109. Trong một bài toán xử lý ảnh, yêu cầu là: Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh. Lựa chọn nào phù hợp nhất?
+A. Trích chọn bit
+B. Cân bằng histogram
+C. Tách ngưỡng
+D. Dãn độ tương phản
+
+Câu 110. Một bước xử lý cần đạt đặc điểm sau: Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Tách ngưỡng
+B. Lọc giả đảo
+C. Mặt phẳng bit cao
+D. Khôi phục ảnh
+
+Câu 111. Một hệ thống được thiết kế để Cộng một hằng số dương vào mức xám làm ảnh sáng hơn. Nội dung nào tương ứng đúng nhất?
+A. Nhiễu muối tiêu
+B. Tăng độ sáng
+C. Phép nhân chập
+D. Tìm ngưỡng tự động
+
+Câu 112. Trong một bài toán xử lý ảnh, yêu cầu là: Cộng một hằng số dương vào mức xám làm ảnh sáng hơn. Lựa chọn nào phù hợp nhất?
+A. Lọc Wiener
+B. Lọc đảo
+C. Trích chọn bit
+D. Tăng độ sáng
+
+Câu 113. Trong một bài toán xử lý ảnh, yêu cầu là: Phân bố lại mức xám để cải thiện độ tương phản của ảnh. Lựa chọn nào phù hợp nhất?
+A. Ảnh âm bản
+B. Nhiễu Gaussian
+C. Cân bằng histogram
+D. Phép nhân chập
+
+Câu 114. Trong một bài toán xử lý ảnh, yêu cầu là: Biến đổi mức xám theo quan hệ nghịch đảo so với thang mức xám. Lựa chọn nào phù hợp nhất?
+A. Ảnh âm bản
+B. Tìm ngưỡng tự động
+C. Lọc đảo
+D. Phép nhân chập
+
+Câu 115. Trong một bài toán xử lý ảnh, yêu cầu là: Kết hợp vùng lân cận của ảnh với một mặt nạ lọc để tạo giá trị đầu ra. Lựa chọn nào phù hợp nhất?
+A. Tách ngưỡng
+B. Lọc giả đảo
+C. Tìm ngưỡng tự động
+D. Phép nhân chập
+
+Câu 116. Trong một bài toán xử lý ảnh, yêu cầu là: Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh. Lựa chọn nào phù hợp nhất?
+A. Dãn độ tương phản
+B. Lọc trung bình
+C. Cân bằng histogram
+D. Mô hình suy giảm ảnh
+
+Câu 117. Một hệ thống được thiết kế để Nhiễu có biên độ tuân theo phân bố Gaussian. Nội dung nào tương ứng đúng nhất?
+A. Nhiễu Gaussian
+B. Tìm ngưỡng tự động
+C. Tách ngưỡng
+D. Lọc trung bình theo k giá trị gần nhất
+
+Câu 118. Một hệ thống được thiết kế để Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh. Nội dung nào tương ứng đúng nhất?
+A. Giảm độ sáng
+B. Lọc giả đảo
+C. Trích chọn bit
+D. Tăng độ sáng
+
+Câu 119. Khi gặp tình huống có đặc điểm: Hạn chế ảnh hưởng của các thành phần làm phép đảo trở nên không ổn định, kỹ thuật nào nên được nhận diện?
+A. Lọc giả đảo
+B. Cân bằng histogram
+C. Nhiễu muối tiêu
+D. Histogram
+
+Câu 120. Mô tả hoạt động sau thuộc về khái niệm nào: Cộng một hằng số dương vào mức xám làm ảnh sáng hơn?
+A. Histogram
+B. Ảnh âm bản
+C. Dãn độ tương phản
+D. Tăng độ sáng
+
+Câu 121. Khi gặp tình huống có đặc điểm: Cộng một hằng số dương vào mức xám làm ảnh sáng hơn, kỹ thuật nào nên được nhận diện?
+A. Nhiễu Gaussian
+B. Tăng độ sáng
+C. Lọc trung bình theo k giá trị gần nhất
+D. Mô hình suy giảm ảnh
+
+Câu 122. Một bước xử lý cần đạt đặc điểm sau: Biểu diễn số điểm ảnh tương ứng với từng mức xám. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Histogram
+B. Lọc đảo
+C. Tách ngưỡng
+D. Bó cụm mức xám
+
+Câu 123. Khi gặp tình huống có đặc điểm: Mở rộng dải mức xám để tăng khả năng phân biệt vùng sáng tối, kỹ thuật nào nên được nhận diện?
+A. Histogram
+B. Tách ngưỡng
+C. Dãn độ tương phản
+D. Giảm độ sáng
+
+Câu 124. Khi gặp tình huống có đặc điểm: Kết hợp vùng lân cận của ảnh với một mặt nạ lọc để tạo giá trị đầu ra, kỹ thuật nào nên được nhận diện?
+A. Mô hình suy giảm ảnh
+B. Phép nhân chập
+C. Tìm ngưỡng tự động
+D. Lọc trung bình theo k giá trị gần nhất
+
+Câu 125. Một hệ thống được thiết kế để Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh. Nội dung nào tương ứng đúng nhất?
+A. Mặt phẳng bit cao
+B. Histogram
+C. Tăng độ sáng
+D. Lọc trung bình
+
+Câu 126. Khi gặp tình huống có đặc điểm: Nhiễu có biên độ tuân theo phân bố Gaussian, kỹ thuật nào nên được nhận diện?
+A. Ảnh âm bản
+B. Tăng độ sáng
+C. Nhiễu Gaussian
+D. Giảm độ sáng
+
+Câu 127. Khi gặp tình huống có đặc điểm: Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh, kỹ thuật nào nên được nhận diện?
+A. Trích chọn bit
+B. Dãn độ tương phản
+C. Lọc giả đảo
+D. Cân bằng histogram
+
+Câu 128. Một hệ thống có biểu hiện: Cộng một hằng số dương vào mức xám làm ảnh sáng hơn. Nhận định nào xác định đúng kỹ thuật liên quan?
+A. Histogram
+B. Dãn độ tương phản
+C. Ảnh âm bản
+D. Tăng độ sáng
+
+Câu 129. Để đáp ứng yêu cầu Cộng một hằng số dương vào mức xám làm ảnh sáng hơn, khái niệm hoặc kỹ thuật nào phù hợp nhất?
+A. Mô hình suy giảm ảnh
+B. Tăng độ sáng
+C. Lọc trung bình theo k giá trị gần nhất
+D. Nhiễu Gaussian
+
+Câu 130. Một bước xử lý cần đạt đặc điểm sau: Thực hiện co ảnh rồi giãn ảnh với cùng phần tử cấu trúc. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Phép mở
+B. Phép co ảnh
+C. Phép giãn ảnh
+D. Sobel
+
+Câu 131. Một bước xử lý cần đạt đặc điểm sau: Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Phép đóng
+B. Phép co ảnh
+C. Trích biên hình thái
+D. Phép mở
+
+Câu 132. Một bước xử lý cần đạt đặc điểm sau: Làm mảnh đáp ứng gradient bằng cách chỉ giữ cực đại cục bộ theo hướng biên trong Canny. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Dò biên theo quy hoạch động
+B. Ức chế cực đại không
+C. Phát hiện biên trực tiếp
+D. Phát hiện biên gián tiếp
+
+Câu 133. Trong một bài toán xử lý ảnh, yêu cầu là: Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh. Lựa chọn nào phù hợp nhất?
+A. Phát hiện biên trực tiếp
+B. Phép giãn ảnh
+C. Láng giềng 4
+D. Phần tử cấu trúc
+
+Câu 134. Trong một bài toán xử lý ảnh, yêu cầu là: Phát hiện biên dựa trên biến thiên mức xám, thường thông qua đạo hàm. Lựa chọn nào phù hợp nhất?
+A. Đạo hàm bậc hai
+B. Toán tử la bàn
+C. Phát hiện biên trực tiếp
+D. Canny
+
+Câu 135. Trong một bài toán xử lý ảnh, yêu cầu là: Đạo hàm bậc nhất dùng để làm nổi bật sự thay đổi mức xám. Lựa chọn nào phù hợp nhất?
+A. Gradient
+B. Canny
+C. Ức chế cực đại không
+D. Phép giãn ảnh
+
+Câu 136. Một hệ thống được thiết kế để Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập. Nội dung nào tương ứng đúng nhất?
+A. Sobel
+B. Canny
+C. Đạo hàm bậc nhất
+D. Laplace
+
+Câu 137. Trong một bài toán xử lý ảnh, yêu cầu là: Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập. Lựa chọn nào phù hợp nhất?
+A. Trích biên hình thái
+B. Laplace
+C. Phép giãn ảnh
+D. Đạo hàm bậc hai
+
+Câu 138. Trong một bài toán xử lý ảnh, yêu cầu là: Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc. Lựa chọn nào phù hợp nhất?
+A. Phép co ảnh
+B. Phần tử cấu trúc
+C. Trích biên hình thái
+D. Gradient
+
+Câu 139. Khi gặp tình huống có đặc điểm: Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc, kỹ thuật nào nên được nhận diện?
+A. Phép mở
+B. Canny
+C. Phép đóng
+D. Laplace
+
+Câu 140. Trong một bài toán xử lý ảnh, yêu cầu là: Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co. Lựa chọn nào phù hợp nhất?
+A. Phát hiện biên trực tiếp
+B. Trích biên hình thái
+C. Dò biên theo quy hoạch động
+D. Phát hiện biên gián tiếp
+
+Câu 141. Trong một bài toán xử lý ảnh, yêu cầu là: Làm nổi chi tiết mịn và điểm cô lập nhưng thường nhạy với nhiễu hơn. Lựa chọn nào phù hợp nhất?
+A. Phép giãn ảnh
+B. Phép mở
+C. Dò biên theo quy hoạch động
+D. Đạo hàm bậc hai
+
+Câu 142. Trong một bài toán xử lý ảnh, yêu cầu là: Dùng hai ngưỡng để phân biệt biên mạnh, biên yếu và hỗ trợ nối biên. Lựa chọn nào phù hợp nhất?
+A. Dò biên theo quy hoạch động
+B. Ngưỡng kép Canny
+C. Ức chế cực đại không
+D. Phát hiện biên trực tiếp
+
+Câu 143. Một hệ thống được thiết kế để Vị trí có sự thay đổi đáng kể về mức xám và thường tạo ranh giới giữa các vùng. Nội dung nào tương ứng đúng nhất?
+A. Biên ảnh
+B. Canny
+C. Phép giãn ảnh
+D. Dò biên theo quy hoạch động
+
+Câu 144. Một hệ thống được thiết kế để Xác định biên từ ranh giới của các vùng sau khi phân vùng. Nội dung nào tương ứng đúng nhất?
+A. Láng giềng 4
+B. Phần tử cấu trúc
+C. Phát hiện biên gián tiếp
+D. Phép giãn ảnh
+
+Câu 145. Trong một bài toán xử lý ảnh, yêu cầu là: Toán tử gradient có trọng số lớn hơn ở hàng hoặc cột giữa của mặt nạ. Lựa chọn nào phù hợp nhất?
+A. Phép đóng
+B. Sobel
+C. Phép mở
+D. Phép giãn ảnh
+
+Câu 146. Khi gặp tình huống có đặc điểm: Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập, kỹ thuật nào nên được nhận diện?
+A. Phép đóng
+B. Canny
+C. Sobel
+D. Laplace
+
+Câu 147. Một hệ thống được thiết kế để Gồm các điểm lân cận trên, dưới, trái và phải của điểm đang xét. Nội dung nào tương ứng đúng nhất?
+A. Phép mở
+B. Phép đóng
+C. Láng giềng 4
+D. Gradient
+
+Câu 148. Khi gặp tình huống có đặc điểm: Làm mở rộng vùng đối tượng theo phần tử cấu trúc, kỹ thuật nào nên được nhận diện?
+A. Phép giãn ảnh
+B. Trích biên trong
+C. Phép co ảnh
+D. Trích biên hình thái
+
+Câu 149. Khi gặp tình huống có đặc điểm: Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co, kỹ thuật nào nên được nhận diện?
+A. Sobel
+B. Toán tử la bàn
+C. Phát hiện biên gián tiếp
+D. Trích biên hình thái
+
+Câu 150. Khi gặp tình huống có đặc điểm: Làm nổi chi tiết mịn và điểm cô lập nhưng thường nhạy với nhiễu hơn, kỹ thuật nào nên được nhận diện?
+A. Ức chế cực đại không
+B. Đạo hàm bậc hai
+C. Phát hiện biên trực tiếp
+D. Trích biên hình thái
+
+Câu 151. Khi gặp tình huống có đặc điểm: Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh, kỹ thuật nào nên được nhận diện?
+A. Phần tử cấu trúc
+B. Phát hiện biên gián tiếp
+C. Phép co ảnh
+D. Trích biên hình thái
+
+Câu 152. Một hệ thống được thiết kế để Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh. Nội dung nào tương ứng đúng nhất?
+A. Phép co ảnh
+B. Phép đóng
+C. Phần tử cấu trúc
+D. Phép mở
+
+Câu 153. Một bước xử lý cần đạt đặc điểm sau: Mô tả sự sắp xếp và biến thiên cục bộ của mức xám, hữu ích khi phân vùng các bề mặt. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Histogram hai đỉnh
+B. Kết cấu texture
+C. Phân vùng theo miền đồng nhất
+D. Thuật toán tam giác
+
+Câu 154. Trong một bài toán xử lý ảnh, yêu cầu là: Dựa trên thông tin của toàn ảnh, ví dụ histogram. Lựa chọn nào phù hợp nhất?
+A. Hợp vùng
+B. Tách vùng
+C. Thuật toán đẳng điệu
+D. Phân vùng toàn thể
+
+Câu 155. Trong một bài toán xử lý ảnh, yêu cầu là: Lặp việc ước lượng hai nhóm mức xám và cập nhật ngưỡng cho đến khi ổn định. Lựa chọn nào phù hợp nhất?
+A. Tách vùng
+B. Phát triển vùng
+C. Thuật toán đẳng điệu
+D. Hợp vùng
+
+Câu 156. Trong một bài toán xử lý ảnh, yêu cầu là: Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng. Lựa chọn nào phù hợp nhất?
+A. Thuật toán tam giác
+B. Phân vùng theo miền đồng nhất
+C. Kết cấu texture
+D. Phân vùng theo kết cấu bề mặt
+
+Câu 157. Mô tả hoạt động sau thuộc về khái niệm nào: Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất?
+A. Phân vùng ảnh
+B. Tách vùng
+C. Phân vùng theo ngưỡng
+D. Phát triển vùng
+
+Câu 158. Khi gặp tình huống có đặc điểm: Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất, kỹ thuật nào nên được nhận diện?
+A. Phân vùng toàn thể
+B. Phát triển vùng
+C. Phân vùng theo kết cấu bề mặt
+D. Phân vùng dựa theo đường biên
+
+Câu 159. Trong một bài toán xử lý ảnh, yêu cầu là: Quy định khi nào các điểm hoặc vùng có thể được xem là cùng một vùng trong quá trình phân đoạn. Lựa chọn nào phù hợp nhất?
+A. Tiêu chuẩn đồng nhất
+B. Phân vùng toàn thể
+C. Phân vùng theo miền đồng nhất
+D. Phân vùng theo kết cấu bề mặt
+
+Câu 160. Một bước xử lý cần đạt đặc điểm sau: Chia ảnh thành các vùng sao cho mỗi vùng chứa đối tượng hoặc nhóm đối tượng có tính chất tương đồng. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Hợp vùng
+B. Tách vùng
+C. Phân vùng theo miền đồng nhất
+D. Phân vùng ảnh
+
+Câu 161. Một hệ thống được thiết kế để Phân biệt vùng đối tượng và nền dựa trên một hoặc nhiều ngưỡng mức xám. Nội dung nào tương ứng đúng nhất?
+A. Phân vùng theo kết cấu bề mặt
+B. Phân vùng theo ngưỡng
+C. Phân vùng dựa theo đường biên
+D. Phân vùng theo miền đồng nhất
+
+Câu 162. Một hệ thống được thiết kế để Ước lượng ngưỡng dựa trên tính đối xứng của phân bố mức xám thuộc nền. Nội dung nào tương ứng đúng nhất?
+A. Đối xứng nền
+B. Phân vùng toàn thể
+C. Tách vùng
+D. Phân vùng theo ngưỡng
+
+Câu 163. Một hệ thống được thiết kế để Hình thành vùng từ các điểm có thuộc tính gần nhau theo tiêu chuẩn đồng nhất. Nội dung nào tương ứng đúng nhất?
+A. Tiêu chuẩn đồng nhất
+B. Hợp vùng
+C. Phân vùng theo miền đồng nhất
+D. Phát triển vùng
+
+Câu 164. Một bước xử lý cần đạt đặc điểm sau: Ghép các vùng lân cận nếu chúng thỏa tiêu chuẩn đồng nhất. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Phát triển vùng
+B. Hợp vùng
+C. Làm trơn histogram
+D. Thuật toán đẳng điệu
+
+Câu 165. Một kỹ sư cần thực hiện chức năng: Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất. Lựa chọn nào phù hợp?
+A. Thuật toán tam giác
+B. Đối xứng nền
+C. Hợp vùng
+D. Phát triển vùng
+
+Câu 166. Khi gặp tình huống có đặc điểm: Thường gợi ý khả năng tồn tại hai nhóm mức xám tương ứng gần với nền và đối tượng, kỹ thuật nào nên được nhận diện?
+A. Kết cấu texture
+B. Phân vùng ảnh
+C. Histogram hai đỉnh
+D. Đối xứng nền
+
+Câu 167. Trong một bài toán xử lý ảnh, yêu cầu là: Chia ảnh thành các vùng sao cho mỗi vùng chứa đối tượng hoặc nhóm đối tượng có tính chất tương đồng. Lựa chọn nào phù hợp nhất?
+A. Phân vùng ảnh
+B. Tách vùng
+C. Histogram hai đỉnh
+D. Phân vùng theo kết cấu bề mặt
+
+Câu 168. Một bước xử lý cần đạt đặc điểm sau: Quá trình gán đối tượng vào một lớp dựa trên mô hình biểu diễn, quy luật và mẫu chuẩn. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. K-means
+B. ISODATA
+C. Nhận dạng cấu trúc
+D. Nhận dạng ảnh
+
+Câu 169. Một bước xử lý cần đạt đặc điểm sau: Tự hình thành các lớp và đặc trưng lớp khi không có thư viện mẫu chuẩn. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Học cạnh tranh Kohonen
+B. Học không giám sát
+C. Tín hiệu lưỡng cực Hopfield
+D. Thuật toán khoảng cách lớn nhất
+
+Câu 170. Một bước xử lý cần đạt đặc điểm sau: Hàm hỗ trợ quyết định đối tượng thuộc lớp nào dựa trên giá trị các đặc trưng. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. ISODATA
+B. Nhận dạng cấu trúc
+C. K-means
+D. Hàm phân lớp
+
+Câu 171. Một bước xử lý cần đạt đặc điểm sau: Tạo lớp mới từ phần tử xa nhất khi khoảng cách vượt điều kiện ngưỡng. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Hàm phân lớp
+B. Mạng Hopfield
+C. Thuật toán khoảng cách lớn nhất
+D. Nhận dạng ảnh
+
+Câu 172. Trong một bài toán xử lý ảnh, yêu cầu là: Biểu diễn đối tượng bằng quan hệ hoặc chuỗi ký hiệu và nhận dạng dựa trên quy tắc cấu trúc. Lựa chọn nào phù hợp nhất?
+A. Nhận dạng cấu trúc
+B. Học cạnh tranh Kohonen
+C. Thuật toán khoảng cách lớn nhất
+D. Hàm phân lớp
+
+Câu 173. Một bước xử lý cần đạt đặc điểm sau: Bản đồ tự tổ chức ánh xạ các vector gần nhau vào các nơron lân cận. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. ISODATA
+B. Bản đồ tự tổ chức
+C. K-means
+D. Mạng Kohonen
+
+Câu 174. Một bước xử lý cần đạt đặc điểm sau: Thường được dùng để xác định mẫu hoặc tâm cụm gần nhất trong không gian đặc trưng. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Tín hiệu lưỡng cực Hopfield
+B. Khoảng cách Euclidean
+C. Thuật toán khoảng cách lớn nhất
+D. Biểu diễn trong không gian đặc trưng
+
+Câu 175. Một bước xử lý cần đạt đặc điểm sau: Mạng Hopfield trong bài giảng sử dụng các giá trị đầu vào -1 và 1. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Biểu diễn trong không gian đặc trưng
+B. Học có giám sát
+C. Bản đồ tự tổ chức
+D. Tín hiệu lưỡng cực Hopfield
+
+Câu 176. Một bước xử lý cần đạt đặc điểm sau: Chia các hệ số DCT cho ma trận lượng tử và làm tròn, khiến nhiều hệ số tần số cao trở thành 0. Kỹ thuật hoặc khái niệm nào phù hợp nhất?
+A. Cây Huffman
+B. Quét Zig-Zag
+C. Lượng tử hóa JPEG
+D. Nén Fractal
+
+Câu 177. Trong một bài toán xử lý ảnh, yêu cầu là: Biểu diễn ảnh ở nhiều mức kích thước bằng thành phần low-pass và các phần chi tiết high-pass. Lựa chọn nào phù hợp nhất?
+A. Kim tự tháp ảnh
+B. Mã hóa khối
+C. Nén sử dụng biến đổi
+D. RLE cho ảnh nhị phân
+
+Câu 178. Trong một bài toán xử lý ảnh, yêu cầu là: Sau giải nén không thu được hoàn toàn dữ liệu gốc nhưng thường đạt tỷ lệ nén cao hơn. Lựa chọn nào phù hợp nhất?
+A. Từ điển LZW
+B. Nén Fractal
+C. Nén không mất thông tin
+D. Nén có mất thông tin
+
+Câu 179. Khi gặp tình huống có đặc điểm: Gán từ mã ngắn cho ký hiệu có xác suất xuất hiện cao và từ mã dài hơn cho ký hiệu ít xuất hiện, kỹ thuật nào nên được nhận diện?
+A. Nén thế hệ thứ nhất
+B. Mã Huffman
+C. RLE cho ảnh nhị phân
+D. Clear Code của LZW
+
+Câu 180. Trong một bài toán xử lý ảnh, yêu cầu là: Gán từ mã ngắn cho ký hiệu có xác suất xuất hiện cao và từ mã dài hơn cho ký hiệu ít xuất hiện. Lựa chọn nào phù hợp nhất?
+A. Mã Huffman
+B. LZW
+C. Nén thế hệ thứ hai
+D. Quét Zig-Zag
+
+Câu 181. Khi gặp tình huống có đặc điểm: Phần thông tin có thể loại bỏ hoặc biểu diễn hiệu quả hơn trong quá trình nén, kỹ thuật nào nên được nhận diện?
+A. Nén không gian
+B. Từ điển LZW
+C. Độ dư thừa dữ liệu
+D. Mã Huffman
+
+Câu 182. Trong một bài toán xử lý ảnh, yêu cầu là: Phần thông tin có thể loại bỏ hoặc biểu diễn hiệu quả hơn trong quá trình nén. Lựa chọn nào phù hợp nhất?
+A. Nén có mất thông tin
+B. Độ dư thừa dữ liệu
+C. Giới hạn từ điển LZW
+D. Giảm mẫu màu trong JPEG
+
+Câu 183. Trong một bài toán xử lý ảnh, yêu cầu là: Mã hóa từng dòng bằng độ dài các chuỗi bit liên tiếp, thường bắt đầu từ số lượng bit 0. Lựa chọn nào phù hợp nhất?
+A. RLE cho ảnh nhị phân
+B. Phân khối JPEG
+C. Giảm mẫu màu trong JPEG
+D. Nén không mất thông tin
+
+Câu 184. Trong một bài toán xử lý ảnh, yêu cầu là: Điều chỉnh cách mã hóa theo sự thay đổi của thống kê dữ liệu trong quá trình xử lý. Lựa chọn nào phù hợp nhất?
+A. DCT trong JPEG
+B. EOI trong LZW
+C. Huffman thích nghi
+D. Tỷ lệ nén
+
+Câu 185. Một hệ thống được thiết kế để JPEG thường chia ảnh thành các khối 8×8 trước khi biến đổi cosin. Nội dung nào tương ứng đúng nhất?
+A. Nén thế hệ thứ hai
+B. Phân khối JPEG
+C. RLE cho ảnh nhị phân
+D. Giảm mẫu màu trong JPEG
+
+Câu 186. Trong một bài toán xử lý ảnh, yêu cầu là: JPEG thường chia ảnh thành các khối 8×8 trước khi biến đổi cosin. Lựa chọn nào phù hợp nhất?
+A. Mã hóa loạt dài RLE
+B. Mã Huffman
+C. Cây Huffman
+D. Phân khối JPEG
+
+Câu 187. Trong một bài toán xử lý ảnh, yêu cầu là: Sắp xếp các hệ số sau lượng tử theo thứ tự từ tần số thấp đến cao trước khi mã hóa. Lựa chọn nào phù hợp nhất?
+A. LZW
+B. Mã Huffman
+C. Quét Zig-Zag
+D. Tỷ lệ nén
+
+Câu 188. Một hệ thống được thiết kế để Khai thác tính tự tương đồng của ảnh nhưng quá trình tìm phép biến đổi thường tốn thời gian mã hóa. Nội dung nào tương ứng đúng nhất?
+A. Nén Fractal
+B. Độ dư thừa dữ liệu
+C. LZW
+D. Mã hóa loạt dài RLE
+
+Câu 189. Khi gặp tình huống có đặc điểm: Khai thác sự lặp lại hoặc tương quan của các mẫu ảnh trong miền không gian, kỹ thuật nào nên được nhận diện?
+A. LZW
+B. Nén Fractal
+C. Mã hóa loạt dài RLE
+D. Nén không gian
+
+Câu 190. Mô tả hoạt động sau thuộc về khái niệm nào: Gán từ mã ngắn cho ký hiệu có xác suất xuất hiện cao và từ mã dài hơn cho ký hiệu ít xuất hiện?
+A. Lượng tử hóa JPEG
+B. Mã Huffman
+C. Nén có mất thông tin
+D. Độ dư thừa dữ liệu
+
+Câu 191. Hành vi nào phản ánh đúng tinh thần tham gia tích cực trong giờ giảng theo chuẩn đầu ra của học phần?
+A. chủ động trao đổi và thực hiện các hoạt động học tập được giao trên lớp
+B. chỉ sử dụng một nguồn thông tin có sẵn, không đối chiếu với bài học và không xem xét phản hồi của giảng viên hoặc thành viên khác
+C. bỏ qua phần tự học
+D. chờ người khác hoàn thành phần lớn nhiệm vụ rồi mới tham gia và không chủ động tìm hiểu thêm tài liệu để củng cố nội dung chưa rõ
+
+Câu 192. Tình huống nào thể hiện phù hợp nhất yêu cầu tích lũy và cập nhật kiến thức trong học phần?
+A. không cần nhận phản hồi
+B. sao chép kết quả có sẵn
+C. thường xuyên bổ sung kiến thức mới liên quan đến nội dung xử lý ảnh
+D. chỉ học trước lúc kiểm tra
+
+Câu 193. Tình huống nào thể hiện phù hợp nhất yêu cầu thực hiện nhiệm vụ được giao trong học phần?
+A. chỉ sử dụng một nguồn thông tin có sẵn, không đối chiếu với bài học và không xem xét phản hồi của giảng viên hoặc thành viên khác
+B. hoàn thành phần việc đúng phạm vi và thời điểm đã thống nhất
+C. chỉ thực hiện khi có yêu cầu trực tiếp, không chủ động kiểm tra, bổ sung hoặc cập nhật kiến thức liên quan sau đó
+D. ưu tiên hoàn thành thật nhanh, không trao đổi tiến độ với nhóm và cũng không kiểm tra lại độ chính xác của kết quả
+
+Câu 194. Khi thực hiện học phần, lựa chọn nào phù hợp nhất với yêu cầu tự đánh giá việc học?
+A. không trao đổi với nhóm
+B. chỉ học trước lúc kiểm tra
+C. bỏ qua các quy định đã thống nhất nếu chưa có kiểm tra trực tiếp và chỉ tham gia những hoạt động được tính điểm bắt buộc
+D. kiểm tra lại mức độ hiểu bài và xác định nội dung cần bổ sung
+
+Câu 195. Khi thực hiện học phần, lựa chọn nào phù hợp nhất với yêu cầu tham gia tích cực trong giờ giảng?
+A. chỉ làm khi được nhắc
+B. bỏ qua phần tự học
+C. chủ động trao đổi và thực hiện các hoạt động học tập được giao trên lớp
+D. không cần nhận phản hồi
+
+Câu 196. Hành vi nào phản ánh đúng tinh thần tích lũy và cập nhật kiến thức theo chuẩn đầu ra của học phần?
+A. thường xuyên bổ sung kiến thức mới liên quan đến nội dung xử lý ảnh
+B. chỉ sử dụng một nguồn thông tin có sẵn, không đối chiếu với bài học và không xem xét phản hồi của giảng viên hoặc thành viên khác
+C. chờ người khác hoàn thành phần lớn nhiệm vụ rồi mới tham gia và không chủ động tìm hiểu thêm tài liệu để củng cố nội dung chưa rõ
+D. bỏ qua phần tự học
+
+Câu 197. Hành vi nào phản ánh đúng tinh thần thực hiện nhiệm vụ được giao theo chuẩn đầu ra của học phần?
+A. không cần nhận phản hồi
+B. chỉ sử dụng một nguồn thông tin có sẵn, không đối chiếu với bài học và không xem xét phản hồi của giảng viên hoặc thành viên khác
+C. sao chép kết quả có sẵn
+D. hoàn thành phần việc đúng phạm vi và thời điểm đã thống nhất
+
+Câu 198. Tình huống nào thể hiện phù hợp nhất yêu cầu tự đánh giá việc học trong học phần?
+A. ưu tiên hoàn thành thật nhanh, không trao đổi tiến độ với nhóm và cũng không kiểm tra lại độ chính xác của kết quả
+B. kiểm tra lại mức độ hiểu bài và xác định nội dung cần bổ sung
+C. chỉ sử dụng một nguồn thông tin có sẵn, không đối chiếu với bài học và không xem xét phản hồi của giảng viên hoặc thành viên khác
+D. chỉ thực hiện khi có yêu cầu trực tiếp, không chủ động kiểm tra, bổ sung hoặc cập nhật kiến thức liên quan sau đó
+
+Câu 199. Tình huống nào thể hiện phù hợp nhất yêu cầu tham gia tích cực trong giờ giảng trong học phần?
+A. chủ động trao đổi và thực hiện các hoạt động học tập được giao trên lớp
+B. chỉ học trước lúc kiểm tra
+C. chỉ thực hiện khi có yêu cầu trực tiếp, không chủ động kiểm tra, bổ sung hoặc cập nhật kiến thức liên quan sau đó
+D. ưu tiên hoàn thành thật nhanh, không trao đổi tiến độ với nhóm và cũng không kiểm tra lại độ chính xác của kết quả
+
+Câu 200. Khi thực hiện học phần, lựa chọn nào phù hợp nhất với yêu cầu tích lũy và cập nhật kiến thức?
+A. chỉ làm khi được nhắc
+B. không cần nhận phản hồi
+C. thường xuyên bổ sung kiến thức mới liên quan đến nội dung xử lý ảnh
+D. bỏ qua phần tự học
+
+Câu 201. Nhận định nào dưới đây phù hợp với khái niệm Nhiễu hệ thống?
+A. Loại nhiễu có quy luật và có thể khử bằng các phép biến đổi thích hợp
+B. Loại nhiễu không rõ quy luật và thường được khắc phục bằng các phép lọc
+C. Biểu diễn cường độ sáng của điểm ảnh
+D. Nội suy các mức xám trung gian nhằm tăng độ mịn của ảnh
+
+Câu 202. Một bài toán có yêu cầu Khắc phục biến dạng do thiết bị quang học và điện tử bằng các phép chiếu dựa trên điểm điều khiển. Kỹ thuật nào phù hợp nhất?
+A. Đặc điểm biên
+B. Nắn chỉnh biến dạng
+C. Nén có bảo toàn thông tin
+D. Nén không bảo toàn thông tin
+
+Câu 203. Khi ôn tập về Nhiễu hệ thống, nội dung nào cần được ghi nhớ là đúng?
+A. Thường cho khả năng nén cao hơn nhưng dữ liệu phục hồi không hoàn toàn giống ảnh gốc
+B. Cho phép phục hồi dữ liệu ảnh sau giải nén mà không làm mất thông tin gốc
+C. Loại nhiễu có quy luật và có thể khử bằng các phép biến đổi thích hợp
+D. Phần tử ảnh; mỗi pixel gắn với vị trí và thông tin cường độ sáng hoặc màu
+
+Câu 204. Một bài toán có yêu cầu Loại nhiễu không rõ quy luật và thường được khắc phục bằng các phép lọc. Kỹ thuật nào phù hợp nhất?
+A. Nhiễu hệ thống
+B. Mức xám
+C. Pixel
+D. Nhiễu ngẫu nhiên
+
+Câu 205. Phát biểu nào mô tả phù hợp nhất cho Giảm số mức xám trong môn xử lý ảnh?
+A. Nhóm các mức xám gần nhau thành một nhóm để giảm số mức biểu diễn
+B. Loại nhiễu không rõ quy luật và thường được khắc phục bằng các phép lọc
+C. Nội suy các mức xám trung gian nhằm tăng độ mịn của ảnh
+D. Giảm không gian lưu trữ dữ liệu ảnh
+
+Câu 206. Một bài toán có yêu cầu Nội suy các mức xám trung gian nhằm tăng độ mịn của ảnh. Kỹ thuật nào phù hợp nhất?
+A. Ảnh số
+B. Tăng số mức xám
+C. Nén có bảo toàn thông tin
+D. Hệ thống nhận dạng tự động
+
+Câu 207. Phát biểu nào mô tả phù hợp nhất cho Phân loại có mẫu trong môn xử lý ảnh?
+A. Phần tử ảnh; mỗi pixel gắn với vị trí và thông tin cường độ sáng hoặc màu
+B. Gồm các khâu thu nhận và tiền xử lý, biểu diễn dữ liệu, nhận dạng và ra quyết định
+C. Mẫu đầu vào được gán vào một lớp đã xác định dựa trên mẫu chuẩn
+D. Cho phép phục hồi dữ liệu ảnh sau giải nén mà không làm mất thông tin gốc
+
+Câu 208. Một bài toán có yêu cầu Các mẫu được nhóm thành lớp theo tiêu chuẩn đồng dạng khi lớp chưa được định danh trước. Kỹ thuật nào phù hợp nhất?
+A. Pixel
+B. Tăng số mức xám
+C. Mức xám
+D. Phân loại không có mẫu
+
+Câu 209. Khi ôn tập về Ảnh số, nội dung nào cần được ghi nhớ là đúng?
+A. Ảnh số có thể được biểu diễn bằng một ma trận các điểm ảnh sau quá trình số hóa
+B. Mẫu đầu vào được gán vào một lớp đã xác định dựa trên mẫu chuẩn
+C. Nội suy các mức xám trung gian nhằm tăng độ mịn của ảnh
+D. Khắc phục biến dạng do thiết bị quang học và điện tử bằng các phép chiếu dựa trên điểm điều khiển
+
+Câu 210. Tình huống Có thể được trích chọn bằng các toán tử như gradient, la bàn hoặc Laplace để hỗ trợ nhận dạng tương ứng với khái niệm nào?
+A. Phân loại không có mẫu
+B. Đặc điểm biên
+C. Ảnh số
+D. Nắn chỉnh biến dạng
+
+Câu 211. Phát biểu nào mô tả phù hợp nhất cho Hệ thống nhận dạng tự động trong môn xử lý ảnh?
+A. Khắc phục biến dạng do thiết bị quang học và điện tử bằng các phép chiếu dựa trên điểm điều khiển
+B. Thường cho khả năng nén cao hơn nhưng dữ liệu phục hồi không hoàn toàn giống ảnh gốc
+C. Gồm các khâu thu nhận và tiền xử lý, biểu diễn dữ liệu, nhận dạng và ra quyết định
+D. Các mẫu được nhóm thành lớp theo tiêu chuẩn đồng dạng khi lớp chưa được định danh trước
+
+Câu 212. Nếu hệ thống phải Có thể được trích chọn bằng các toán tử như gradient, la bàn hoặc Laplace để hỗ trợ nhận dạng, lựa chọn nào nên được xem xét trước tiên?
+A. Nén ảnh
+B. Mức xám
+C. Ảnh số
+D. Đặc điểm biên
+
+Câu 213. Phát biểu nào mô tả phù hợp nhất cho Nén có bảo toàn thông tin trong môn xử lý ảnh?
+A. Cho phép phục hồi dữ liệu ảnh sau giải nén mà không làm mất thông tin gốc
+B. Nhóm các mức xám gần nhau thành một nhóm để giảm số mức biểu diễn
+C. Giảm không gian lưu trữ dữ liệu ảnh
+D. Ảnh số có thể được biểu diễn bằng một ma trận các điểm ảnh sau quá trình số hóa
+
+Câu 214. Tình huống Biểu diễn cường độ sáng của điểm ảnh tương ứng với khái niệm nào?
+A. Nhiễu ngẫu nhiên
+B. Mức xám
+C. Pixel
+D. Nhiễu hệ thống
+
+Câu 215. Phát biểu nào mô tả phù hợp nhất cho Lấy mẫu trong môn xử lý ảnh?
+A. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+B. Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận
+C. Biến tín hiệu quang liên tục thành tín hiệu điện được lấy tại các vị trí rời rạc
+D. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+
+Câu 216. Một bài toán có yêu cầu Biến giá trị biên độ liên tục sau lấy mẫu thành các mức rời rạc hữu hạn để lưu trữ. Kỹ thuật nào phù hợp nhất?
+A. RAW
+B. Lọc Bayer
+C. CMYK
+D. Lượng tử hóa
+
+Câu 217. Khi ôn tập về Mô hình Raster, nội dung nào cần được ghi nhớ là đúng?
+A. Biểu diễn ảnh bằng ma trận các điểm ảnh và thuận lợi cho hiển thị, in ấn
+B. Ảnh có nhiều mức cường độ sáng từ tối đến sáng
+C. Biến tín hiệu quang liên tục thành tín hiệu điện được lấy tại các vị trí rời rạc
+D. Sensor hoặc bàn số hóa có thể tạo dữ liệu Vector
+
+Câu 218. Nếu hệ thống phải Biểu diễn ảnh bằng ma trận các điểm ảnh và thuận lợi cho hiển thị, in ấn, lựa chọn nào nên được xem xét trước tiên?
+A. Thiết bị thu nhận ảnh Raster
+B. Mô hình Raster
+C. Lọc Bayer
+D. Độ phân giải ảnh
+
+Câu 219. Phát biểu nào mô tả phù hợp nhất cho Mô hình Vector trong môn xử lý ảnh?
+A. Biến giá trị biên độ liên tục sau lấy mẫu thành các mức rời rạc hữu hạn để lưu trữ
+B. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+C. Biểu diễn bằng các đối tượng hình học và có thể phóng to mà không bị vỡ hình
+D. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+
+Câu 220. Một bài toán có yêu cầu Ảnh chỉ có hai mức biểu diễn. Kỹ thuật nào phù hợp nhất?
+A. RAW
+B. CMYK
+C. PCX
+D. Ảnh nhị phân
+
+Câu 221. Khi ôn tập về Ảnh màu RGB, nội dung nào cần được ghi nhớ là đúng?
+A. Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng
+B. Định dạng ảnh có sử dụng mã hóa loạt dài trong lưu trữ dữ liệu ảnh
+C. Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận
+D. Biểu diễn màu theo sắc độ, độ bão hòa và độ sáng
+
+Câu 222. Nếu hệ thống phải Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng, lựa chọn nào nên được xem xét trước tiên?
+A. Nội suy màu Bayer
+B. Ảnh màu RGB
+C. Thiết bị thu nhận ảnh Raster
+D. Lọc Bayer
+
+Câu 223. Khi ôn tập về Three-CCD, nội dung nào cần được ghi nhớ là đúng?
+A. Dữ liệu ảnh thô lưu thông tin thu nhận trực tiếp với mức xử lý tối thiểu trước khi hậu kỳ
+B. Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận
+C. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+D. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+
+Câu 224. Nếu hệ thống phải Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy, lựa chọn nào nên được xem xét trước tiên?
+A. TIFF
+B. Lấy mẫu
+C. BMP
+D. Three-CCD
+
+Câu 225. Phát biểu nào mô tả phù hợp nhất cho Mô hình CMY trong môn xử lý ảnh?
+A. Mô hình màu liên hệ với RGB theo nguyên tắc bù màu
+B. Tạo màu bằng cách cộng các thành phần ánh sáng và là nguyên lý của mô hình RGB
+C. Sensor hoặc bàn số hóa có thể tạo dữ liệu Vector
+D. Biểu diễn màu theo sắc độ, độ bão hòa và độ sáng
+
+Câu 226. Một bài toán có yêu cầu Biểu diễn màu theo sắc độ, độ bão hòa và giá trị sáng. Kỹ thuật nào phù hợp nhất?
+A. Định lý lấy mẫu
+B. Mô hình HSV
+C. Nội suy màu Bayer
+D. Lấy mẫu
+
+Câu 227. Phát biểu nào mô tả phù hợp nhất cho Mô hình HSL trong môn xử lý ảnh?
+A. Biểu diễn ảnh bằng ma trận các điểm ảnh và thuận lợi cho hiển thị, in ấn
+B. Biểu diễn bằng các đối tượng hình học và có thể phóng to mà không bị vỡ hình
+C. Biểu diễn màu theo sắc độ, độ bão hòa và độ sáng
+D. Mô hình màu liên hệ với RGB theo nguyên tắc bù màu
+
+Câu 228. Tình huống Liên quan đến số lượng điểm ảnh dùng để biểu diễn ảnh theo các chiều không gian tương ứng với khái niệm nào?
+A. Lọc Bayer
+B. BMP
+C. Nửa cường độ
+D. Độ phân giải ảnh
+
+Câu 229. Phát biểu nào mô tả phù hợp nhất cho TIFF trong môn xử lý ảnh?
+A. Định dạng ảnh hỗ trợ nhiều kiểu mã hóa và nhiều kiểu màu
+B. Camera và scanner là các thiết bị thu nhận ảnh Raster thông dụng
+C. Ảnh chỉ có hai mức biểu diễn
+D. Mô hình màu liên hệ với RGB theo nguyên tắc bù màu
+
+Câu 230. Nếu hệ thống phải Liên quan đến số lượng điểm ảnh dùng để biểu diễn ảnh theo các chiều không gian, lựa chọn nào nên được xem xét trước tiên?
+A. Thiết bị thu nhận ảnh Raster
+B. Độ phân giải ảnh
+C. Ảnh mức xám
+D. Thiết bị thu nhận ảnh Vector
+
+Câu 231. Phát biểu nào mô tả phù hợp nhất cho Phối màu cộng trong môn xử lý ảnh?
+A. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+B. Tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu để có thể tái tạo ảnh
+C. Tạo màu bằng cách cộng các thành phần ánh sáng và là nguyên lý của mô hình RGB
+D. Biến tín hiệu quang liên tục thành tín hiệu điện được lấy tại các vị trí rời rạc
+
+Câu 232. Một bài toán có yêu cầu Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn. Kỹ thuật nào phù hợp nhất?
+A. Lấy mẫu
+B. TIFF
+C. PCX
+D. Phối màu trừ
+
+Câu 233. Phát biểu nào mô tả phù hợp nhất cho CMYK trong môn xử lý ảnh?
+A. Mở rộng mô hình CMY bằng thành phần đen để phù hợp hơn với quá trình in
+B. Biểu diễn màu theo sắc độ, độ bão hòa và độ sáng
+C. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+D. Mô hình màu liên hệ với RGB theo nguyên tắc bù màu
+
+Câu 234. Tình huống Kỹ thuật in tạo cảm giác nhiều mức xám bằng cách thay đổi mật độ các điểm in tương ứng với khái niệm nào?
+A. Độ phân giải ảnh
+B. Nửa cường độ
+C. Mô hình Vector
+D. TIFF
+
+Câu 235. Phát biểu nào mô tả phù hợp nhất cho RAW trong môn xử lý ảnh?
+A. Tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu để có thể tái tạo ảnh
+B. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+C. Dữ liệu ảnh thô lưu thông tin thu nhận trực tiếp với mức xử lý tối thiểu trước khi hậu kỳ
+D. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+
+Câu 236. Nếu hệ thống phải Kỹ thuật in tạo cảm giác nhiều mức xám bằng cách thay đổi mật độ các điểm in, lựa chọn nào nên được xem xét trước tiên?
+A. Lọc Bayer
+B. BMP
+C. TIFF
+D. Nửa cường độ
+
+Câu 237. Phát biểu nào mô tả phù hợp nhất cho Nội suy màu Bayer trong môn xử lý ảnh?
+A. Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận
+B. Tạo màu bằng cách cộng các thành phần ánh sáng và là nguyên lý của mô hình RGB
+C. Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh
+D. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+
+Câu 238. Để thực hiện nhiệm vụ Biến tín hiệu quang liên tục thành tín hiệu điện được lấy tại các vị trí rời rạc, phương án nào phù hợp nhất?
+A. Mô hình Vector
+B. Lấy mẫu
+C. Lượng tử hóa
+D. PCX
+
+Câu 239. Phát biểu nào mô tả phù hợp nhất cho Thiết bị thu nhận ảnh Vector trong môn xử lý ảnh?
+A. Tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu để có thể tái tạo ảnh
+B. Định dạng ảnh có sử dụng mã hóa loạt dài trong lưu trữ dữ liệu ảnh
+C. Sensor hoặc bàn số hóa có thể tạo dữ liệu Vector
+D. Dữ liệu ảnh thô lưu thông tin thu nhận trực tiếp với mức xử lý tối thiểu trước khi hậu kỳ
+
+Câu 240. Tình huống Biến tín hiệu quang liên tục thành tín hiệu điện được lấy tại các vị trí rời rạc tương ứng với khái niệm nào?
+A. PCX
+B. TIFF
+C. BMP
+D. Lấy mẫu
+
+Câu 241. Khi ôn tập về Lượng tử hóa, nội dung nào cần được ghi nhớ là đúng?
+A. Biến giá trị biên độ liên tục sau lấy mẫu thành các mức rời rạc hữu hạn để lưu trữ
+B. Mở rộng mô hình CMY bằng thành phần đen để phù hợp hơn với quá trình in
+C. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+D. Ảnh có nhiều mức cường độ sáng từ tối đến sáng
+
+Câu 242. Một bài toán có yêu cầu Tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu để có thể tái tạo ảnh. Kỹ thuật nào phù hợp nhất?
+A. Lượng tử hóa
+B. Định lý lấy mẫu
+C. Nội suy màu Bayer
+D. Thiết bị thu nhận ảnh Raster
+
+Câu 243. Nhận định nào dưới đây phù hợp với khái niệm Mô hình Raster?
+A. Biến giá trị biên độ liên tục sau lấy mẫu thành các mức rời rạc hữu hạn để lưu trữ
+B. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+C. Biểu diễn ảnh bằng ma trận các điểm ảnh và thuận lợi cho hiển thị, in ấn
+D. Biểu diễn bằng các đối tượng hình học và có thể phóng to mà không bị vỡ hình
+
+Câu 244. Nếu hệ thống phải Biểu diễn bằng các đối tượng hình học và có thể phóng to mà không bị vỡ hình, lựa chọn nào nên được xem xét trước tiên?
+A. TIFF
+B. Ảnh mức xám
+C. PCX
+D. Mô hình Vector
+
+Câu 245. Ý nghĩa nào sau đây gần nhất với Ảnh màu RGB?
+A. Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng
+B. Ước lượng các thành phần màu còn thiếu tại mỗi pixel dựa trên thông tin các pixel lân cận
+C. Mở rộng mô hình CMY bằng thành phần đen để phù hợp hơn với quá trình in
+D. Định dạng ảnh hỗ trợ nhiều kiểu mã hóa và nhiều kiểu màu
+
+Câu 246. Một bài toán có yêu cầu Ảnh có nhiều mức cường độ sáng từ tối đến sáng. Kỹ thuật nào phù hợp nhất?
+A. Thiết bị thu nhận ảnh Vector
+B. Ảnh mức xám
+C. RAW
+D. Độ phân giải ảnh
+
+Câu 247. Trong các mô tả sau, mô tả nào đúng với Ảnh màu RGB?
+A. Liên quan đến số lượng điểm ảnh dùng để biểu diễn ảnh theo các chiều không gian
+B. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+C. Biểu diễn màu bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng
+D. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+
+Câu 248. Một bài toán có yêu cầu Dùng một cảm biến với bộ lọc màu và cần nội suy để khôi phục đủ thông tin màu cho mỗi điểm ảnh. Kỹ thuật nào phù hợp nhất?
+A. Lấy mẫu
+B. RAW
+C. PCX
+D. Lọc Bayer
+
+Câu 249. Nhận định nào dưới đây phù hợp với khái niệm Three-CCD?
+A. Dùng ba cảm biến riêng cho ba thành phần màu để tăng chất lượng và giảm sai số nội suy
+B. Mở rộng mô hình CMY bằng thành phần đen để phù hợp hơn với quá trình in
+C. Biến giá trị biên độ liên tục sau lấy mẫu thành các mức rời rạc hữu hạn để lưu trữ
+D. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+
+Câu 250. Nếu hệ thống phải Mô hình màu liên hệ với RGB theo nguyên tắc bù màu, lựa chọn nào nên được xem xét trước tiên?
+A. Phối màu cộng
+B. Mô hình CMY
+C. Thiết bị thu nhận ảnh Vector
+D. RAW
+
+Câu 251. Khi ôn tập về Mô hình HSV, nội dung nào cần được ghi nhớ là đúng?
+A. Liên quan đến số lượng điểm ảnh dùng để biểu diễn ảnh theo các chiều không gian
+B. Biến giá trị biên độ liên tục sau lấy mẫu thành các mức rời rạc hữu hạn để lưu trữ
+C. Biểu diễn màu theo sắc độ, độ bão hòa và giá trị sáng
+D. Tạo màu bằng cách hấp thụ bớt thành phần ánh sáng và được dùng trong các mô hình phục vụ in ấn
+
+Câu 252. Nếu hệ thống phải Biểu diễn màu theo sắc độ, độ bão hòa và độ sáng, lựa chọn nào nên được xem xét trước tiên?
+A. CMYK
+B. Three-CCD
+C. TIFF
+D. Mô hình HSL
+
+Câu 253. Phát biểu nào mô tả phù hợp nhất cho BMP trong môn xử lý ảnh?
+A. Định dạng ảnh bitmap lưu dữ liệu ảnh theo cấu trúc điểm ảnh
+B. Sensor hoặc bàn số hóa có thể tạo dữ liệu Vector
+C. Ảnh chỉ có hai mức biểu diễn
+D. Tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu để có thể tái tạo ảnh
+
+Câu 254. Để thực hiện nhiệm vụ Liên quan đến số lượng điểm ảnh dùng để biểu diễn ảnh theo các chiều không gian, phương án nào phù hợp nhất?
+A. Thiết bị thu nhận ảnh Vector
+B. Độ phân giải ảnh
+C. Nửa cường độ
+D. Thiết bị thu nhận ảnh Raster
+
+Câu 255. Phát biểu nào mô tả phù hợp nhất cho Histogram trong môn xử lý ảnh?
+A. Phân chia giá trị điểm ảnh theo một ngưỡng để tạo các nhóm mức xám khác nhau
+B. Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng giá trị quan tâm
+C. Biểu diễn số điểm ảnh tương ứng với từng mức xám
+D. Biểu diễn ảnh quan sát như kết quả của ảnh gốc qua hệ suy hao kết hợp với nhiễu
+
+Câu 256. Một bài toán có yêu cầu Phân bố lại mức xám để cải thiện độ tương phản của ảnh. Kỹ thuật nào phù hợp nhất?
+A. Giảm độ sáng
+B. Lọc trung bình
+C. Nhiễu Gaussian
+D. Cân bằng histogram
+
+Câu 257. Phát biểu nào mô tả phù hợp nhất cho Tìm ngưỡng tự động trong môn xử lý ảnh?
+A. Xác định ngưỡng dựa trên đặc trưng phân bố mức xám thay vì chọn hoàn toàn thủ công
+B. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+C. Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh
+D. Biểu diễn số điểm ảnh tương ứng với từng mức xám
+
+Câu 258. Một bài toán có yêu cầu Biến đổi mức xám theo quan hệ nghịch đảo so với thang mức xám. Kỹ thuật nào phù hợp nhất?
+A. Dãn độ tương phản
+B. Ảnh âm bản
+C. Bó cụm mức xám
+D. Lọc đảo
+
+Câu 259. Phát biểu nào mô tả phù hợp nhất cho Dãn độ tương phản trong môn xử lý ảnh?
+A. Tính trung bình trên k giá trị trong lân cận có mức xám gần với điểm đang xét
+B. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+C. Mở rộng dải mức xám để tăng khả năng phân biệt vùng sáng tối
+D. Thay điểm ảnh bằng trung vị của các giá trị trong cửa sổ lân cận và phù hợp với nhiễu xung
+
+Câu 260. Một bài toán có yêu cầu Kết hợp vùng lân cận của ảnh với một mặt nạ lọc để tạo giá trị đầu ra. Kỹ thuật nào phù hợp nhất?
+A. Tách ngưỡng
+B. Lọc Wiener
+C. Lọc trung vị
+D. Phép nhân chập
+
+Câu 261. Phát biểu nào mô tả phù hợp nhất cho Lọc trung vị trong môn xử lý ảnh?
+A. Thay điểm ảnh bằng trung vị của các giá trị trong cửa sổ lân cận và phù hợp với nhiễu xung
+B. Ước lượng ảnh gốc từ ảnh bị suy giảm dựa trên mô hình suy hao và nhiễu
+C. Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương khi xét cả suy hao và nhiễu
+D. Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh
+
+Câu 262. Một bài toán có yêu cầu Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh. Kỹ thuật nào phù hợp nhất?
+A. Mặt phẳng bit cao
+B. Lọc trung bình
+C. Tìm ngưỡng tự động
+D. Tách ngưỡng
+
+Câu 263. Phát biểu nào mô tả phù hợp nhất cho Lọc trung bình theo k giá trị gần nhất trong môn xử lý ảnh?
+A. Khôi phục ảnh bằng cách bù trực tiếp hàm suy hao trong miền tần số khi điều kiện cho phép
+B. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+C. Tính trung bình trên k giá trị trong lân cận có mức xám gần với điểm đang xét
+D. Xác định ngưỡng dựa trên đặc trưng phân bố mức xám thay vì chọn hoàn toàn thủ công
+
+Câu 264. Một bài toán có yêu cầu Ước lượng ảnh gốc từ ảnh bị suy giảm dựa trên mô hình suy hao và nhiễu. Kỹ thuật nào phù hợp nhất?
+A. Lọc đảo
+B. Histogram
+C. Lọc Wiener
+D. Khôi phục ảnh
+
+Câu 265. Phát biểu nào mô tả phù hợp nhất cho Nhiễu muối tiêu trong môn xử lý ảnh?
+A. Nhiễu xung tạo ra các điểm rất sáng hoặc rất tối rải rác trên ảnh
+B. Cộng một hằng số âm vào mức xám làm ảnh tối hơn
+C. Phân chia giá trị điểm ảnh theo một ngưỡng để tạo các nhóm mức xám khác nhau
+D. Phân bố lại mức xám để cải thiện độ tương phản của ảnh
+
+Câu 266. Một bài toán có yêu cầu Nhiễu có biên độ tuân theo phân bố Gaussian. Kỹ thuật nào phù hợp nhất?
+A. Tìm ngưỡng tự động
+B. Nhiễu Gaussian
+C. Lọc trung bình theo k giá trị gần nhất
+D. Lọc trung vị
+
+Câu 267. Khi ôn tập về Trích chọn bit, nội dung nào cần được ghi nhớ là đúng?
+A. Khôi phục ảnh bằng cách bù trực tiếp hàm suy hao trong miền tần số khi điều kiện cho phép
+B. Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng giá trị quan tâm
+C. Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh
+D. Thay điểm ảnh bằng trung vị của các giá trị trong cửa sổ lân cận và phù hợp với nhiễu xung
+
+Câu 268. Nếu hệ thống phải Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh, lựa chọn nào nên được xem xét trước tiên?
+A. Tách ngưỡng
+B. Histogram
+C. Tăng độ sáng
+D. Trích chọn bit
+
+Câu 269. Phát biểu nào mô tả phù hợp nhất cho Mặt phẳng bit cao trong môn xử lý ảnh?
+A. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+B. Khôi phục ảnh bằng cách bù trực tiếp hàm suy hao trong miền tần số khi điều kiện cho phép
+C. Ước lượng ảnh gốc từ ảnh bị suy giảm dựa trên mô hình suy hao và nhiễu
+D. Phân chia giá trị điểm ảnh theo một ngưỡng để tạo các nhóm mức xám khác nhau
+
+Câu 270. Nếu hệ thống phải Hạn chế ảnh hưởng của các thành phần làm phép đảo trở nên không ổn định, lựa chọn nào nên được xem xét trước tiên?
+A. Lọc trung bình theo k giá trị gần nhất
+B. Lọc giả đảo
+C. Dãn độ tương phản
+D. Histogram
+
+Câu 271. Khi ôn tập về Lọc giả đảo, nội dung nào cần được ghi nhớ là đúng?
+A. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+B. Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh
+C. Hạn chế ảnh hưởng của các thành phần làm phép đảo trở nên không ổn định
+D. Phân chia giá trị điểm ảnh theo một ngưỡng để tạo các nhóm mức xám khác nhau
+
+Câu 272. Nếu hệ thống phải Biểu diễn ảnh quan sát như kết quả của ảnh gốc qua hệ suy hao kết hợp với nhiễu, lựa chọn nào nên được xem xét trước tiên?
+A. Khôi phục ảnh
+B. Histogram
+C. Lọc trung bình
+D. Mô hình suy giảm ảnh
+
+Câu 273. Khi ôn tập về Mô hình suy giảm ảnh, nội dung nào cần được ghi nhớ là đúng?
+A. Biểu diễn ảnh quan sát như kết quả của ảnh gốc qua hệ suy hao kết hợp với nhiễu
+B. Ước lượng ảnh gốc từ ảnh bị suy giảm dựa trên mô hình suy hao và nhiễu
+C. Phân chia giá trị điểm ảnh theo một ngưỡng để tạo các nhóm mức xám khác nhau
+D. Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương khi xét cả suy hao và nhiễu
+
+Câu 274. Một bài toán có yêu cầu Cộng một hằng số dương vào mức xám làm ảnh sáng hơn. Kỹ thuật nào phù hợp nhất?
+A. Histogram
+B. Tăng độ sáng
+C. Dãn độ tương phản
+D. Cân bằng histogram
+
+Câu 275. Phát biểu nào mô tả phù hợp nhất cho Giảm độ sáng trong môn xử lý ảnh?
+A. Biến đổi mức xám theo quan hệ nghịch đảo so với thang mức xám
+B. Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng giá trị quan tâm
+C. Cộng một hằng số âm vào mức xám làm ảnh tối hơn
+D. Mở rộng dải mức xám để tăng khả năng phân biệt vùng sáng tối
+
+Câu 276. Để thực hiện nhiệm vụ Phân bố lại mức xám để cải thiện độ tương phản của ảnh, phương án nào phù hợp nhất?
+A. Histogram
+B. Lọc giả đảo
+C. Bó cụm mức xám
+D. Cân bằng histogram
+
+Câu 277. Trong các mô tả sau, mô tả nào đúng với Cân bằng histogram?
+A. Phân bố lại mức xám để cải thiện độ tương phản của ảnh
+B. Cộng một hằng số âm vào mức xám làm ảnh tối hơn
+C. Nhiễu có biên độ tuân theo phân bố Gaussian
+D. Phân chia giá trị điểm ảnh theo một ngưỡng để tạo các nhóm mức xám khác nhau
+
+Câu 278. Tình huống Xác định ngưỡng dựa trên đặc trưng phân bố mức xám thay vì chọn hoàn toàn thủ công tương ứng với khái niệm nào?
+A. Lọc trung bình theo k giá trị gần nhất
+B. Tìm ngưỡng tự động
+C. Lọc trung bình
+D. Mô hình suy giảm ảnh
+
+Câu 279. Nhận định nào dưới đây phù hợp với khái niệm Tìm ngưỡng tự động?
+A. Khôi phục ảnh bằng cách bù trực tiếp hàm suy hao trong miền tần số khi điều kiện cho phép
+B. Thay điểm ảnh bằng trung vị của các giá trị trong cửa sổ lân cận và phù hợp với nhiễu xung
+C. Xác định ngưỡng dựa trên đặc trưng phân bố mức xám thay vì chọn hoàn toàn thủ công
+D. Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng giá trị quan tâm
+
+Câu 280. Tình huống Mở rộng dải mức xám để tăng khả năng phân biệt vùng sáng tối tương ứng với khái niệm nào?
+A. Tăng độ sáng
+B. Lọc trung vị
+C. Giảm độ sáng
+D. Dãn độ tương phản
+
+Câu 281. Nhận định nào dưới đây phù hợp với khái niệm Dãn độ tương phản?
+A. Mở rộng dải mức xám để tăng khả năng phân biệt vùng sáng tối
+B. Cộng một hằng số âm vào mức xám làm ảnh tối hơn
+C. Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng giá trị quan tâm
+D. Cộng một hằng số dương vào mức xám làm ảnh sáng hơn
+
+Câu 282. Nếu hệ thống phải Kết hợp vùng lân cận của ảnh với một mặt nạ lọc để tạo giá trị đầu ra, lựa chọn nào nên được xem xét trước tiên?
+A. Tách ngưỡng
+B. Phép nhân chập
+C. Tìm ngưỡng tự động
+D. Lọc trung bình theo k giá trị gần nhất
+
+Câu 283. Nhận định nào dưới đây phù hợp với khái niệm Lọc trung bình?
+A. Biểu diễn ảnh quan sát như kết quả của ảnh gốc qua hệ suy hao kết hợp với nhiễu
+B. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+C. Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh
+D. Khôi phục ảnh bằng cách bù trực tiếp hàm suy hao trong miền tần số khi điều kiện cho phép
+
+Câu 284. Tình huống Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh tương ứng với khái niệm nào?
+A. Tăng độ sáng
+B. Histogram
+C. Giảm độ sáng
+D. Lọc trung bình
+
+Câu 285. Khi ôn tập về Lọc trung bình theo k giá trị gần nhất, nội dung nào cần được ghi nhớ là đúng?
+A. Tính trung bình trên k giá trị trong lân cận có mức xám gần với điểm đang xét
+B. Kết hợp vùng lân cận của ảnh với một mặt nạ lọc để tạo giá trị đầu ra
+C. Biểu diễn số điểm ảnh tương ứng với từng mức xám
+D. Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh
+
+Câu 286. Nếu hệ thống phải Ước lượng ảnh gốc từ ảnh bị suy giảm dựa trên mô hình suy hao và nhiễu, lựa chọn nào nên được xem xét trước tiên?
+A. Histogram
+B. Khôi phục ảnh
+C. Mặt phẳng bit cao
+D. Nhiễu muối tiêu
+
+Câu 287. Khi ôn tập về Nhiễu muối tiêu, nội dung nào cần được ghi nhớ là đúng?
+A. Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh
+B. Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương khi xét cả suy hao và nhiễu
+C. Nhiễu xung tạo ra các điểm rất sáng hoặc rất tối rải rác trên ảnh
+D. Hạn chế ảnh hưởng của các thành phần làm phép đảo trở nên không ổn định
+
+Câu 288. Nếu hệ thống phải Nhiễu có biên độ tuân theo phân bố Gaussian, lựa chọn nào nên được xem xét trước tiên?
+A. Lọc giả đảo
+B. Tách ngưỡng
+C. Lọc đảo
+D. Nhiễu Gaussian
+
+Câu 289. Phát biểu nào mô tả phù hợp nhất cho Bó cụm mức xám trong môn xử lý ảnh?
+A. Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng giá trị quan tâm
+B. Tính trung bình trên k giá trị trong lân cận có mức xám gần với điểm đang xét
+C. Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương khi xét cả suy hao và nhiễu
+D. Thay điểm ảnh bằng giá trị trung bình của vùng lân cận để làm trơn ảnh
+
+Câu 290. Tình huống Tách các mặt phẳng bit của ảnh để phân tích mức đóng góp của từng bit vào thông tin ảnh tương ứng với khái niệm nào?
+A. Tăng độ sáng
+B. Trích chọn bit
+C. Mô hình suy giảm ảnh
+D. Lọc trung bình theo k giá trị gần nhất
+
+Câu 291. Khi ôn tập về Mặt phẳng bit cao, nội dung nào cần được ghi nhớ là đúng?
+A. Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương khi xét cả suy hao và nhiễu
+B. Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng giá trị quan tâm
+C. Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh mức xám
+D. Xác định ngưỡng dựa trên đặc trưng phân bố mức xám thay vì chọn hoàn toàn thủ công
+
+Câu 292. Khi quan sát thấy yêu cầu Biểu diễn ảnh quan sát như kết quả của ảnh gốc qua hệ suy hao kết hợp với nhiễu, nội dung nào liên quan trực tiếp?
+A. Bó cụm mức xám
+B. Lọc đảo
+C. Giảm độ sáng
+D. Mô hình suy giảm ảnh
+
+Câu 293. Nhận định nào dưới đây phù hợp với khái niệm Lọc giả đảo?
+A. Hạn chế ảnh hưởng của các thành phần làm phép đảo trở nên không ổn định
+B. Nhiễu xung tạo ra các điểm rất sáng hoặc rất tối rải rác trên ảnh
+C. Biểu diễn ảnh quan sát như kết quả của ảnh gốc qua hệ suy hao kết hợp với nhiễu
+D. Biểu diễn số điểm ảnh tương ứng với từng mức xám
+
+Câu 294. Một bài toán có yêu cầu Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương khi xét cả suy hao và nhiễu. Kỹ thuật nào phù hợp nhất?
+A. Tăng độ sáng
+B. Lọc Wiener
+C. Lọc đảo
+D. Phép nhân chập
+
+Câu 295. Phát biểu nào mô tả phù hợp nhất cho Prewitt trong môn xử lý ảnh?
+A. Phát hiện biên dựa trên biến thiên mức xám, thường thông qua đạo hàm
+B. Làm mảnh đáp ứng gradient bằng cách chỉ giữ cực đại cục bộ theo hướng biên trong Canny
+C. Toán tử gradient sử dụng các mặt nạ xấp xỉ đạo hàm theo hai hướng
+D. Tìm đường biên tối ưu dựa trên một hàm chi phí và quan hệ lân cận giữa các điểm
+
+Câu 296. Nếu hệ thống phải Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau, lựa chọn nào nên được xem xét trước tiên?
+A. Láng giềng 4
+B. Phép co ảnh
+C. Láng giềng 8
+D. Toán tử la bàn
+
+Câu 297. Khi ôn tập về Toán tử la bàn, nội dung nào cần được ghi nhớ là đúng?
+A. Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau
+B. Đạo hàm bậc nhất dùng để làm nổi bật sự thay đổi mức xám
+C. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+D. Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập
+
+Câu 298. Một bài toán có yêu cầu Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập. Kỹ thuật nào phù hợp nhất?
+A. Láng giềng 4
+B. Laplace
+C. Toán tử la bàn
+D. Canny
+
+Câu 299. Phát biểu nào mô tả phù hợp nhất cho Canny trong môn xử lý ảnh?
+A. Nhạy với bước nhảy mức xám và thường tạo đáp ứng biên dày hơn đạo hàm bậc hai
+B. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+C. Phương pháp phát hiện biên nhiều bước nhằm tạo biên mảnh và liên tục hơn
+D. Tìm đường biên tối ưu dựa trên một hàm chi phí và quan hệ lân cận giữa các điểm
+
+Câu 300. Một bài toán có yêu cầu Gồm các điểm lân cận trên, dưới, trái và phải của điểm đang xét. Kỹ thuật nào phù hợp nhất?
+A. Biên ảnh
+B. Canny
+C. Prewitt
+D. Láng giềng 4
+
+Câu 301. Khi ôn tập về Phép co ảnh, nội dung nào cần được ghi nhớ là đúng?
+A. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+B. Thực hiện co ảnh rồi giãn ảnh với cùng phần tử cấu trúc
+C. Làm mảnh đáp ứng gradient bằng cách chỉ giữ cực đại cục bộ theo hướng biên trong Canny
+D. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+
+Câu 302. Nếu hệ thống phải Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc, lựa chọn nào nên được xem xét trước tiên?
+A. Trích biên hình thái
+B. Phép co ảnh
+C. Gradient
+D. Phần tử cấu trúc
+
+Câu 303. Phát biểu nào mô tả phù hợp nhất cho Phép giãn ảnh trong môn xử lý ảnh?
+A. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+B. Thực hiện co ảnh rồi giãn ảnh với cùng phần tử cấu trúc
+C. Làm mở rộng vùng đối tượng theo phần tử cấu trúc
+D. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+
+Câu 304. Nếu hệ thống phải Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc, lựa chọn nào nên được xem xét trước tiên?
+A. Prewitt
+B. Laplace
+C. Canny
+D. Phép đóng
+
+Câu 305. Khi ôn tập về Trích biên hình thái, nội dung nào cần được ghi nhớ là đúng?
+A. Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co
+B. Toán tử gradient có trọng số lớn hơn ở hàng hoặc cột giữa của mặt nạ
+C. Làm mở rộng vùng đối tượng theo phần tử cấu trúc
+D. Đạo hàm bậc nhất dùng để làm nổi bật sự thay đổi mức xám
+
+Câu 306. Nếu hệ thống phải Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co, lựa chọn nào nên được xem xét trước tiên?
+A. Dò biên theo quy hoạch động
+B. Trích biên hình thái
+C. Phép đóng
+D. Phát hiện biên gián tiếp
+
+Câu 307. Khi ôn tập về Đạo hàm bậc hai, nội dung nào cần được ghi nhớ là đúng?
+A. Làm mảnh đáp ứng gradient bằng cách chỉ giữ cực đại cục bộ theo hướng biên trong Canny
+B. Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau
+C. Làm nổi chi tiết mịn và điểm cô lập nhưng thường nhạy với nhiễu hơn
+D. Vị trí có sự thay đổi đáng kể về mức xám và thường tạo ranh giới giữa các vùng
+
+Câu 308. Nếu hệ thống phải Làm nổi chi tiết mịn và điểm cô lập nhưng thường nhạy với nhiễu hơn, lựa chọn nào nên được xem xét trước tiên?
+A. Phép giãn ảnh
+B. Phép đóng
+C. Phép mở
+D. Đạo hàm bậc hai
+
+Câu 309. Khi ôn tập về Ngưỡng kép Canny, nội dung nào cần được ghi nhớ là đúng?
+A. Dùng hai ngưỡng để phân biệt biên mạnh, biên yếu và hỗ trợ nối biên
+B. Tìm đường biên tối ưu dựa trên một hàm chi phí và quan hệ lân cận giữa các điểm
+C. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+D. Đạo hàm bậc nhất dùng để làm nổi bật sự thay đổi mức xám
+
+Câu 310. Nếu hệ thống phải Dùng hai ngưỡng để phân biệt biên mạnh, biên yếu và hỗ trợ nối biên, lựa chọn nào nên được xem xét trước tiên?
+A. Dò biên theo quy hoạch động
+B. Ngưỡng kép Canny
+C. Láng giềng 8
+D. Ức chế cực đại không
+
+Câu 311. Khi ôn tập về Phần tử cấu trúc, nội dung nào cần được ghi nhớ là đúng?
+A. Nhạy với bước nhảy mức xám và thường tạo đáp ứng biên dày hơn đạo hàm bậc hai
+B. Vị trí có sự thay đổi đáng kể về mức xám và thường tạo ranh giới giữa các vùng
+C. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+D. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+
+Câu 312. Nếu hệ thống phải Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh, lựa chọn nào nên được xem xét trước tiên?
+A. Phép giãn ảnh
+B. Phép mở
+C. Láng giềng 4
+D. Phần tử cấu trúc
+
+Câu 313. Phát biểu nào mô tả phù hợp nhất cho Trích biên trong trong môn xử lý ảnh?
+A. Có thể xác định bằng hiệu giữa ảnh gốc và ảnh sau phép co
+B. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+C. Phát hiện biên dựa trên biến thiên mức xám, thường thông qua đạo hàm
+D. Làm mở rộng vùng đối tượng theo phần tử cấu trúc
+
+Câu 314. Một bài toán có yêu cầu Vị trí có sự thay đổi đáng kể về mức xám và thường tạo ranh giới giữa các vùng. Kỹ thuật nào phù hợp nhất?
+A. Canny
+B. Biên ảnh
+C. Phát hiện biên gián tiếp
+D. Đạo hàm bậc nhất
+
+Câu 315. Phát biểu nào mô tả phù hợp nhất cho Phát hiện biên trực tiếp trong môn xử lý ảnh?
+A. Phương pháp phát hiện biên nhiều bước nhằm tạo biên mảnh và liên tục hơn
+B. Vị trí có sự thay đổi đáng kể về mức xám và thường tạo ranh giới giữa các vùng
+C. Phát hiện biên dựa trên biến thiên mức xám, thường thông qua đạo hàm
+D. Tìm đường biên tối ưu dựa trên một hàm chi phí và quan hệ lân cận giữa các điểm
+
+Câu 316. Một bài toán có yêu cầu Xác định biên từ ranh giới của các vùng sau khi phân vùng. Kỹ thuật nào phù hợp nhất?
+A. Trích biên hình thái
+B. Canny
+C. Trích biên trong
+D. Phát hiện biên gián tiếp
+
+Câu 317. Nhận định nào dưới đây phù hợp với khái niệm Prewitt?
+A. Toán tử gradient sử dụng các mặt nạ xấp xỉ đạo hàm theo hai hướng
+B. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+C. Có thể xác định bằng hiệu giữa ảnh gốc và ảnh sau phép co
+D. Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co
+
+Câu 318. Tình huống Toán tử gradient sử dụng các mặt nạ xấp xỉ đạo hàm theo hai hướng tương ứng với khái niệm nào?
+A. Ngưỡng kép Canny
+B. Prewitt
+C. Phát hiện biên gián tiếp
+D. Sobel
+
+Câu 319. Phát biểu nào mô tả phù hợp nhất cho Sobel trong môn xử lý ảnh?
+A. Làm mảnh đáp ứng gradient bằng cách chỉ giữ cực đại cục bộ theo hướng biên trong Canny
+B. Nhạy với bước nhảy mức xám và thường tạo đáp ứng biên dày hơn đạo hàm bậc hai
+C. Toán tử gradient có trọng số lớn hơn ở hàng hoặc cột giữa của mặt nạ
+D. Tìm đường biên tối ưu dựa trên một hàm chi phí và quan hệ lân cận giữa các điểm
+
+Câu 320. Tình huống Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau tương ứng với khái niệm nào?
+A. Prewitt
+B. Canny
+C. Phép co ảnh
+D. Toán tử la bàn
+
+Câu 321. Khi ôn tập về Laplace, nội dung nào cần được ghi nhớ là đúng?
+A. Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập
+B. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+C. Thực hiện co ảnh rồi giãn ảnh với cùng phần tử cấu trúc
+D. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+
+Câu 322. Tình huống Gồm các điểm lân cận trên, dưới, trái và phải của điểm đang xét tương ứng với khái niệm nào?
+A. Phát hiện biên trực tiếp
+B. Láng giềng 4
+C. Trích biên hình thái
+D. Gradient
+
+Câu 323. Nhận định nào dưới đây phù hợp với khái niệm Láng giềng 4?
+A. Phương pháp phát hiện biên nhiều bước nhằm tạo biên mảnh và liên tục hơn
+B. Phát hiện biên dựa trên biến thiên mức xám, thường thông qua đạo hàm
+C. Gồm các điểm lân cận trên, dưới, trái và phải của điểm đang xét
+D. Dùng hai ngưỡng để phân biệt biên mạnh, biên yếu và hỗ trợ nối biên
+
+Câu 324. Một bài toán có yêu cầu Bao gồm cả bốn hướng chéo ngoài bốn láng giềng trực giao. Kỹ thuật nào phù hợp nhất?
+A. Sobel
+B. Gradient
+C. Laplace
+D. Láng giềng 8
+
+Câu 325. Nhận định nào dưới đây phù hợp với khái niệm Phép co ảnh?
+A. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+B. Làm mảnh đáp ứng gradient bằng cách chỉ giữ cực đại cục bộ theo hướng biên trong Canny
+C. Có thể xác định bằng hiệu giữa ảnh gốc và ảnh sau phép co
+D. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+
+Câu 326. Nếu hệ thống phải Làm mở rộng vùng đối tượng theo phần tử cấu trúc, lựa chọn nào nên được xem xét trước tiên?
+A. Dò biên theo quy hoạch động
+B. Phép giãn ảnh
+C. Gradient
+D. Đạo hàm bậc hai
+
+Câu 327. Phát biểu nào mô tả phù hợp nhất cho Phép mở trong môn xử lý ảnh?
+A. Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co
+B. Có thể xác định bằng hiệu giữa ảnh gốc và ảnh sau phép co
+C. Thực hiện co ảnh rồi giãn ảnh với cùng phần tử cấu trúc
+D. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+
+Câu 328. Để thực hiện nhiệm vụ Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co, phương án nào phù hợp nhất?
+A. Đạo hàm bậc nhất
+B. Toán tử la bàn
+C. Sobel
+D. Trích biên hình thái
+
+Câu 329. Trong các mô tả sau, mô tả nào đúng với Trích biên hình thái?
+A. Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co
+B. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+C. Làm mở rộng vùng đối tượng theo phần tử cấu trúc
+D. Thực hiện giãn ảnh rồi co ảnh với cùng phần tử cấu trúc
+
+Câu 330. Một bài toán có yêu cầu Nhạy với bước nhảy mức xám và thường tạo đáp ứng biên dày hơn đạo hàm bậc hai. Kỹ thuật nào phù hợp nhất?
+A. Ức chế cực đại không
+B. Đạo hàm bậc nhất
+C. Dò biên theo quy hoạch động
+D. Prewitt
+
+Câu 331. Nhận định nào dưới đây phù hợp với khái niệm Đạo hàm bậc hai?
+A. Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh
+B. Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ so với phần tử cấu trúc
+C. Làm nổi chi tiết mịn và điểm cô lập nhưng thường nhạy với nhiễu hơn
+D. Nhạy với bước nhảy mức xám và thường tạo đáp ứng biên dày hơn đạo hàm bậc hai
+
+Câu 332. Một bài toán có yêu cầu Làm mảnh đáp ứng gradient bằng cách chỉ giữ cực đại cục bộ theo hướng biên trong Canny. Kỹ thuật nào phù hợp nhất?
+A. Gradient
+B. Ngưỡng kép Canny
+C. Láng giềng 8
+D. Ức chế cực đại không
+
+Câu 333. Nhận định nào dưới đây phù hợp với khái niệm Ngưỡng kép Canny?
+A. Dùng hai ngưỡng để phân biệt biên mạnh, biên yếu và hỗ trợ nối biên
+B. Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau
+C. Xác định biên từ ranh giới của các vùng sau khi phân vùng
+D. Toán tử đạo hàm bậc hai nhạy với chi tiết mịn và điểm cô lập
+
+Câu 334. Để thực hiện nhiệm vụ Mẫu hình học dùng để xác định cách phép toán hình thái tác động lên ảnh, phương án nào phù hợp nhất?
+A. Phát hiện biên gián tiếp
+B. Phần tử cấu trúc
+C. Phép co ảnh
+D. Trích biên hình thái
+
+Câu 335. Phát biểu nào mô tả phù hợp nhất cho Thuật toán đẳng điệu trong môn xử lý ảnh?
+A. Hình thành vùng từ các điểm có thuộc tính gần nhau theo tiêu chuẩn đồng nhất
+B. Dựa vào đặc trưng texture để phân biệt các vùng có cấu trúc bề mặt khác nhau
+C. Lặp việc ước lượng hai nhóm mức xám và cập nhật ngưỡng cho đến khi ổn định
+D. Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất
+
+Câu 336. Nếu hệ thống phải Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng, lựa chọn nào nên được xem xét trước tiên?
+A. Phân vùng ảnh
+B. Kết cấu texture
+C. Tách vùng
+D. Thuật toán tam giác
+
+Câu 337. Khi ôn tập về Thuật toán tam giác, nội dung nào cần được ghi nhớ là đúng?
+A. Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng
+B. Hình thành vùng từ các điểm có thuộc tính gần nhau theo tiêu chuẩn đồng nhất
+C. Quy định khi nào các điểm hoặc vùng có thể được xem là cùng một vùng trong quá trình phân đoạn
+D. Mô tả sự sắp xếp và biến thiên cục bộ của mức xám, hữu ích khi phân vùng các bề mặt
+
+Câu 338. Khi quan sát thấy yêu cầu Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất, nội dung nào liên quan trực tiếp?
+A. Histogram hai đỉnh
+B. Phát triển vùng
+C. Đối xứng nền
+D. Thuật toán tam giác
+
+Câu 339. Phát biểu nào mô tả phù hợp nhất cho Tách vùng trong môn xử lý ảnh?
+A. Lặp việc ước lượng hai nhóm mức xám và cập nhật ngưỡng cho đến khi ổn định
+B. Giảm dao động không cần thiết trên histogram trước khi xác định ngưỡng
+C. Chia một vùng chưa đồng nhất thành các vùng nhỏ hơn
+D. Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh
+
+Câu 340. Nếu hệ thống phải Sử dụng thông tin đường biên để xác định ranh giới các vùng, lựa chọn nào nên được xem xét trước tiên?
+A. Thuật toán tam giác
+B. Phân vùng theo ngưỡng
+C. Phân vùng cục bộ
+D. Phân vùng dựa theo đường biên
+
+Câu 341. Khi ôn tập về Phân vùng dựa theo đường biên, nội dung nào cần được ghi nhớ là đúng?
+A. Sử dụng thông tin đường biên để xác định ranh giới các vùng
+B. Hình thành vùng từ các điểm có thuộc tính gần nhau theo tiêu chuẩn đồng nhất
+C. Chia một vùng chưa đồng nhất thành các vùng nhỏ hơn
+D. Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh
+
+Câu 342. Tình huống Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất tương ứng với khái niệm nào?
+A. Phân vùng theo miền đồng nhất
+B. Phát triển vùng
+C. Tách vùng
+D. Histogram hai đỉnh
+
+Câu 343. Nhận định nào dưới đây phù hợp với khái niệm Phát triển vùng?
+A. Chia ảnh thành các vùng sao cho mỗi vùng chứa đối tượng hoặc nhóm đối tượng có tính chất tương đồng
+B. Quy định khi nào các điểm hoặc vùng có thể được xem là cùng một vùng trong quá trình phân đoạn
+C. Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất
+D. Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng
+
+Câu 344. Một bài toán có yêu cầu Quy định khi nào các điểm hoặc vùng có thể được xem là cùng một vùng trong quá trình phân đoạn. Kỹ thuật nào phù hợp nhất?
+A. Phân vùng toàn thể
+B. Kết cấu texture
+C. Phân vùng cục bộ
+D. Tiêu chuẩn đồng nhất
+
+Câu 345. Phát biểu nào mô tả phù hợp nhất cho Histogram hai đỉnh trong môn xử lý ảnh?
+A. Thường gợi ý khả năng tồn tại hai nhóm mức xám tương ứng gần với nền và đối tượng
+B. Chia ảnh thành các vùng sao cho mỗi vùng chứa đối tượng hoặc nhóm đối tượng có tính chất tương đồng
+C. Hình thành vùng từ các điểm có thuộc tính gần nhau theo tiêu chuẩn đồng nhất
+D. Giảm dao động không cần thiết trên histogram trước khi xác định ngưỡng
+
+Câu 346. Một bài toán có yêu cầu Mô tả sự sắp xếp và biến thiên cục bộ của mức xám, hữu ích khi phân vùng các bề mặt. Kỹ thuật nào phù hợp nhất?
+A. Đối xứng nền
+B. Kết cấu texture
+C. Histogram hai đỉnh
+D. Phân vùng theo miền đồng nhất
+
+Câu 347. Khi ôn tập về Phân vùng cục bộ, nội dung nào cần được ghi nhớ là đúng?
+A. Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất
+B. Quy định khi nào các điểm hoặc vùng có thể được xem là cùng một vùng trong quá trình phân đoạn
+C. Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh
+D. Ghép các vùng lân cận nếu chúng thỏa tiêu chuẩn đồng nhất
+
+Câu 348. Nếu hệ thống phải Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh, lựa chọn nào nên được xem xét trước tiên?
+A. Hợp vùng
+B. Tách vùng
+C. Đối xứng nền
+D. Phân vùng cục bộ
+
+Câu 349. Khi ôn tập về Phân vùng theo ngưỡng, nội dung nào cần được ghi nhớ là đúng?
+A. Phân biệt vùng đối tượng và nền dựa trên một hoặc nhiều ngưỡng mức xám
+B. Dựa trên thông tin của toàn ảnh, ví dụ histogram
+C. Quy định khi nào các điểm hoặc vùng có thể được xem là cùng một vùng trong quá trình phân đoạn
+D. Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh
+
+Câu 350. Nếu hệ thống phải Phân biệt vùng đối tượng và nền dựa trên một hoặc nhiều ngưỡng mức xám, lựa chọn nào nên được xem xét trước tiên?
+A. Phân vùng theo kết cấu bề mặt
+B. Phân vùng theo ngưỡng
+C. Kết cấu texture
+D. Phân vùng dựa theo đường biên
+
+Câu 351. Phát biểu nào mô tả phù hợp nhất cho Làm trơn histogram trong môn xử lý ảnh?
+A. Chia ảnh thành các vùng sao cho mỗi vùng chứa đối tượng hoặc nhóm đối tượng có tính chất tương đồng
+B. Hình thành vùng từ các điểm có thuộc tính gần nhau theo tiêu chuẩn đồng nhất
+C. Giảm dao động không cần thiết trên histogram trước khi xác định ngưỡng
+D. Mô tả sự sắp xếp và biến thiên cục bộ của mức xám, hữu ích khi phân vùng các bề mặt
+
+Câu 352. Nếu hệ thống phải Lặp việc ước lượng hai nhóm mức xám và cập nhật ngưỡng cho đến khi ổn định, lựa chọn nào nên được xem xét trước tiên?
+A. Tách vùng
+B. Phát triển vùng
+C. Hợp vùng
+D. Thuật toán đẳng điệu
+
+Câu 353. Phát biểu nào mô tả phù hợp nhất cho Đối xứng nền trong môn xử lý ảnh?
+A. Ước lượng ngưỡng dựa trên tính đối xứng của phân bố mức xám thuộc nền
+B. Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh
+C. Sử dụng thông tin đường biên để xác định ranh giới các vùng
+D. Dựa vào đặc trưng texture để phân biệt các vùng có cấu trúc bề mặt khác nhau
+
+Câu 354. Tình huống Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng tương ứng với khái niệm nào?
+A. Phân vùng theo kết cấu bề mặt
+B. Thuật toán tam giác
+C. Phân vùng dựa theo đường biên
+D. Tách vùng
+
+Câu 355. Phát biểu nào mô tả phù hợp nhất cho Phân vùng theo miền đồng nhất trong môn xử lý ảnh?
+A. Chia ảnh thành các vùng sao cho mỗi vùng chứa đối tượng hoặc nhóm đối tượng có tính chất tương đồng
+B. Xác định ngưỡng dựa trên hình học của histogram và khoảng cách đến đường nối đặc trưng
+C. Hình thành vùng từ các điểm có thuộc tính gần nhau theo tiêu chuẩn đồng nhất
+D. Mô tả sự sắp xếp và biến thiên cục bộ của mức xám, hữu ích khi phân vùng các bề mặt
+
+Câu 356. Một bước xử lý có chức năng Sử dụng thông tin đường biên để xác định ranh giới các vùng. Đó là kỹ thuật nào?
+A. Hợp vùng
+B. Tách vùng
+C. Làm trơn histogram
+D. Phân vùng dựa theo đường biên
+
+Câu 357. Phát biểu nào mô tả phù hợp nhất cho Hợp vùng trong môn xử lý ảnh?
+A. Ghép các vùng lân cận nếu chúng thỏa tiêu chuẩn đồng nhất
+B. Dựa trên thông tin của toàn ảnh, ví dụ histogram
+C. Dựa chủ yếu trên thông tin trong lân cận của điểm ảnh
+D. Ước lượng ngưỡng dựa trên tính đối xứng của phân bố mức xám thuộc nền
+
+Câu 358. Một bước xử lý có chức năng Quy định khi nào các điểm hoặc vùng có thể được xem là cùng một vùng trong quá trình phân đoạn. Đó là kỹ thuật nào?
+A. Tách vùng
+B. Tiêu chuẩn đồng nhất
+C. Phân vùng theo miền đồng nhất
+D. Phân vùng theo kết cấu bề mặt
+
+Câu 359. Phát biểu nào mô tả phù hợp nhất cho Phân vùng theo kết cấu bề mặt trong môn xử lý ảnh?
+A. Quy định khi nào các điểm hoặc vùng có thể được xem là cùng một vùng trong quá trình phân đoạn
+B. Chia ảnh thành các vùng sao cho mỗi vùng chứa đối tượng hoặc nhóm đối tượng có tính chất tương đồng
+C. Dựa vào đặc trưng texture để phân biệt các vùng có cấu trúc bề mặt khác nhau
+D. Mô tả sự sắp xếp và biến thiên cục bộ của mức xám, hữu ích khi phân vùng các bề mặt
+
+Câu 360. Để thực hiện nhiệm vụ Bắt đầu từ các điểm hạt giống rồi bổ sung các điểm lân cận thỏa tiêu chuẩn đồng nhất, phương án nào phù hợp nhất?
+A. Đối xứng nền
+B. Tách vùng
+C. Hợp vùng
+D. Phát triển vùng
+
+Câu 361. Phát biểu nào mô tả phù hợp nhất cho K-means trong môn xử lý ảnh?
+A. Phân đối tượng vào K cụm bằng cách lặp gán điểm tới tâm gần nhất và cập nhật tâm
+B. Tạo lớp mới từ phần tử xa nhất khi khoảng cách vượt điều kiện ngưỡng
+C. Mạng Hopfield trong bài giảng sử dụng các giá trị đầu vào -1 và 1
+D. Tại một thời điểm chọn nơron có vector trọng số gần đầu vào nhất rồi hiệu chỉnh vùng lân cận
+
+Câu 362. Tình huống Gán lớp theo lớp chiếm đa số trong số K mẫu gần nhất của đối tượng cần nhận dạng tương ứng với khái niệm nào?
+A. Khoảng cách Euclidean
+B. K láng giềng
+C. ISODATA
+D. Nhận dạng cấu trúc
+
+Câu 363. Phát biểu nào mô tả phù hợp nhất cho ISODATA trong môn xử lý ảnh?
+A. Thường được dùng để xác định mẫu hoặc tâm cụm gần nhất trong không gian đặc trưng
+B. Biểu diễn đối tượng bằng quan hệ hoặc chuỗi ký hiệu và nhận dạng dựa trên quy tắc cấu trúc
+C. Thuật toán phân cụm lặp có khả năng tách và gộp lớp theo các ngưỡng
+D. Bảo toàn tương đối quan hệ lân cận khi ánh xạ các vector đầu vào lên lưới nơron
+
+Câu 364. Nếu hệ thống phải Biểu diễn đối tượng bằng quan hệ hoặc chuỗi ký hiệu và nhận dạng dựa trên quy tắc cấu trúc, lựa chọn nào nên được xem xét trước tiên?
+A. K láng giềng
+B. Hàm phân lớp
+C. K-means
+D. Nhận dạng cấu trúc
+
+Câu 365. Khi ôn tập về Nhận dạng cấu trúc, nội dung nào cần được ghi nhớ là đúng?
+A. Biểu diễn đối tượng bằng quan hệ hoặc chuỗi ký hiệu và nhận dạng dựa trên quy tắc cấu trúc
+B. Mô tả mỗi đối tượng bằng một vector nhiều chiều, mỗi chiều là một đặc trưng
+C. Tại một thời điểm chọn nơron có vector trọng số gần đầu vào nhất rồi hiệu chỉnh vùng lân cận
+D. Quá trình gán đối tượng vào một lớp dựa trên mô hình biểu diễn, quy luật và mẫu chuẩn
+
+Câu 366. Một bài toán có yêu cầu Mạng một lớp liên kết đầy đủ dùng cơ chế tự kết hợp để hồi tưởng mẫu. Kỹ thuật nào phù hợp nhất?
+A. Học không giám sát
+B. Mạng Hopfield
+C. KNN có trọng số
+D. K-means
+
+Câu 367. Phát biểu nào mô tả phù hợp nhất cho Mạng Kohonen trong môn xử lý ảnh?
+A. Tại một thời điểm chọn nơron có vector trọng số gần đầu vào nhất rồi hiệu chỉnh vùng lân cận
+B. Bảo toàn tương đối quan hệ lân cận khi ánh xạ các vector đầu vào lên lưới nơron
+C. Bản đồ tự tổ chức ánh xạ các vector gần nhau vào các nơron lân cận
+D. Mạng một lớp liên kết đầy đủ dùng cơ chế tự kết hợp để hồi tưởng mẫu
+
+Câu 368. Một bài toán có yêu cầu Là giá trị trung bình của các đối tượng đang được gán vào cụm tương ứng. Kỹ thuật nào phù hợp nhất?
+A. Mạng Hopfield
+B. K-means
+C. Hàm phân lớp
+D. Tâm cụm K-means
+
+Câu 369. Phát biểu nào mô tả phù hợp nhất cho Khoảng cách Euclidean trong môn xử lý ảnh?
+A. Thường được dùng để xác định mẫu hoặc tâm cụm gần nhất trong không gian đặc trưng
+B. Mạng một lớp liên kết đầy đủ dùng cơ chế tự kết hợp để hồi tưởng mẫu
+C. Hàm hỗ trợ quyết định đối tượng thuộc lớp nào dựa trên giá trị các đặc trưng
+D. Biểu diễn đối tượng bằng quan hệ hoặc chuỗi ký hiệu và nhận dạng dựa trên quy tắc cấu trúc
+
+Câu 370. Một bài toán có yêu cầu Giảm ảnh hưởng của các láng giềng ở xa bằng cách gán trọng số phụ thuộc khoảng cách. Kỹ thuật nào phù hợp nhất?
+A. K-means
+B. KNN có trọng số
+C. Nhận dạng cấu trúc
+D. Tín hiệu lưỡng cực Hopfield
+
+Câu 371. Phát biểu nào mô tả phù hợp nhất cho Tín hiệu lưỡng cực Hopfield trong môn xử lý ảnh?
+A. Tại một thời điểm chọn nơron có vector trọng số gần đầu vào nhất rồi hiệu chỉnh vùng lân cận
+B. Thuật toán phân cụm lặp có khả năng tách và gộp lớp theo các ngưỡng
+C. Mạng Hopfield trong bài giảng sử dụng các giá trị đầu vào -1 và 1
+D. Mạng một lớp liên kết đầy đủ dùng cơ chế tự kết hợp để hồi tưởng mẫu
+
+Câu 372. Một bài toán có yêu cầu Tại một thời điểm chọn nơron có vector trọng số gần đầu vào nhất rồi hiệu chỉnh vùng lân cận. Kỹ thuật nào phù hợp nhất?
+A. Học có giám sát
+B. Nhận dạng ảnh
+C. Học không giám sát
+D. Học cạnh tranh Kohonen
+
+Câu 373. Phát biểu nào mô tả phù hợp nhất cho Bản đồ tự tổ chức trong môn xử lý ảnh?
+A. Bảo toàn tương đối quan hệ lân cận khi ánh xạ các vector đầu vào lên lưới nơron
+B. Giảm ảnh hưởng của các láng giềng ở xa bằng cách gán trọng số phụ thuộc khoảng cách
+C. Mạng một lớp liên kết đầy đủ dùng cơ chế tự kết hợp để hồi tưởng mẫu
+D. Thuật toán phân cụm lặp có khả năng tách và gộp lớp theo các ngưỡng
+
+Câu 374. Một bài toán có yêu cầu Quá trình gán đối tượng vào một lớp dựa trên mô hình biểu diễn, quy luật và mẫu chuẩn. Kỹ thuật nào phù hợp nhất?
+A. Học có giám sát
+B. Nhận dạng ảnh
+C. Nhận dạng cấu trúc
+D. K-means
+
+Câu 375. Khi ôn tập về Từ điển LZW, nội dung nào cần được ghi nhớ là đúng?
+A. Mã đặc biệt dùng để kết thúc từ điển hiện tại và bắt đầu lại từ điển mới khi cần
+B. Khai thác sự lặp lại hoặc tương quan của các mẫu ảnh trong miền không gian
+C. Được mở rộng động khi xuất hiện các chuỗi mới trong dữ liệu đầu vào
+D. Xây dựng và mở rộng từ điển các chuỗi trong quá trình mã hóa mà không cần truyền từ điển hoàn chỉnh
+
+Câu 376. Tình huống Phần thông tin có thể loại bỏ hoặc biểu diễn hiệu quả hơn trong quá trình nén tương ứng với khái niệm nào?
+A. DCT trong JPEG
+B. Nén không gian
+C. EOI trong LZW
+D. Độ dư thừa dữ liệu
+
+Câu 377. Phát biểu nào mô tả phù hợp nhất cho Tỷ lệ nén trong môn xử lý ảnh?
+A. Tỷ số giữa kích thước dữ liệu trước nén và kích thước dữ liệu sau nén
+B. Khai thác sự lặp lại hoặc tương quan của các mẫu ảnh trong miền không gian
+C. JPEG thường chia ảnh thành các khối 8×8 trước khi biến đổi cosin
+D. Được xây dựng bằng cách lặp ghép hai nút có xác suất nhỏ nhất
+
+Câu 378. Nếu hệ thống phải Phần thông tin có thể loại bỏ hoặc biểu diễn hiệu quả hơn trong quá trình nén, lựa chọn nào nên được xem xét trước tiên?
+A. Giảm mẫu màu trong JPEG
+B. Độ dư thừa dữ liệu
+C. Nén có mất thông tin
+D. Mã hóa khối
+
+Câu 379. Phát biểu nào mô tả phù hợp nhất cho Mã hóa khối trong môn xử lý ảnh?
+A. Tỷ số giữa kích thước dữ liệu trước nén và kích thước dữ liệu sau nén
+B. Thay một chuỗi ký hiệu lặp liên tiếp bằng biểu diễn gồm độ dài loạt và ký hiệu
+C. Biểu diễn các khối dữ liệu bằng các từ mã tương ứng
+D. Mã hóa từng dòng bằng độ dài các chuỗi bit liên tiếp, thường bắt đầu từ số lượng bit 0
+
+Câu 380. Một bài toán có yêu cầu Bao gồm các phương pháp mã hóa tương đối trực tiếp như RLE, Huffman và LZW. Kỹ thuật nào phù hợp nhất?
+A. Mã hóa khối
+B. Quét Zig-Zag
+C. LZW
+D. Nén thế hệ thứ nhất
+
+Câu 381. Phát biểu nào mô tả phù hợp nhất cho Nén thế hệ thứ hai trong môn xử lý ảnh?
+A. Khai thác cấu trúc và mô hình ảnh ở mức cao hơn nhằm vượt giới hạn của các phương pháp truyền thống
+B. Biểu diễn ảnh ở nhiều mức kích thước bằng thành phần low-pass và các phần chi tiết high-pass
+C. Chuyển dữ liệu ảnh từ miền không gian sang miền tần số để tập trung năng lượng và thuận lợi loại bớt chi tiết
+D. Khai thác sự lặp lại hoặc tương quan của các mẫu ảnh trong miền không gian
+
+Câu 382. Một bài toán có yêu cầu Mã hóa từng dòng bằng độ dài các chuỗi bit liên tiếp, thường bắt đầu từ số lượng bit 0. Kỹ thuật nào phù hợp nhất?
+A. Nén không mất thông tin
+B. RLE cho ảnh nhị phân
+C. Giảm mẫu màu trong JPEG
+D. Quét Zig-Zag
+
+Câu 383. Phát biểu nào mô tả phù hợp nhất cho RLE theo Gray code trong môn xử lý ảnh?
+A. Khai thác cấu trúc và mô hình ảnh ở mức cao hơn nhằm vượt giới hạn của các phương pháp truyền thống
+B. Chuyển dữ liệu ảnh từ miền không gian sang miền tần số để tập trung năng lượng và thuận lợi loại bớt chi tiết
+C. Có thể tạo nhiều đoạn lặp hơn vì các giá trị gần nhau trong Gray code chỉ khác nhau một bit
+D. Khai thác tính tự tương đồng của ảnh nhưng quá trình tìm phép biến đổi thường tốn thời gian mã hóa
+
+Câu 384. Một bài toán có yêu cầu Điều chỉnh cách mã hóa theo sự thay đổi của thống kê dữ liệu trong quá trình xử lý. Kỹ thuật nào phù hợp nhất?
+A. DCT trong JPEG
+B. Quét Zig-Zag
+C. Từ điển LZW
+D. Huffman thích nghi
+
+Câu 385. Phát biểu nào mô tả phù hợp nhất cho Clear Code của LZW trong môn xử lý ảnh?
+A. Mã đặc biệt dùng để kết thúc từ điển hiện tại và bắt đầu lại từ điển mới khi cần
+B. Điều chỉnh cách mã hóa theo sự thay đổi của thống kê dữ liệu trong quá trình xử lý
+C. Khai thác sự lặp lại hoặc tương quan của các mẫu ảnh trong miền không gian
+D. Biến đổi ảnh sang miền khác trước khi lượng tử hoặc mã hóa các hệ số
+
+Câu 386. Một bài toán có yêu cầu Mã đặc biệt đánh dấu kết thúc thông tin. Kỹ thuật nào phù hợp nhất?
+A. Nén Fractal
+B. EOI trong LZW
+C. Huffman thích nghi
+D. Nén sử dụng biến đổi
+
+Câu 387. Phát biểu nào mô tả phù hợp nhất cho Giới hạn từ điển LZW trong môn xử lý ảnh?
+A. Thay một chuỗi ký hiệu lặp liên tiếp bằng biểu diễn gồm độ dài loạt và ký hiệu
+B. Điều chỉnh cách mã hóa theo sự thay đổi của thống kê dữ liệu trong quá trình xử lý
+C. Từ điển trong bài giảng có tối đa 4096 phần tử nên từ mã lớn nhất dài 12 bit
+D. Chuyển dữ liệu ảnh từ miền không gian sang miền tần số để tập trung năng lượng và thuận lợi loại bớt chi tiết
+
+Câu 388. Một bài toán có yêu cầu JPEG thường chia ảnh thành các khối 8×8 trước khi biến đổi cosin. Kỹ thuật nào phù hợp nhất?
+A. LZW
+B. Mã Huffman
+C. Tỷ lệ nén
+D. Phân khối JPEG
+
+Câu 389. Khi ôn tập về Lượng tử hóa JPEG, nội dung nào cần được ghi nhớ là đúng?
+A. Chia các hệ số DCT cho ma trận lượng tử và làm tròn, khiến nhiều hệ số tần số cao trở thành 0
+B. Khai thác cấu trúc và mô hình ảnh ở mức cao hơn nhằm vượt giới hạn của các phương pháp truyền thống
+C. Sắp xếp các hệ số sau lượng tử theo thứ tự từ tần số thấp đến cao trước khi mã hóa
+D. Biến đổi ảnh sang miền khác trước khi lượng tử hoặc mã hóa các hệ số
+
+Câu 390. Nếu hệ thống phải Chia các hệ số DCT cho ma trận lượng tử và làm tròn, khiến nhiều hệ số tần số cao trở thành 0, lựa chọn nào nên được xem xét trước tiên?
+A. RLE cho ảnh nhị phân
+B. Lượng tử hóa JPEG
+C. Nén thế hệ thứ nhất
+D. Quét Zig-Zag
+
+Câu 391. Phát biểu nào mô tả phù hợp nhất cho Quét Zig-Zag trong môn xử lý ảnh?
+A. Mã hóa từng dòng bằng độ dài các chuỗi bit liên tiếp, thường bắt đầu từ số lượng bit 0
+B. Xây dựng và mở rộng từ điển các chuỗi trong quá trình mã hóa mà không cần truyền từ điển hoàn chỉnh
+C. Sắp xếp các hệ số sau lượng tử theo thứ tự từ tần số thấp đến cao trước khi mã hóa
+D. Chuyển dữ liệu ảnh từ miền không gian sang miền tần số để tập trung năng lượng và thuận lợi loại bớt chi tiết
+
+Câu 392. Một bài toán có yêu cầu Có thể giảm độ phân giải hai thành phần sắc độ vì mắt người nhạy với độ sáng hơn màu. Kỹ thuật nào phù hợp nhất?
+A. Độ dư thừa dữ liệu
+B. RLE theo Gray code
+C. Phân khối JPEG
+D. Giảm mẫu màu trong JPEG
+
+Câu 393. Phát biểu nào mô tả phù hợp nhất cho Kim tự tháp ảnh trong môn xử lý ảnh?
+A. Biểu diễn ảnh ở nhiều mức kích thước bằng thành phần low-pass và các phần chi tiết high-pass
+B. Khai thác cấu trúc và mô hình ảnh ở mức cao hơn nhằm vượt giới hạn của các phương pháp truyền thống
+C. Thay một chuỗi ký hiệu lặp liên tiếp bằng biểu diễn gồm độ dài loạt và ký hiệu
+D. Tỷ số giữa kích thước dữ liệu trước nén và kích thước dữ liệu sau nén
+
+Câu 394. Một bài toán có yêu cầu Khai thác tính tự tương đồng của ảnh nhưng quá trình tìm phép biến đổi thường tốn thời gian mã hóa. Kỹ thuật nào phù hợp nhất?
+A. LZW
+B. Nén Fractal
+C. Phân khối JPEG
+D. Huffman thích nghi
+
+Câu 395. Phát biểu nào mô tả phù hợp nhất cho Nén không mất thông tin trong môn xử lý ảnh?
+A. Phần thông tin có thể loại bỏ hoặc biểu diễn hiệu quả hơn trong quá trình nén
+B. Tỷ số giữa kích thước dữ liệu trước nén và kích thước dữ liệu sau nén
+C. Sau giải nén có thể khôi phục chính xác dữ liệu gốc
+D. Sau giải nén không thu được hoàn toàn dữ liệu gốc nhưng thường đạt tỷ lệ nén cao hơn
+
+Câu 396. Một bài toán có yêu cầu Sau giải nén không thu được hoàn toàn dữ liệu gốc nhưng thường đạt tỷ lệ nén cao hơn. Kỹ thuật nào phù hợp nhất?
+A. Độ dư thừa dữ liệu
+B. Từ điển LZW
+C. Mã Huffman
+D. Nén có mất thông tin
+
+Câu 397. Phát biểu nào mô tả phù hợp nhất cho Nén không gian trong môn xử lý ảnh?
+A. Khai thác sự lặp lại hoặc tương quan của các mẫu ảnh trong miền không gian
+B. Chuyển dữ liệu ảnh từ miền không gian sang miền tần số để tập trung năng lượng và thuận lợi loại bớt chi tiết
+C. Sau giải nén có thể khôi phục chính xác dữ liệu gốc
+D. JPEG thường chia ảnh thành các khối 8×8 trước khi biến đổi cosin
+
+Câu 398. Một bài toán có yêu cầu Biến đổi ảnh sang miền khác trước khi lượng tử hoặc mã hóa các hệ số. Kỹ thuật nào phù hợp nhất?
+A. Nén Fractal
+B. Nén sử dụng biến đổi
+C. Nén không mất thông tin
+D. Giảm mẫu màu trong JPEG
+
+Câu 399. Phát biểu nào mô tả phù hợp nhất cho Mã hóa loạt dài RLE trong môn xử lý ảnh?
+A. Có thể tạo nhiều đoạn lặp hơn vì các giá trị gần nhau trong Gray code chỉ khác nhau một bit
+B. Điều chỉnh cách mã hóa theo sự thay đổi của thống kê dữ liệu trong quá trình xử lý
+C. Thay một chuỗi ký hiệu lặp liên tiếp bằng biểu diễn gồm độ dài loạt và ký hiệu
+D. Mã đặc biệt dùng để kết thúc từ điển hiện tại và bắt đầu lại từ điển mới khi cần
+
+Câu 400. Trong thực hành, yêu cầu Phần thông tin có thể loại bỏ hoặc biểu diễn hiệu quả hơn trong quá trình nén nên gắn với lựa chọn nào?
+A. EOI trong LZW
+B. Mã hóa khối
+C. Tỷ lệ nén
+D. Độ dư thừa dữ liệu
