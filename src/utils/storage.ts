@@ -85,3 +85,4 @@ export const clearAllData = () => {
   localStorage.removeItem(STORAGE_KEYS.BOOKMARKS);
   localStorage.removeItem(STORAGE_KEYS.EXAM_SESSION);
 };
+

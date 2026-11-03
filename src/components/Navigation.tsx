@@ -70,3 +70,4 @@ export const Navigation: React.FC<NavigationProps> = ({ currentMode, onSelectMod
     </>
   );
 };
+

@@ -32,3 +32,4 @@ export interface ExamSession {
   totalQuestions?: number;
   startedAt: number;
 }
+
