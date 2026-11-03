@@ -35,10 +35,10 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
             <div className="min-w-0">
               <h1 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 truncate leading-tight">
-                Nhập Môn Xử Lý Ảnh
+                Học 1 lần là đạt
               </h1>
               <p className="text-xs text-slate-500 dark:text-slate-400 truncate">
-                Ngân hàng 400 câu hỏi trắc nghiệm chuẩn
+                Thi 1 lần là qua
               </p>
             </div>
           </div>
