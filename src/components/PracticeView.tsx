@@ -11,9 +11,11 @@ import {
   Layers, 
   Filter,
   CheckCircle2,
-  AlertCircle
+  AlertCircle,
+  LayoutGrid
 } from 'lucide-react';
 import { Question, OptionKey, PracticeFilter } from '../types';
+import { QuestionSitemap } from './QuestionSitemap';
 
 interface PracticeViewProps {
   questions: Question[];
@@ -44,6 +46,29 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
   const [showExplanation, setShowExplanation] = useState<boolean>(false);
   const [isFlashcardMode, setIsFlashcardMode] = useState<boolean>(false);
   const [jumpInput, setJumpInput] = useState<string>('');
+  const [showSitemap, setShowSitemap] = useState<boolean>(false);
+  const [isPinnedSitemap, setIsPinnedSitemap] = useState<boolean>(() => {
+    return localStorage.getItem('nmxla_pinned_sitemap') === 'true';
+  });
+
+  const handleTogglePinSitemap = () => {
+    const next = !isPinnedSitemap;
+    setIsPinnedSitemap(next);
+    localStorage.setItem('nmxla_pinned_sitemap', String(next));
+  };
+
+  const handleSelectQuestionFromSitemap = (questionId: number) => {
+    let idx = filteredQuestions.findIndex((q) => q.id === questionId);
+    if (idx === -1) {
+      setSelectedChapter(0);
+      setStatusFilter('all');
+      idx = questions.findIndex((q) => q.id === questionId);
+    }
+    if (idx >= 0) {
+      setCurrentIndex(idx);
+      setShowExplanation(false);
+    }
+  };
 
   // Extract chapters list
   const chapters = useMemo(() => {
@@ -161,7 +186,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
   const optionKeys: OptionKey[] = ['A', 'B', 'C', 'D'];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 pb-24 sm:pb-12">
+    <div className={`mx-auto px-4 sm:px-6 py-6 pb-24 sm:pb-12 transition-all ${isPinnedSitemap ? 'max-w-7xl' : 'max-w-4xl'}`}>
       {/* Control & Filter Bar */}
       <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 mb-6 shadow-sm">
         {/* Top Controls: Chapter Selector & Utility Toggles */}
@@ -227,6 +252,20 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
               <Layers className="w-3.5 h-3.5" />
               <span>{isFlashcardMode ? 'Thẻ Flashcard' : 'Trắc nghiệm'}</span>
             </button>
+
+            {/* Sitemap Toggle Button */}
+            <button
+              onClick={() => setShowSitemap(true)}
+              className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border interactive-tap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
+                showSitemap || isPinnedSitemap
+                  ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
+                  : 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/40 dark:text-blue-300 dark:border-blue-900 hover:bg-blue-100 dark:hover:bg-blue-900/40'
+              }`}
+              title="Mở bản đồ sitemap câu hỏi"
+            >
+              <LayoutGrid className="w-3.5 h-3.5" />
+              <span>Sitemap</span>
+            </button>
           </div>
         </div>
 
@@ -265,19 +304,26 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
         </div>
       </div>
 
-      {/* Main Question Display */}
-      {currentQuestion ? (
-        <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden transition-all">
-          {/* Card Top Metadata Bar */}
-          <div className="px-5 sm:px-6 py-3.5 bg-slate-50/70 dark:bg-slate-800/50 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between gap-3">
-            <div className="flex items-center gap-2 min-w-0">
-              <span className="px-2.5 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-semibold text-xs shrink-0">
-                Câu {currentQuestion.id}
-              </span>
-              <span className="text-xs text-slate-500 dark:text-slate-400 truncate">
-                Chương {currentQuestion.chapterId}: {currentQuestion.chapterName}
-              </span>
-            </div>
+      {/* Main Question & Sitemap Layout */}
+      <div className="flex items-start gap-6">
+        <div className="flex-1 min-w-0">
+          {currentQuestion ? (
+            <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden transition-all">
+              {/* Card Top Metadata Bar */}
+              <div className="px-5 sm:px-6 py-3.5 bg-slate-50/70 dark:bg-slate-800/50 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-2 min-w-0">
+                  <button
+                    onClick={() => setShowSitemap(true)}
+                    title="Nhấp để mở Sitemap câu hỏi"
+                    className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-blue-100 hover:bg-blue-200 dark:bg-blue-950/60 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 font-bold text-xs shrink-0 interactive-tap"
+                  >
+                    <LayoutGrid className="w-3 h-3" />
+                    <span>Câu {currentQuestion.id}</span>
+                  </button>
+                  <span className="text-xs text-slate-500 dark:text-slate-400 truncate">
+                    Chương {currentQuestion.chapterId}: {currentQuestion.chapterName}
+                  </span>
+                </div>
 
             <div className="flex items-center gap-2 shrink-0">
               {/* Question Position */}
@@ -472,19 +518,51 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
           </div>
         </div>
       ) : (
-        <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-12 text-center text-slate-500">
-          <p className="text-base font-medium mb-2">Không có câu hỏi nào thỏa mãn bộ lọc</p>
-          <p className="text-xs text-slate-400 mb-4">Hãy thử chọn chương khác hoặc đổi trạng thái lọc.</p>
-          <button
-            onClick={() => {
-              setSelectedChapter(0);
-              setStatusFilter('all');
-            }}
-            className="px-4 py-2 rounded-lg bg-blue-600 text-white text-xs font-medium hover:bg-blue-700"
-          >
-            Hiện tất cả câu hỏi
-          </button>
+            <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-12 text-center text-slate-500">
+              <p className="text-base font-medium mb-2">Không có câu hỏi nào thỏa mãn bộ lọc</p>
+              <p className="text-xs text-slate-400 mb-4">Hãy thử chọn chương khác hoặc đổi trạng thái lọc.</p>
+              <button
+                onClick={() => {
+                  setSelectedChapter(0);
+                  setStatusFilter('all');
+                }}
+                className="px-4 py-2 rounded-lg bg-blue-600 text-white text-xs font-medium hover:bg-blue-700"
+              >
+                Hiện tất cả câu hỏi
+              </button>
+            </div>
+          )}
         </div>
+
+        {/* Pinned Desktop Sidebar */}
+        {isPinnedSitemap && (
+          <QuestionSitemap
+            questions={questions}
+            currentQuestionId={currentQuestion ? currentQuestion.id : 1}
+            practiceAnswers={practiceAnswers}
+            bookmarks={bookmarks}
+            onSelectQuestion={handleSelectQuestionFromSitemap}
+            isOpen={true}
+            onClose={() => setIsPinnedSitemap(false)}
+            isPinned={true}
+            onTogglePin={handleTogglePinSitemap}
+          />
+        )}
+      </div>
+
+      {/* Slide-over Drawer / Modal when NOT pinned or on Mobile */}
+      {showSitemap && !isPinnedSitemap && (
+        <QuestionSitemap
+          questions={questions}
+          currentQuestionId={currentQuestion ? currentQuestion.id : 1}
+          practiceAnswers={practiceAnswers}
+          bookmarks={bookmarks}
+          onSelectQuestion={handleSelectQuestionFromSitemap}
+          isOpen={true}
+          onClose={() => setShowSitemap(false)}
+          isPinned={false}
+          onTogglePin={handleTogglePinSitemap}
+        />
       )}
     </div>
   );
