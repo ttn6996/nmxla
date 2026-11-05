@@ -42,7 +42,14 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
 }) => {
   const [selectedChapter, setSelectedChapter] = useState<number>(0); // 0 = all
   const [statusFilter, setStatusFilter] = useState<PracticeFilter>('all');
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [currentIndex, setCurrentIndex] = useState<number>(() => {
+    const savedQuestionId = Number(localStorage.getItem('nmxla_last_practice_question'));
+    const initialQuestions = shuffleMode
+      ? [...questions].sort((a, b) => ((a.id * 37) % 1000) - ((b.id * 37) % 1000))
+      : questions;
+    const savedIndex = initialQuestions.findIndex((question) => question.id === savedQuestionId);
+    return savedIndex >= 0 ? savedIndex : 0;
+  });
   const [showExplanation, setShowExplanation] = useState<boolean>(false);
   const [isFlashcardMode, setIsFlashcardMode] = useState<boolean>(false);
   const [jumpInput, setJumpInput] = useState<string>('');
@@ -120,6 +127,12 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
   const currentQuestion: Question | undefined = filteredQuestions[currentIndex];
   const userAnswer: OptionKey | undefined = currentQuestion ? practiceAnswers[currentQuestion.id] : undefined;
   const isBookmarked = currentQuestion ? bookmarks.includes(currentQuestion.id) : false;
+
+  useEffect(() => {
+    if (currentQuestion) {
+      localStorage.setItem('nmxla_last_practice_question', String(currentQuestion.id));
+    }
+  }, [currentQuestion?.id]);
 
   // Keyboard navigation
   useEffect(() => {
