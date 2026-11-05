@@ -7,6 +7,7 @@ interface HeaderProps {
   onResetProgress: () => void;
   totalAnswered: number;
   totalQuestions: number;
+  currentRank: string;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -15,6 +16,7 @@ export const Header: React.FC<HeaderProps> = ({
   onResetProgress,
   totalAnswered,
   totalQuestions,
+  currentRank,
 }) => {
   const [showShortcutsModal, setShowShortcutsModal] = useState(false);
 
@@ -49,6 +51,11 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-medium text-slate-700 dark:text-slate-300">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
               <span>Đã làm: {totalAnswered}/{totalQuestions}</span>
+            </div>
+
+            <div className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 dark:bg-amber-950/50 text-xs font-semibold text-amber-700 dark:text-amber-300">
+              <span>Cấp:</span>
+              <span>{currentRank}</span>
             </div>
 
             {/* Keyboard shortcuts info button */}

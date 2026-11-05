@@ -57,6 +57,10 @@ export const App: React.FC = () => {
   const [instantFeedback, setInstantFeedback] = useState<boolean>(true);
   const [shuffleMode, setShuffleMode] = useState<boolean>(() => localStorage.getItem('nmxla_shuffle_mode') === 'true');
   const [promotionRank, setPromotionRank] = useState<number | null>(null);
+  const totalAnswered = Object.keys(practiceAnswers).length;
+  const currentRank = totalAnswered < 20
+    ? 'Phàm nhân'
+    : cultivationRanks[Math.min(Math.floor(totalAnswered / 20) - 1, cultivationRanks.length - 1)];
 
   // Initialize from LocalStorage
   useEffect(() => {
@@ -134,8 +138,9 @@ export const App: React.FC = () => {
         darkMode={darkMode}
         setDarkMode={setDarkMode}
         onResetProgress={handleResetProgress}
-        totalAnswered={Object.keys(practiceAnswers).length}
+        totalAnswered={totalAnswered}
         totalQuestions={questions.length}
+        currentRank={currentRank}
       />
 
       {/* Main Navigation Tabs */}
@@ -150,6 +155,7 @@ export const App: React.FC = () => {
             bookmarks={bookmarks}
             instantFeedback={instantFeedback}
             shuffleMode={shuffleMode}
+            currentRank={currentRank}
             onAnswer={handleAnswer}
             onToggleBookmark={handleToggleBookmark}
             onToggleInstantFeedback={handleToggleInstantFeedback}

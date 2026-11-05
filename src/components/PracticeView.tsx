@@ -23,6 +23,7 @@ interface PracticeViewProps {
   bookmarks: number[];
   instantFeedback: boolean;
   shuffleMode: boolean;
+  currentRank: string;
   onAnswer: (questionId: number, answer: OptionKey) => void;
   onToggleBookmark: (questionId: number) => void;
   onToggleInstantFeedback: () => void;
@@ -35,6 +36,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
   bookmarks,
   instantFeedback,
   shuffleMode,
+  currentRank,
   onAnswer,
   onToggleBookmark,
   onToggleInstantFeedback,
@@ -55,13 +57,18 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
   const [jumpInput, setJumpInput] = useState<string>('');
   const [showSitemap, setShowSitemap] = useState<boolean>(false);
   const [isPinnedSitemap, setIsPinnedSitemap] = useState<boolean>(() => {
-    return localStorage.getItem('nmxla_pinned_sitemap') === 'true';
+    return localStorage.getItem('nmxla_pinned_sitemap') !== 'false';
   });
 
   const handleTogglePinSitemap = () => {
     const next = !isPinnedSitemap;
     setIsPinnedSitemap(next);
     localStorage.setItem('nmxla_pinned_sitemap', String(next));
+  };
+
+  const handleHideDesktopSitemap = () => {
+    setIsPinnedSitemap(false);
+    localStorage.setItem('nmxla_pinned_sitemap', 'false');
   };
 
   const handleSelectQuestionFromSitemap = (questionId: number) => {
@@ -266,15 +273,26 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
               <span>{isFlashcardMode ? 'Thẻ Flashcard' : 'Trắc nghiệm'}</span>
             </button>
 
-            {/* Sitemap Toggle Button */}
+            {/* Desktop sitemap visibility toggle */}
             <button
-              onClick={() => setShowSitemap(true)}
-              className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border interactive-tap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
-                showSitemap || isPinnedSitemap
+              onClick={handleTogglePinSitemap}
+              className={`hidden lg:flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border interactive-tap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
+                isPinnedSitemap
                   ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
                   : 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/40 dark:text-blue-300 dark:border-blue-900 hover:bg-blue-100 dark:hover:bg-blue-900/40'
               }`}
-              title="Mở bản đồ sitemap câu hỏi"
+              title={isPinnedSitemap ? 'Ẩn Sitemap' : 'Hiện Sitemap'}
+              aria-pressed={isPinnedSitemap}
+            >
+              <LayoutGrid className="w-3.5 h-3.5" />
+              <span>{isPinnedSitemap ? 'Ẩn Sitemap' : 'Hiện Sitemap'}</span>
+            </button>
+
+            {/* Mobile sitemap drawer toggle */}
+            <button
+              onClick={() => setShowSitemap(true)}
+              className="flex lg:hidden items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/40 dark:text-blue-300 dark:border-blue-900 hover:bg-blue-100 dark:hover:bg-blue-900/40 interactive-tap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+              title="Mở bản đồ câu hỏi"
             >
               <LayoutGrid className="w-3.5 h-3.5" />
               <span>Sitemap</span>
@@ -556,15 +574,16 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
             bookmarks={bookmarks}
             onSelectQuestion={handleSelectQuestionFromSitemap}
             isOpen={true}
-            onClose={() => setIsPinnedSitemap(false)}
+            onClose={handleHideDesktopSitemap}
             isPinned={true}
             onTogglePin={handleTogglePinSitemap}
+            currentRank={currentRank}
           />
         )}
       </div>
 
       {/* Slide-over Drawer / Modal when NOT pinned or on Mobile */}
-      {showSitemap && !isPinnedSitemap && (
+      {showSitemap && (
         <QuestionSitemap
           questions={questions}
           currentQuestionId={currentQuestion ? currentQuestion.id : 1}
@@ -575,6 +594,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
           onClose={() => setShowSitemap(false)}
           isPinned={false}
           onTogglePin={handleTogglePinSitemap}
+          currentRank={currentRank}
         />
       )}
     </div>

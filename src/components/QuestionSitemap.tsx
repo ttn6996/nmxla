@@ -16,6 +16,7 @@ interface QuestionSitemapProps {
   onClose: () => void;
   isPinned?: boolean;
   onTogglePin?: () => void;
+  currentRank: string;
 }
 
 type SitemapFilter = 'all' | 'correct' | 'incorrect' | 'unanswered' | 'bookmarked';
@@ -30,6 +31,7 @@ export const QuestionSitemap: React.FC<QuestionSitemapProps> = ({
   onClose,
   isPinned = false,
   onTogglePin,
+  currentRank,
 }) => {
   const [filter, setFilter] = useState<SitemapFilter>('all');
   const [selectedChapter, setSelectedChapter] = useState<number>(0); // 0 = all
@@ -134,6 +136,10 @@ export const QuestionSitemap: React.FC<QuestionSitemapProps> = ({
 
       {/* Legend & Telemetry Bar */}
       <div className="px-5 py-2.5 bg-slate-50/70 dark:bg-slate-800/40 border-b border-slate-100 dark:border-slate-800 flex flex-wrap items-center gap-3 text-xs">
+        <div className="flex items-center gap-1.5 rounded-full bg-amber-100 px-2.5 py-1 font-semibold text-amber-800 dark:bg-amber-950/60 dark:text-amber-300">
+          <span>Cấp hiện tại:</span>
+          <span>{currentRank}</span>
+        </div>
         <div className="flex items-center gap-1.5 font-medium text-emerald-700 dark:text-emerald-400">
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
           <span>Đúng: {stats.correct}</span>
