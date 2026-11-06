@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Sparkles, X } from 'lucide-react';
 import questionsData from './data/questions.json';
 import { Question, OptionKey, StudyMode } from './types';
@@ -8,6 +8,7 @@ import { PracticeView } from './components/PracticeView';
 import { ExamView } from './components/ExamView';
 import { ListView } from './components/ListView';
 import { AnalyticsView } from './components/AnalyticsView';
+import { CoreKnowledgeView } from './components/CoreKnowledgeView';
 import {
   getStorageData,
   savePracticeAnswer,
@@ -45,6 +46,7 @@ export const App: React.FC = () => {
 
   // App & View State
   const [currentMode, setCurrentMode] = useState<StudyMode>('practice');
+  const modeBeforeCoreRef = useRef<StudyMode>('practice');
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     const saved = localStorage.getItem('nmxla_theme');
     if (saved) return saved === 'dark';
@@ -61,6 +63,11 @@ export const App: React.FC = () => {
   const currentRank = totalAnswered < 20
     ? 'Phàm nhân'
     : cultivationRanks[Math.min(Math.floor(totalAnswered / 20) - 1, cultivationRanks.length - 1)];
+
+  const handleSelectMode = (mode: StudyMode) => {
+    if (mode !== 'core') modeBeforeCoreRef.current = mode;
+    setCurrentMode(mode);
+  };
 
   // Initialize from LocalStorage
   useEffect(() => {
@@ -144,7 +151,7 @@ export const App: React.FC = () => {
       />
 
       {/* Main Navigation Tabs */}
-      <Navigation currentMode={currentMode} onSelectMode={setCurrentMode} />
+      <Navigation currentMode={currentMode} onSelectMode={handleSelectMode} />
 
       {/* Main Content Area */}
       <main className="flex-1">
@@ -179,10 +186,14 @@ export const App: React.FC = () => {
             practiceAnswers={practiceAnswers}
             bookmarks={bookmarks}
             onNavigateToPractice={() => {
-              setCurrentMode('practice');
+              handleSelectMode('practice');
             }}
             onResetProgress={handleResetProgress}
           />
+        )}
+
+        {currentMode === 'core' && (
+          <CoreKnowledgeView onBack={() => handleSelectMode(modeBeforeCoreRef.current)} />
         )}
       </main>
 

@@ -18,7 +18,7 @@ export interface ChapterInfo {
   total: number;
 }
 
-export type StudyMode = 'practice' | 'exam' | 'list' | 'analytics';
+export type StudyMode = 'practice' | 'exam' | 'list' | 'analytics' | 'core';
 
 export type PracticeFilter = 'all' | 'unanswered' | 'incorrect' | 'bookmarked';
 
