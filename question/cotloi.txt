@@ -1,0 +1,275 @@
+﻿TÀI LIỆU ÔN THI TRẮC NGHIỆM – XỬ LÝ ẢNH SỐ
+Tổng hợp lý thuyết cốt lõi – Không bao gồm công thức tính toán
+
+============================================================
+1. TỔNG QUAN VỀ ẢNH SỐ
+============================================================
+
+- Ảnh số: Được biểu diễn bằng ma trận các điểm ảnh (pixel).
+- Pixel: Phần tử ảnh, chứa thông tin vị trí và cường độ sáng hoặc màu sắc.
+- Ảnh mức xám: Mỗi pixel biểu diễn một mức độ sáng.
+- Ảnh nhị phân: Chỉ có hai mức biểu diễn: đen và trắng.
+- Độ phân giải: Liên quan đến số lượng pixel dùng để biểu diễn ảnh.
+- Tăng số mức xám: Nội suy các mức xám trung gian để tăng độ mịn của ảnh.
+- Raster: Biểu diễn ảnh bằng ma trận pixel; phóng to quá mức có thể bị vỡ.
+- Vector: Biểu diễn bằng các đối tượng hình học; phóng to không bị vỡ hình.
+
+Thiết bị thu nhận ảnh:
+- Camera, scanner: Thiết bị thu nhận ảnh Raster thông dụng.
+- Sensor hoặc bàn số hóa: Có thể tạo dữ liệu Vector.
+
+============================================================
+2. THU NHẬN VÀ BIỂU DIỄN ẢNH
+============================================================
+
+- Lấy mẫu (Sampling): Lấy giá trị tín hiệu tại các vị trí rời rạc trong không gian.
+- Lượng tử hóa (Quantization): Chuyển giá trị liên tục thành các mức rời rạc hữu hạn.
+- Định lý Nyquist: Tần số lấy mẫu phải ít nhất gấp đôi tần số cao nhất của tín hiệu.
+- RGB: Ba thành phần Red, Green, Blue; sử dụng phối màu cộng.
+- HSV: Biểu diễn màu bằng sắc độ, độ bão hòa và giá trị sáng.
+- CMY: Mô hình màu theo nguyên tắc phối màu trừ.
+- CMYK: Mở rộng CMY bằng thành phần màu đen K, thường dùng trong in ấn.
+- Phối màu cộng: Cộng các thành phần ánh sáng để tạo màu; gắn với RGB.
+- Phối màu trừ: Hấp thụ bớt thành phần ánh sáng; gắn với mô hình in ấn.
+- RAW: Dữ liệu ảnh thô, lưu thông tin thu nhận với mức xử lý tối thiểu.
+- Bayer: Một cảm biến với bộ lọc màu; cần nội suy để khôi phục đủ thông tin màu cho mỗi pixel.
+- Three-CCD: Dùng ba cảm biến riêng cho ba thành phần màu, giảm sai số nội suy.
+
+Các định dạng ảnh:
+- BMP: Ảnh bitmap, lưu dữ liệu theo cấu trúc pixel.
+- TIFF: Hỗ trợ nhiều kiểu mã hóa và kiểu màu.
+- PCX: Định dạng ảnh có sử dụng mã hóa loạt dài (RLE).
+
+============================================================
+3. NHIỄU VÀ XỬ LÝ MỨC XÁM
+============================================================
+
+3.1. Các loại nhiễu
+
+- Nhiễu ngẫu nhiên: Không rõ quy luật, thường khắc phục bằng các phép lọc.
+- Nhiễu hệ thống: Có quy luật, có thể khử bằng các phép biến đổi thích hợp.
+- Nhiễu Gaussian: Nhiễu có biên độ tuân theo phân bố Gaussian.
+- Nhiễu muối tiêu: Nhiễu xung tạo ra các điểm rất sáng hoặc rất tối rải rác trên ảnh.
+
+3.2. Các phép xử lý mức xám
+
+- Tăng độ sáng: Cộng giá trị dương vào mức xám để ảnh sáng hơn.
+- Giảm độ sáng: Cộng giá trị âm vào mức xám để ảnh tối hơn.
+- Ảnh âm bản: Biến đổi mức xám theo quan hệ nghịch đảo.
+- Dãn độ tương phản: Mở rộng dải mức xám để phân biệt vùng sáng tối tốt hơn.
+- Histogram: Biểu diễn số lượng pixel tương ứng với từng mức xám.
+- Cân bằng Histogram: Phân bố lại mức xám nhằm cải thiện độ tương phản.
+- Bó cụm mức xám: Nhóm các mức xám gần nhau để giảm số mức biểu diễn hoặc làm nổi bật vùng quan tâm.
+- Trích chọn bit: Tách các mặt phẳng bit để phân tích mức đóng góp của từng bit.
+- Mặt phẳng bit cao: Thường chứa phần lớn thông tin hình dạng và cấu trúc quan trọng của ảnh.
+
+3.3. Các bộ lọc
+
+- Lọc trung bình (Mean): Thay pixel bằng giá trị trung bình vùng lân cận; làm trơn ảnh.
+- Lọc trung vị (Median): Thay pixel bằng trung vị vùng lân cận; phù hợp với nhiễu muối tiêu.
+- Lọc trung bình theo k giá trị gần nhất: Chỉ tính trung bình trên k giá trị trong lân cận có mức xám gần với pixel đang xét.
+- Phép nhân chập (Convolution): Kết hợp vùng lân cận ảnh với mặt nạ lọc để tạo giá trị đầu ra.
+
+3.4. Khôi phục ảnh
+
+- Khôi phục ảnh: Ước lượng ảnh gốc từ ảnh bị suy giảm dựa trên mô hình suy hao và nhiễu.
+- Mô hình suy giảm ảnh: Mô tả ảnh quan sát là kết quả của ảnh gốc qua hệ suy hao kết hợp với nhiễu.
+- Lọc đảo (Inverse Filter): Bù trực tiếp hàm suy hao trong miền tần số khi điều kiện cho phép.
+- Lọc Wiener: Khôi phục ảnh theo tiêu chuẩn giảm sai số trung bình bình phương, xét cả suy hao và nhiễu.
+- Lọc giả đảo (Pseudo-inverse): Hạn chế ảnh hưởng của các thành phần làm phép đảo trở nên không ổn định.
+
+============================================================
+4. PHÁT HIỆN BIÊN VÀ HÌNH THÁI HỌC
+============================================================
+
+4.1. Phát hiện biên
+
+- Phát hiện biên trực tiếp: Dựa trên sự biến thiên mức xám, thường thông qua đạo hàm.
+- Gradient: Đạo hàm bậc nhất, làm nổi bật sự thay đổi mức xám.
+- Laplace: Đạo hàm bậc hai, nhạy với chi tiết mịn và điểm cô lập.
+- Sobel: Toán tử gradient có trọng số lớn hơn ở hàng hoặc cột giữa của mặt nạ.
+- Prewitt: Toán tử phát hiện biên sử dụng mặt nạ theo các hướng.
+- Compass: Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau.
+- Canny: Phương pháp nhiều bước nhằm tạo biên mảnh và liên tục hơn.
+- Non-maximum Suppression: Làm mảnh đáp ứng gradient bằng cách giữ các cực đại cục bộ theo hướng biên.
+- Ngưỡng kép Canny: Dùng hai ngưỡng phân biệt biên mạnh, biên yếu và hỗ trợ nối biên.
+
+4.2. Phép toán hình thái học
+
+- Phần tử cấu trúc: Mẫu hình học dùng để thực hiện các phép toán hình thái.
+- Giãn ảnh (Dilation): Làm mở rộng vùng đối tượng.
+- Co ảnh (Erosion): Làm thu nhỏ vùng đối tượng.
+- Opening (Phép mở): Co ảnh rồi giãn ảnh với cùng phần tử cấu trúc.
+- Closing (Phép đóng): Giãn ảnh rồi co ảnh với cùng phần tử cấu trúc.
+- Trích biên trong: Xác định biên bằng hiệu giữa ảnh gốc và ảnh sau phép co.
+- Trích biên hình thái: Có thể xác định biên từ hiệu giữa ảnh đã giãn và ảnh đã co.
+
+Láng giềng pixel:
+- 4 láng giềng: Trên, dưới, trái, phải.
+- 8 láng giềng: Gồm 4 láng giềng trực giao và 4 hướng chéo.
+
+============================================================
+5. PHÂN ĐOẠN ẢNH (IMAGE SEGMENTATION)
+============================================================
+
+Mục tiêu: Chia ảnh thành các vùng hoặc đối tượng có đặc điểm tương đồng.
+
+- Tách ngưỡng (Thresholding): Phân chia pixel dựa trên giá trị mức xám và một ngưỡng.
+- Ngưỡng toàn cục: Sử dụng một ngưỡng chung cho toàn ảnh.
+- Ngưỡng cục bộ: Sử dụng ngưỡng khác nhau cho từng vùng ảnh.
+- Tìm ngưỡng tự động: Xác định ngưỡng dựa trên đặc trưng phân bố mức xám.
+- Histogram hai đỉnh: Có thể chọn ngưỡng tại vùng giữa hai đỉnh phân bố mức xám.
+- Phân đoạn theo kết cấu: Dựa vào đặc trưng kết cấu của vùng ảnh.
+- Region Growing: Phát triển vùng từ điểm hạt giống dựa trên tiêu chuẩn đồng nhất.
+- Region Merging: Gộp các vùng lân cận có đặc điểm tương đồng.
+- Region Splitting: Chia vùng chưa đồng nhất thành các vùng nhỏ hơn.
+- Homogeneity: Tiêu chuẩn đánh giá mức độ đồng nhất của vùng ảnh.
+
+Các cách xác định ngưỡng cần nhận diện:
+- Ngưỡng lặp: Cập nhật ngưỡng qua nhiều lần lặp.
+- Ngưỡng Triangle: Xác định ngưỡng dựa trên hình dạng histogram.
+- Đối xứng nền: Khai thác tính đối xứng của phân bố nền.
+
+============================================================
+6. NHẬN DẠNG VÀ PHÂN LOẠI ẢNH
+============================================================
+
+- Nhận dạng ảnh: Xác định đối tượng hoặc lớp của mẫu đầu vào.
+- Học có giám sát: Có dữ liệu huấn luyện đã được gán nhãn.
+- Học không giám sát: Dữ liệu chưa được gán nhãn, tự tìm nhóm hoặc cấu trúc.
+- Không gian đặc trưng: Biểu diễn đối tượng thông qua các đặc trưng để phân loại.
+- K-means: Phân cụm dữ liệu thành K nhóm dựa trên mức độ gần nhau.
+- KNN: Phân loại mẫu dựa trên K láng giềng gần nhất.
+- Weighted KNN: Các láng giềng có trọng số khác nhau, thường ưu tiên điểm gần hơn.
+- Khoảng cách Euclidean: Đo khoảng cách giữa các điểm trong không gian đặc trưng.
+- ISODATA: Phương pháp phân cụm có khả năng tách hoặc gộp cụm.
+- Hopfield: Mạng nơ-ron hồi tiếp, có khả năng lưu trữ và khôi phục mẫu.
+- Kohonen / SOM: Mạng nơ-ron tự tổ chức, ánh xạ dữ liệu lên không gian thấp chiều để biểu diễn cấu trúc.
+- Nhận dạng cấu trúc: Nhận dạng dựa trên cấu trúc và mối quan hệ giữa các thành phần của đối tượng.
+
+Phân biệt quan trọng:
+- K-means, ISODATA: Phân cụm không giám sát.
+- KNN: Phân loại dựa trên các mẫu lân cận.
+- Học có giám sát: Dữ liệu đã có nhãn.
+- Học không giám sát: Dữ liệu chưa có nhãn.
+
+============================================================
+7. NÉN ẢNH
+============================================================
+
+7.1. Khái niệm cơ bản
+
+- Nén ảnh: Giảm dung lượng lưu trữ hoặc dữ liệu truyền tải.
+- Nén không mất thông tin: Sau giải nén có thể khôi phục dữ liệu gốc chính xác.
+- Nén có mất thông tin: Sau giải nén không thu được hoàn toàn dữ liệu gốc nhưng thường đạt tỷ lệ nén cao hơn.
+- Độ dư thừa dữ liệu: Phần thông tin lặp lại hoặc có thể biểu diễn hiệu quả hơn trong quá trình nén.
+
+7.2. Các phương pháp nén
+
+- RLE: Mã hóa các chuỗi giá trị lặp liên tiếp bằng thông tin về số lần lặp và giá trị.
+- RLE ảnh nhị phân: Mã hóa độ dài các chuỗi bit liên tiếp, thường bắt đầu từ số lượng bit 0.
+- RLE theo Gray Code: Có thể tạo nhiều đoạn lặp hơn vì các giá trị gần nhau trong Gray Code chỉ khác nhau một bit.
+- Huffman: Gán từ mã ngắn cho ký hiệu xuất hiện thường xuyên và từ mã dài cho ký hiệu ít xuất hiện.
+- Huffman thích nghi: Điều chỉnh cách mã hóa theo sự thay đổi thống kê dữ liệu trong quá trình xử lý.
+- LZW: Phương pháp nén dựa trên từ điển, khai thác các chuỗi dữ liệu lặp lại.
+- Nén Fractal: Khai thác tính tự tương đồng của ảnh; tìm phép biến đổi thường tốn thời gian mã hóa.
+- DCT: Chuyển ảnh từ miền không gian sang miền tần số, tập trung năng lượng vào một số hệ số.
+- JPEG: Sử dụng DCT, lượng tử hóa và mã hóa để nén ảnh có mất thông tin.
+- Quét Zig-Zag: Sắp xếp hệ số DCT theo thứ tự thuận lợi cho mã hóa.
+- Giảm mẫu màu: Giảm lượng thông tin màu để giảm dung lượng ảnh JPEG.
+- Image Pyramid: Biểu diễn ảnh ở nhiều mức kích thước bằng thành phần low-pass và high-pass.
+
+7.3. Các hướng nén ảnh
+
+- Nén không gian: Khai thác sự lặp lại hoặc tương quan của các mẫu ảnh trong miền không gian.
+- Nén biến đổi: Chuyển dữ liệu sang miền khác trước khi lượng tử hoặc mã hóa hệ số.
+- Nén thế hệ thứ hai: Khai thác cấu trúc và mô hình ảnh ở mức cao hơn nhằm vượt giới hạn phương pháp truyền thống.
+
+Cần nhớ về JPEG:
+- DCT: Chuyển ảnh sang miền tần số.
+- Lượng tử hóa: Loại bỏ hoặc giảm độ chính xác của các hệ số ít quan trọng.
+- Zig-Zag: Sắp xếp hệ số.
+- Mã hóa: Biểu diễn dữ liệu hiệu quả hơn.
+- Giảm mẫu màu: Giảm lượng thông tin màu.
+
+============================================================
+8. CÁC KIẾN THỨC BỔ SUNG TRONG BỘ CÂU HỎI
+============================================================
+
+- Tham gia tích cực giờ học: Chủ động trao đổi và thực hiện hoạt động học tập được giao.
+- Thực hiện nhiệm vụ: Hoàn thành đúng phạm vi và thời điểm đã thống nhất.
+- Tự đánh giá: Kiểm tra mức độ hiểu bài và xác định nội dung cần bổ sung.
+- Cập nhật kiến thức: Thường xuyên bổ sung kiến thức mới liên quan đến xử lý ảnh.
+- Tiếp nhận phản hồi: Lắng nghe, đối chiếu và cải thiện kết quả.
+
+============================================================
+9. BẢNG PHÂN BIỆT NHANH – PHẦN NÊN HỌC THUỘC
+============================================================
+
+- Không rõ quy luật, dùng phép lọc -> Nhiễu ngẫu nhiên.
+- Có quy luật, dùng phép biến đổi -> Nhiễu hệ thống.
+- Điểm sáng/tối bất thường -> Nhiễu muối tiêu.
+- Lấy giá trị tại vị trí rời rạc -> Sampling.
+- Chuyển giá trị liên tục thành mức rời rạc -> Quantization.
+- Màu đỏ, xanh lá, xanh dương -> RGB.
+- Sắc độ, độ bão hòa, độ sáng -> HSV.
+- Một cảm biến, nội suy màu -> Bayer.
+- Ba cảm biến riêng -> Three-CCD.
+- Giá trị trung bình vùng lân cận -> Mean Filter.
+- Giá trị trung vị vùng lân cận -> Median Filter.
+- Hai ngưỡng, biên mạnh/yếu -> Canny.
+- Đạo hàm bậc nhất -> Gradient.
+- Đạo hàm bậc hai -> Laplace.
+- Mở rộng vùng đối tượng -> Dilation.
+- Thu nhỏ vùng đối tượng -> Erosion.
+- Co rồi giãn -> Opening.
+- Giãn rồi co -> Closing.
+- Chia theo mức xám -> Thresholding.
+- Phát triển vùng từ điểm hạt giống -> Region Growing.
+- Có nhãn -> Supervised Learning.
+- Không có nhãn -> Unsupervised Learning.
+- K láng giềng gần nhất -> KNN.
+- Chia thành K cụm -> K-means.
+- Từ mã ngắn cho ký hiệu xuất hiện nhiều -> Huffman.
+- Điều chỉnh mã theo thống kê dữ liệu -> Adaptive Huffman.
+- Từ điển -> LZW.
+- Chuỗi lặp liên tiếp -> RLE.
+- Chuyển sang miền tần số -> DCT.
+- Sắp xếp hệ số DCT -> Zig-Zag.
+- Nén ảnh JPEG -> DCT + lượng tử hóa + mã hóa.
+
+============================================================
+CÁCH ÔN TẬP
+============================================================
+
+1. Học thuộc bảng phân biệt nhanh ở mục 9.
+2. Đọc lần lượt các bảng kiến thức ở mục 1 đến mục 8.
+3. Khi gặp câu hỏi tình huống, tìm từ khóa mô tả trong đề rồi đối chiếu với khái niệm tương ứng.
+4. Ưu tiên phân biệt các cặp dễ nhầm: Mean/Median, Dilation/Erosion, Opening/Closing, KNN/K-means, nén mất thông tin/không mất thông tin.
+
+============================================================
+10. BỔ SUNG CÁC Ý CỐT LÕI CÒN THIẾU TRONG BỘ 400 CÂU
+============================================================
+
+- HSL: Mô hình màu biểu diễn màu bằng sắc độ (Hue), độ bão hòa (Saturation) và độ sáng (Lightness); phân biệt với HSV dùng Value.
+- Giảm số mức xám: Nhóm các mức xám gần nhau để giảm số mức biểu diễn; khác với tăng số mức xám bằng nội suy mức trung gian.
+- Làm trơn Histogram: Giảm các dao động không cần thiết trên Histogram trước khi xác định ngưỡng.
+- Nửa cường độ (Halftoning): Tạo cảm giác có nhiều mức xám khi in bằng cách thay đổi mật độ các điểm in.
+- Nắn chỉnh biến dạng: Khắc phục biến dạng hình học do thiết bị quang học hoặc điện tử, thường dựa trên các phép chiếu và điểm điều khiển.
+- Phát hiện biên gián tiếp: Xác định biên từ ranh giới các vùng sau khi ảnh đã được phân vùng; khác với phát hiện trực tiếp dựa trên biến thiên mức xám.
+- Phân khối JPEG: Ảnh thường được chia thành các khối 8×8 trước khi áp dụng biến đổi cosin rời rạc (DCT).
+
+Ngưỡng và phân cụm:
+- Thuật toán ngưỡng đẳng điệu: Lặp việc ước lượng hai nhóm mức xám (đối tượng và nền), cập nhật ngưỡng cho đến khi giá trị ổn định.
+- Thuật toán khoảng cách lớn nhất: Tạo lớp/cụm mới từ phần tử xa tâm cụm nhất khi khoảng cách vượt điều kiện ngưỡng.
+- Hàm phân lớp: Hàm quyết định đối tượng thuộc lớp nào dựa trên các giá trị đặc trưng.
+- Tâm cụm K-means: Giá trị trung bình của các đối tượng đang được gán vào cụm đó.
+
+Mã hóa và nén:
+- Nén thế hệ thứ nhất: Nhóm các phương pháp mã hóa tương đối trực tiếp như RLE, Huffman và LZW.
+- Mã hóa khối: Biểu diễn các khối dữ liệu bằng các từ mã tương ứng.
+- Cây Huffman: Tạo cây bằng cách lặp ghép hai nút có xác suất nhỏ nhất; ký hiệu xuất hiện thường xuyên nhận từ mã ngắn hơn.
+- Tỷ lệ nén: Tỷ số giữa kích thước dữ liệu trước nén và kích thước dữ liệu sau nén.
+- LZW Clear Code: Mã đặc biệt dùng để kết thúc từ điển hiện tại và bắt đầu lại từ điển mới khi cần.
+- LZW EOI: Mã đặc biệt đánh dấu kết thúc thông tin.
+- Giới hạn từ điển LZW trong bài giảng: Tối đa 4096 phần tử, tương ứng từ mã lớn nhất dài 12 bit.

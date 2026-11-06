@@ -1,6 +1,7 @@
-import React from 'react';
-import { BookOpen, Award, ListFilter, BarChart2 } from 'lucide-react';
+import React, { useState } from 'react';
+import { BookOpen, Award, ListFilter, BarChart2, X } from 'lucide-react';
 import { StudyMode } from '../types';
+import coreKnowledge from '../../question/cotloi.txt?raw';
 
 interface NavigationProps {
   currentMode: StudyMode;
@@ -8,6 +9,19 @@ interface NavigationProps {
 }
 
 export const Navigation: React.FC<NavigationProps> = ({ currentMode, onSelectMode }) => {
+  const [secretClickCount, setSecretClickCount] = useState(0);
+  const [isCoreKnowledgeOpen, setIsCoreKnowledgeOpen] = useState(false);
+
+  const handleSecretClick = () => {
+    const nextClickCount = secretClickCount + 1;
+    if (nextClickCount === 9) {
+      setSecretClickCount(0);
+      setIsCoreKnowledgeOpen(true);
+      return;
+    }
+    setSecretClickCount(nextClickCount);
+  };
+
   const tabs = [
     { id: 'practice' as StudyMode, label: 'Luyện tập', icon: BookOpen },
     { id: 'exam' as StudyMode, label: 'Thi thử', icon: Award },
@@ -38,12 +52,20 @@ export const Navigation: React.FC<NavigationProps> = ({ currentMode, onSelectMod
               </button>
             );
           })}
+          <button
+            type="button"
+            onClick={handleSecretClick}
+            aria-label="Khu vực kiến thức cốt lõi"
+            className="ml-1 flex items-center justify-center px-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+          >
+            <span className="h-1.5 w-1.5 rounded-full bg-slate-400/40 transition-colors hover:bg-slate-500/70 dark:bg-slate-500/40 dark:hover:bg-slate-400/70" />
+          </button>
         </div>
       </nav>
 
       {/* Mobile Bottom Fixed Navigation Bar (>=48px touch targets) */}
       <nav aria-label="Điều hướng di động" className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 pb-safe">
-        <div className="grid grid-cols-4 h-16">
+        <div className="grid grid-cols-5 h-16">
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = currentMode === tab.id;
@@ -65,8 +87,49 @@ export const Navigation: React.FC<NavigationProps> = ({ currentMode, onSelectMod
               </button>
             );
           })}
+          <button
+            type="button"
+            onClick={handleSecretClick}
+            aria-label="Khu vực kiến thức cốt lõi"
+            className="flex flex-col items-center justify-center min-h-[48px] py-1 focus-visible:outline-none"
+          >
+            <span className="h-1.5 w-1.5 rounded-full bg-slate-400/40 transition-colors hover:bg-slate-500/70 dark:bg-slate-500/40 dark:hover:bg-slate-400/70" />
+          </button>
         </div>
       </nav>
+
+      {isCoreKnowledgeOpen && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-slate-950/60 p-3 sm:p-6 backdrop-blur-sm"
+          role="presentation"
+          onClick={() => setIsCoreKnowledgeOpen(false)}
+        >
+          <section
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="core-knowledge-title"
+            className="flex max-h-[90vh] w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl dark:border-slate-700 dark:bg-slate-900"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <header className="flex shrink-0 items-center justify-between gap-4 border-b border-slate-200 px-5 py-4 dark:border-slate-800 sm:px-7">
+              <h2 id="core-knowledge-title" className="text-lg font-bold text-slate-900 dark:text-slate-100 sm:text-xl">
+                Kiến thức cốt lõi
+              </h2>
+              <button
+                type="button"
+                onClick={() => setIsCoreKnowledgeOpen(false)}
+                aria-label="Đóng kiến thức cốt lõi"
+                className="rounded-lg p-2 text-slate-500 transition hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </header>
+            <div className="overflow-y-auto px-5 py-5 text-sm leading-7 text-slate-700 dark:text-slate-300 sm:px-7">
+              <div className="whitespace-pre-wrap font-sans">{coreKnowledge}</div>
+            </div>
+          </section>
+        </div>
+      )}
     </>
   );
 };
