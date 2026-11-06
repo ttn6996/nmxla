@@ -273,3 +273,100 @@ Mã hóa và nén:
 - LZW Clear Code: Mã đặc biệt dùng để kết thúc từ điển hiện tại và bắt đầu lại từ điển mới khi cần.
 - LZW EOI: Mã đặc biệt đánh dấu kết thúc thông tin.
 - Giới hạn từ điển LZW trong bài giảng: Tối đa 4096 phần tử, tương ứng từ mã lớn nhất dài 12 bit.
+
+============================================================
+11. BỔ SUNG CÁC KHÁI NIỆM ĐƯỢC HỎI TRONG 400 CÂU
+============================================================
+
+11.1. Nhận dạng và học máy
+
+- Không gian đặc trưng: Mỗi đối tượng được biểu diễn bằng một vector nhiều chiều; mỗi chiều là một đặc trưng dùng để phân biệt đối tượng.
+- Hàm phân lớp: Nhận giá trị đặc trưng làm đầu vào và hỗ trợ quyết định đối tượng thuộc lớp nào.
+- Hệ thống nhận dạng tự động: Gồm các khâu thu nhận, tiền xử lý, biểu diễn dữ liệu, nhận dạng và ra quyết định.
+- Phân loại có mẫu: Dùng các mẫu chuẩn đã biết nhãn để gán mẫu đầu vào vào một lớp đã xác định.
+- Phân loại không có mẫu: Nhóm các mẫu theo mức độ giống nhau khi lớp chưa được định danh trước.
+- KNN có trọng số: Gán ảnh hưởng khác nhau cho các láng giềng, thường để điểm gần có ảnh hưởng lớn hơn và giảm ảnh hưởng của điểm xa.
+- KNN thông thường: Tìm K mẫu gần nhất và gán lớp theo lớp chiếm đa số trong các mẫu lân cận đó.
+- Tâm cụm: Trong K-means, tâm là giá trị trung bình của các đối tượng hiện được gán vào cụm.
+- Quy trình K-means: Lặp việc gán mỗi điểm vào tâm gần nhất rồi cập nhật các tâm cụm cho đến khi ổn định.
+- ISODATA: Phân cụm lặp; có thể tách một cụm hoặc gộp các cụm theo điều kiện và ngưỡng đặt ra.
+- Bản đồ tự tổ chức (SOM/Kohonen): Ánh xạ vector đầu vào lên lưới nơron và bảo toàn tương đối quan hệ lân cận; vector gần nhau thường được ánh xạ lên các nơron gần nhau.
+- Học cạnh tranh Kohonen: Chọn nơron có vector trọng số gần đầu vào nhất làm nơron thắng, sau đó điều chỉnh trọng số của nơron thắng và các nơron lân cận.
+- Mạng Hopfield: Mạng hồi tiếp một lớp liên kết đầy đủ, có khả năng tự kết hợp để lưu và hồi tưởng mẫu.
+- Tín hiệu lưỡng cực Hopfield: Trạng thái đầu vào/đầu ra trong mô hình bài giảng dùng hai giá trị -1 và 1.
+
+11.2. Biên, kết cấu và phân vùng
+
+- Biên ảnh: Vị trí mức xám thay đổi đáng kể, thường tạo ranh giới giữa các vùng hoặc đối tượng.
+- Đặc điểm biên: Có thể được trích chọn bằng các toán tử gradient, la bàn hoặc Laplace để hỗ trợ nhận dạng.
+- Kết cấu (texture): Mô tả cách mức xám sắp xếp và biến thiên cục bộ; hữu ích để phân biệt các vùng có bề mặt khác nhau.
+- Phân vùng toàn thể: Dựa trên thông tin của toàn ảnh, chẳng hạn phân bố mức xám trên histogram.
+- Phân vùng cục bộ: Dựa chủ yếu trên thông tin trong vùng lân cận của điểm ảnh đang xét.
+- Phân vùng theo đường biên: Dùng các đường biên để xác định ranh giới giữa các vùng.
+- Phân vùng theo miền đồng nhất: Gom các điểm hoặc vùng lân cận có thuộc tính tương tự theo tiêu chuẩn đồng nhất.
+- Phân vùng theo kết cấu: Dùng đặc trưng texture để phân biệt các vùng có cấu trúc bề mặt khác nhau.
+- Tách vùng: Chia một vùng chưa đồng nhất thành các vùng nhỏ hơn.
+- Hợp vùng: Ghép các vùng lân cận khi chúng thỏa tiêu chuẩn đồng nhất.
+- Phát triển vùng: Bắt đầu từ điểm hạt giống rồi thêm các điểm lân cận thỏa tiêu chuẩn đồng nhất.
+- Thuật toán tam giác: Chọn ngưỡng dựa trên hình dạng histogram và khoảng cách hình học từ histogram đến đường nối các điểm đặc trưng.
+- Histogram hai đỉnh: Hai đỉnh thường đại diện gần đúng cho hai nhóm mức xám như nền và đối tượng; vùng giữa hai đỉnh có thể gợi ý ngưỡng.
+- Phép mở: Co rồi giãn; thường giúp loại chi tiết sáng nhỏ và làm trơn biên mà ít thay đổi kích thước các vùng lớn.
+- Phép đóng: Giãn rồi co; thường giúp lấp lỗ nhỏ và nối các khe hẹp trong vùng đối tượng.
+
+11.3. Lọc, màu và nén
+
+- Đạo hàm bậc hai/Laplace: Làm nổi bật chi tiết mịn và điểm cô lập; thường nhạy với nhiễu hơn đạo hàm bậc nhất.
+- Mô hình CMY và RGB: CMY dùng phối màu trừ, có quan hệ bù với các thành phần của RGB; CMYK thêm kênh đen để phù hợp in ấn.
+- Lượng tử hóa JPEG: Chia hệ số DCT cho ma trận lượng tử rồi làm tròn; các hệ số tần số cao ít quan trọng thường bị đưa về 0.
+- Giảm mẫu màu JPEG: Có thể giảm độ phân giải các thành phần sắc độ vì mắt người thường nhạy với thay đổi độ sáng hơn thay đổi màu.
+- Nén thế hệ thứ hai: Khai thác cấu trúc hoặc mô hình ảnh ở mức cao hơn các phương pháp mã hóa trực tiếp của thế hệ thứ nhất.
+- JPEG và ảnh màu: Quy trình thường gồm chia khối, DCT, lượng tử hóa, quét Zig-Zag và mã hóa; giảm mẫu màu có thể được áp dụng để giảm dữ liệu màu.
+
+============================================================
+12. TRA CỨU THEO ĐÚNG TÊN KHÁI NIỆM TRONG CÂU HỎI
+============================================================
+
+Ảnh và thu nhận:
+- Ảnh màu RGB: Ảnh màu biểu diễn bằng ba thành phần đỏ, xanh lá và xanh dương theo phối màu cộng.
+- Định lý lấy mẫu: Để tái tạo tín hiệu, tần số lấy mẫu theo mỗi chiều phải ít nhất gấp đôi tần số cao nhất của tín hiệu.
+- Độ phân giải ảnh: Số lượng điểm ảnh theo các chiều không gian dùng để biểu diễn ảnh.
+- Mô hình Raster: Biểu diễn ảnh bằng ma trận điểm ảnh, phù hợp hiển thị và in ấn nhưng có thể vỡ khi phóng lớn.
+- Mô hình Vector: Biểu diễn ảnh bằng đối tượng hình học nên có thể phóng lớn mà không vỡ hình.
+- Thiết bị thu nhận ảnh Vector: Sensor hoặc bàn số hóa có thể tạo dữ liệu Vector.
+- Láng giềng 4: Các điểm ở phía trên, dưới, trái và phải của điểm đang xét.
+- Láng giềng 8: Gồm bốn láng giềng trực giao và bốn láng giềng chéo.
+- Lọc Bayer: Một cảm biến ghi nhận các thành phần màu qua bộ lọc; cần nội suy để khôi phục các thành phần màu còn thiếu.
+- Nội suy màu Bayer: Ước lượng thành phần màu còn thiếu của mỗi pixel từ thông tin các pixel lân cận.
+- Mô hình HSL: Biểu diễn màu bằng sắc độ, độ bão hòa và độ sáng (Lightness).
+- Mô hình HSV: Biểu diễn màu bằng sắc độ, độ bão hòa và giá trị sáng (Value).
+- Giảm mẫu màu trong JPEG: Giảm độ phân giải thành phần sắc độ vì mắt người thường nhạy với độ sáng hơn với thay đổi màu.
+- Kim tự tháp ảnh: Biểu diễn ảnh ở nhiều kích thước bằng thành phần low-pass và các chi tiết high-pass.
+- Kết cấu texture: Sự sắp xếp và biến thiên cục bộ của mức xám, dùng để phân biệt bề mặt ảnh.
+
+Nhận dạng, biên và phân vùng:
+- Biểu diễn trong không gian đặc trưng: Mô tả mỗi đối tượng bằng vector nhiều chiều, trong đó mỗi chiều là một đặc trưng.
+- Phân vùng ảnh: Chia ảnh thành các vùng sao cho mỗi vùng chứa đối tượng hoặc nhóm đối tượng có tính chất tương đồng.
+- Phân vùng theo ngưỡng: Phân biệt nền và đối tượng dựa trên một hoặc nhiều ngưỡng mức xám.
+- Phân vùng dựa theo đường biên: Dùng đường biên để xác định ranh giới các vùng.
+- Phân vùng theo kết cấu bề mặt: Dùng đặc trưng texture để tách các vùng có cấu trúc bề mặt khác nhau.
+- Phép co ảnh: Làm co vùng đối tượng và có thể loại bỏ chi tiết nhỏ hơn phần tử cấu trúc.
+- Phép giãn ảnh: Mở rộng vùng đối tượng theo phần tử cấu trúc.
+- Thuật toán đẳng điệu: Lặp ước lượng hai nhóm mức xám và cập nhật ngưỡng cho đến khi ổn định.
+- Toán tử la bàn: Dùng nhiều mặt nạ định hướng để phát hiện biên theo các hướng khác nhau.
+- Ức chế cực đại không: Trong Canny, chỉ giữ cực đại cục bộ của đáp ứng gradient theo hướng biên để làm mảnh biên.
+- Bản đồ tự tổ chức: Ánh xạ vector đầu vào lên lưới nơron đồng thời bảo toàn tương đối quan hệ lân cận.
+- Mạng Kohonen: Mạng tự tổ chức, trong đó các vector đầu vào gần nhau thường được ánh xạ tới các nơron lân cận.
+
+Mã hóa, nén và chuẩn đầu ra:
+- Mã hóa loạt dài RLE: Thay chuỗi ký hiệu lặp liên tiếp bằng độ dài loạt và ký hiệu đó.
+- RLE cho ảnh nhị phân: Mã hóa từng dòng bằng độ dài các chuỗi bit liên tiếp, thường bắt đầu bằng số bit 0.
+- Mã Huffman: Gán từ mã ngắn cho ký hiệu xuất hiện thường xuyên và từ mã dài hơn cho ký hiệu ít xuất hiện.
+- Clear Code của LZW: Mã đặc biệt kết thúc từ điển hiện tại để bắt đầu lại từ điển mới khi cần.
+- EOI trong LZW: Mã đặc biệt đánh dấu kết thúc thông tin.
+- Nén có bảo toàn thông tin: Sau giải nén khôi phục chính xác dữ liệu ảnh gốc.
+- Nén không bảo toàn thông tin: Sau giải nén dữ liệu không hoàn toàn giống gốc, thường đổi lại tỷ lệ nén cao hơn.
+- Nén sử dụng biến đổi: Chuyển ảnh sang miền khác trước khi lượng tử hóa hoặc mã hóa hệ số.
+- chủ động trao đổi và thực hiện các hoạt động học tập được giao trên lớp: Biểu hiện tham gia tích cực giờ học.
+- hoàn thành phần việc đúng phạm vi và thời điểm đã thống nhất: Biểu hiện thực hiện đầy đủ nhiệm vụ được giao.
+- kiểm tra lại mức độ hiểu bài và xác định nội dung cần bổ sung: Nội dung của việc tự đánh giá quá trình học.
+- thường xuyên bổ sung kiến thức mới liên quan đến nội dung xử lý ảnh: Biểu hiện cập nhật kiến thức trong học phần.
